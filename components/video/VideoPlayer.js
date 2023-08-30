@@ -47,7 +47,7 @@ const VideoPlayer = () => {
 
   return (
     <div ref={ref} className="relative w-full my-20 container mx-auto">
-      <video ref={videoRef} className="w-[370px] h-20 object-cover" muted autoPlay playsinline>
+      <video ref={videoRef} className="w-[370px] h-20 object-cover" muted autoPlay playsInline>
         <source src="/logovideo.mp4" type="video/mp4" />
       </video>
     </div>
