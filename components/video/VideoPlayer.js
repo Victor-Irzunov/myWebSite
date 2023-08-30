@@ -1,8 +1,23 @@
 "use client"
 import { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 
 const VideoPlayer = () => {
   const videoRef = useRef(null);
+  const [videoVisible, setVideoVisible] = useState(false); // Состояние видимости видео
+
+  // Хук useInView возвращает true, когда видео видимо в окне браузера
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Позволяет сработать только один раз, когда видео становится видимым
+    threshold: 0.5, // Порог видимости (от 0 до 1), определяет, насколько видимость должна быть для срабатывания
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setVideoVisible(true);
+    }
+  }, [inView]);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -10,7 +25,6 @@ const VideoPlayer = () => {
     const playVideo = () => {
       video.play()
         .catch(error => {
-          // Обработка ошибки воспроизведения
           console.error('Video playback error:', error);
         });
     };
@@ -20,18 +34,20 @@ const VideoPlayer = () => {
       playVideo();
     };
 
-    video.addEventListener('loadedmetadata', playVideo);
-    video.addEventListener('ended', restartVideo);
+    if (videoVisible) {
+      video.addEventListener('loadedmetadata', playVideo);
+      video.addEventListener('ended', restartVideo);
+    }
 
     return () => {
       video.removeEventListener('loadedmetadata', playVideo);
       video.removeEventListener('ended', restartVideo);
     };
-  }, []);
+  }, [videoVisible]);
 
   return (
-    <div className="relative w-full my-20 container mx-auto">
-      <video ref={videoRef} className="w-[370px] h-20 object-cover" muted  autoPlay>
+    <div ref={ref} className="relative w-full my-20 container mx-auto">
+      <video ref={videoRef} className="w-[370px] h-20 object-cover" muted autoPlay>
         <source src="/logovideo.mp4" type="video/mp4" />
       </video>
     </div>
@@ -39,3 +55,5 @@ const VideoPlayer = () => {
 };
 
 export default VideoPlayer;
+
+
