@@ -1,113 +1,373 @@
+import VideoPlayer from '@/components/video/VideoPlayer'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex flex-col items-center justify-between py-24">
+      <div className="container mx-auto">
+        <section className='pt-10'>
+          <h1 className='uppercase text-3xl'>
+            Разработка <span className='text-[#004C97]'>сайтов</span> в Минске
+          </h1>
+
+          <div className='mt-16 text-[#004C97] uppercase '>
+            <div className='relative mb-5'>
+              <Image src='/line.svg' alt='Линия' width={50} height={10}
+                className='rotate-45 absolute top-0 left-0'
+              />
+              <p className=''>
+                Создание сайтов и веб приложений
+              </p>
+            </div>
+            <div className='relative mb-5'>
+              <Image src='/line.svg' alt='Линия' width={50} height={10}
+                className='rotate-45 absolute top-0 left-0'
+              />
+              <p className=''>
+                SEO продвижение в Google и Яндекс
+              </p>
+            </div>
+            <div className='relative'>
+              <Image src='/line.svg' alt='Линия' width={50} height={10}
+                className='rotate-45 absolute top-0 left-0'
+              />
+              <p className=''>
+                Продвижение при помощи рекламы Google и Яндекс
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <article className="mt-32 text-sm font-light bg-[#004C97] pb-6 pt-6 px-5 text-white">
+        <div className='container mx-auto'>
+          <p className="mt-2 bg-blue-700 p-2">
+            <span className='font-semibold'>Создание сайта</span> - это важный этап в развитии любого бизнеса в интернете.
+            Но одного только сайта недостаточно, чтобы привлечь клиентов и начать зарабатывать.
+            Ключевым фактором является продвижение ресурса в поисковых системах.
+          </p>
+
+          <p className="mt-2 text-right bg-blue-600 p-2">
+            <span className='font-semibold'> Мы предлагаем </span> комплексное решение, включающее разработку сайта и его раскрутку в Google и Яндекс.
+            Благодаря грамотной SEO-оптимизации и настройке контекстной рекламы ваш сайт быстро займет лидирующие позиции в выдаче,
+            и вы начнете получать целевой трафик из поиска каждый день.
+          </p>
+
+          <p className="mt-2  bg-blue-700 p-2">
+            <span className='font-semibold'>SEO и контекстная реклама </span> работают 24 часа в сутки, привлекая потенциальных клиентов именно тогда,
+            когда они ищут такие товары и услуги как ваши. Вы получите стабильный прирост посетителей и заказов с минимальными затратами.
+          </p>
+
+          <p className="mt-2 text-right p-2 text-white/90 font-semibold">
+            Мы гарантируем высокие результаты в продвижении за счет использования передовых технологий,
+            опыта специалистов и индивидуального подхода к каждому проекту. Зарабатывайте больше с помощью интернет-маркетинга вместе с нами!
+          </p>
+
+          <Image
+            src='/stakan.webp'
+            alt='Логотип компании vi-tech на визитке'
+            width={100} height={30}
+            className=''
+          />
         </div>
-      </div>
+      </article>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className='mt-16 min-h-screen'>
+        <div className='container mx-auto'>
+          <div className='mb-3'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h2 className='text-[#004C97] uppercase text-lg mb-6'>
+              Что мы делаем?
+            </h2>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <Image src='/baner.webp' alt='Логотип компании vi-tech на баннере' width={375} height={100} />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <div className='text-sm mt-2 p-2 text-gray-600'>
+              <p className=''>
+                Компания VI:TECH предоставляет полный спектр услуг для продвижения и развития вашего бизнеса онлайн:
+                <br /> Разработка сайтов и интернет-магазинов.
+                <br />Продвижение в поисковых системах (SEO).
+                <br />Настройка и ведение рекламных кампаний.
+                <br />Контент-маркетинг.
+                <br />Брендинг и дизайн.
+                <br />Digital стратегии для бизнеса.
+              </p>
+              <p>
+                Мы выбираем оптимальные решения, чтобы реализовать цифровой потенциал вашего бизнеса. Работаем на результат - увеличение продаж и популярности бренда.
+              </p>
+              <p className='font-semibold mt-1'>
+                Доверьте интернет-продвижение профессионалам!
+              </p>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+          <div className='bg-[#004C97] rounded-md p-4 text-white/90 text-center  text-sm mb-1'>
+            <p className=''>
+              Разрабатываем сайты любой сложности - от простых лендингов до крупных интернет-магазинов. Фокусируемся на пользовательском опыте и конверсии посетителей в клиентов.
+            </p>
+          </div>
+          <div className='bg-blue-500 rounded-md p-4 text-white text-center font-light text-sm mb-1'>
+            <p className=''>
+              Ведем продвижение сайтов в ТОП Google и Яндекса. Комплексная SEO-оптимизация и настройка контекстной рекламы быстро привлекают целевой трафик из поиска.
+            </p>
+          </div>
+          <div className='bg-[#004C97] rounded-md p-4 text-white/90 text-center font-light text-sm mb-1'>
+            <p className=''>
+              Создаем уникальный дизайн сайтов. Современный стиль и корпоративный имидж повышают доверие аудитории.
+            </p>
+          </div>
+          <div className='bg-blue-500 rounded-md p-4 text-white text-center font-light text-sm mb-1'>
+            <p className=''>
+              Обеспечиваем наполнение сайта полезным контентом, который читают и делятся в соцсетях.
+            </p>
+          </div>
+          <div className='bg-[#004C97] rounded-md p-4 text-white/90 text-center font-light text-sm mb-1'>
+            <p className=''>
+              Осуществляем техническую поддержку и обновление сайтов. Ваш ресурс всегда работает быстро и без сбоев.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+
+      <section className='mt-16 min-h-screen'>
+        <div className='container mx-auto'>
+          <div className='mb-3'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h2 className='text-[#004C97] uppercase text-lg mb-4'>
+              Цели клиентов при разработке сайта
+            </h2>
+          </div>
+
+          <Image src='/goals.webp'
+            alt='Цели клиентов при разработке сайта'
+            width={370} height={263}
+          />
+
+          <div className="text-sm mt-4" >
+
+            <p className="mt-1">
+              Одна из основных целей - это привлечение новых клиентов, рост продаж и заказов. Сайт должен эффективно конвертировать посетителей в платежеспособных пользователей.
+            </p>
+
+            <p className="mt-1">
+              Еще одна распространенная цель - раскрутка бренда и повышение его узнаваемости с помощью сайта. Качественный сайт формирует имидж компании в глазах аудитории.
+            </p>
+
+            <p className="mt-1">
+              Создание закрытых корпоративных сервисов, образовательных платформ - это тоже востребованное направление разработки сайтов.
+            </p>
+
+            <p className="mt-1">
+              Наконец, часто возникает необходимость вновь создать или модернизировать имеющийся сайт с улучшенным дизайном и удобством использования.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section className='mt-16 min-h-screen'>
+        <div className='container mx-auto'>
+          <div className='mb-3'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h2 className='text-[#004C97] uppercase text-lg mb-4'>
+              Наши задачи при разработке сайта
+            </h2>
+          </div>
+
+          <Image src='/zadachi.webp'
+            alt='задачи при разработке сайта'
+            width={370} height={246}
+          />
+
+          <div className="text-sm mt-4" >
+
+            <p className='mb-3 p-3'>
+              Добро пожаловать в мир веб-разработки и продвижения, где наши сайты становятся мостом между вашей идеей и целевой аудиторией. Наша команда специалистов горит желанием создавать уникальные и эффективные веб-платформы, нацеленные на результат. Позвольте рассказать вам о том, какие задачи мы решаем, когда приступаем к разработке вашего сайта.
+            </p>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Соблазнительный контент для привлечения действий:
+                </span>
+                Мы понимаем, что сайт – это не просто набор страниц. Это ваш голос в цифровом мире. Мы разрабатываем контент, который внушает доверие и вдохновляет к действию. Наши тексты и изображения не только информативны, но и эмоционально подходят к вашей аудитории, призывая её к взаимодействию.
+              </p>
+            </div>
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Простота, удобство и логичность:
+                </span>
+                Сложные вещи становятся легкими благодаря нашей философии дизайна. Мы стремимся создать сайты, на которых пользователь мгновенно ориентируется. Интуитивная навигация и логичное расположение элементов – это наше золотое правило. Ваш сайт не должен требовать усилий, чтобы найти нужную информацию или выполнить действие.
+              </p>
+            </div>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Преобразование посетителей в клиентов:
+                </span>
+                Каждая наша линия кода направлена на то, чтобы увеличить конверсии. Мы анализируем поведение посетителей и оптимизируем сайт для максимальной эффективности. Будь то покупка продукта, подписка на рассылку или отправка запроса – мы знаем, как превратить интересующегося пользователя в лояльного клиента.
+              </p>
+            </div>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Профессионализм и инновации:
+                </span>
+                Мы не стоим на месте. В мире технологий всегда есть место для улучшений. Наша команда следит за трендами и инновациями, чтобы предоставить вам лучшее. Мы не только разрабатываем сайты – мы создаем цифровые истории, которые оставляют след в памяти пользователей.
+              </p>
+            </div>
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className='font-semibold text-[#004C97]'>
+                Когда вы выбираете нас для разработки и продвижения вашего сайта, вы получаете не просто техническое решение, а партнера, который делает ваш успех своей целью. Мы воплощаем ваши идеи в веб-реальность, делая её доступной и привлекательной для всех, кто ищет то, что вы предлагаете.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <VideoPlayer />
+
+
+      <section className='mt-4 min-h-screen'>
+        <div className='container mx-auto'>
+          <div className='mb-3'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h2 className='text-[#004C97] uppercase text-lg mb-4'>
+              Наши задачи при продвижении сайта
+            </h2>
+          </div>
+
+          <Image src='/marketing.webp'
+            alt='задачи при продвижении сайта'
+            width={370} height={246}
+          />
+
+
+          <div className="text-sm mt-4" >
+
+            <p className='mb-3 p-3'>
+              Мы – команда разработчиков и маркетологов, чья цель состоит в том, чтобы ваш сайт не только выделялся на фоне конкурентов, но и привлекал к себе целевую аудиторию с помощью самых современных и эффективных методов продвижения.
+            </p>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  SEO: Привлечение органического трафика:
+                </span>
+                Мы знаем, как сделать ваш сайт "любимчиком" поисковых систем. Структурированный контент, оптимизированный под ключевые запросы, улучшение скорости загрузки и другие SEO-приемы помогут вашему сайту подниматься в поисковой выдаче. Мы создаем контент, который не только информативен, но и релевантен вашей аудитории.
+              </p>
+            </div>
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Поисковая реклама (контекстная) Google и Яндекс: Оплата за клик, оплата за конверсию:
+                </span>
+                Мы гордимся своим опытом в создании успешных кампаний по контекстной рекламе. Наши специалисты подберут ключевые слова, настроят объявления и оптимизируют ставки, чтобы ваш бюджет работал максимально эффективно. Мы фокусируемся не на количестве кликов, а на качестве – привлекаем только тех пользователей, которые действительно заинтересованы.
+              </p>
+            </div>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  КМС реклама Google и Яндекс:
+                </span>
+                Контекстно-медийная сеть – это мощный инструмент для привлечения аудитории, чьи интересы соответствуют вашему продукту или услуге. Мы разрабатываем креативные объявления, которые впечатляют и запоминаются. Это возможность достичь большей видимости и подключить потенциальных клиентов на разных платформах.
+              </p>
+            </div>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className='font-semibold text-[#004C97]'>
+                Когда вы доверяете нам продвижение вашего сайта, вы получаете гарантию того, что ваш бизнес будет представлен в цифровом пространстве с максимальной эффективностью. Мы адаптируемся к изменениям в алгоритмах поисковых систем, следим за трендами и применяем передовые методы. Результат – это рост трафика, повышение конверсий и укрепление вашей онлайн-репутации. Вместе мы создаем успешное веб-присутствие, которое гарантирует вашему бизнесу процветание в онлайн-мире.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className='mt-16 min-h-screen'>
+        <div className='container mx-auto'>
+          <div className='mb-3'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h2 className='text-[#004C97] uppercase text-lg mb-4'>
+              Почему VI:TECH?
+            </h2>
+          </div>
+
+          <Image src='/pochemu.webp'
+            alt=' Почему VI:TECH'
+            width={370} height={246}
+          />
+
+
+          <div className="text-sm mt-4" >
+
+            <h3 className='p-3 font-semibold'>
+              Наш подход к разработке и продвижению сайтов.
+            </h3>
+            <p className='mb-3 p-3'>
+              Добро пожаловать в мир VI:TECH, где ваш веб-опыт превращается в эффективное средство достижения целей. Наша философия заключается в том, чтобы не только создавать красивые сайты, но и обеспечивать их максимальную функциональность, видимость и привлекательность для вашей аудитории. Позвольте рассказать о том, почему именно VI:TECH – это правильный выбор.
+            </p>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Целенаправленный подход:
+                </span>
+                Мы не просто разрабатываем сайты. Мы создаем инструменты, которые помогают вам достигать ваших бизнес-целей. Наша команда вникает в ваши потребности, анализирует ваш рынок и аудиторию, чтобы создать веб-решение, которое идеально подходит для вашего бренда. Мы преображаем ваши идеи в стратегический онлайн-план.
+              </p>
+            </div>
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Современный дизайн и пользовательский опыт:
+                </span>
+                Мы понимаем, что первое впечатление имеет огромное значение. Наши дизайнеры и разработчики тщательно продумывают каждую деталь, чтобы ваш сайт не только выглядел современно, но и был удобен в использовании. Мы стремимся создать платформу, которая навигируется интуитивно и оставляет положительное впечатление на посетителей.
+              </p>
+            </div>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Интеграция технологий и инноваций:
+                </span>
+                Мир онлайн-технологий постоянно меняется, и мы всегда на шаг впереди. Мы используем передовые инструменты и методы, чтобы обеспечить ваш сайт современными возможностями. Будь то адаптивный дизайн, мобильная оптимизация или интеграция с социальными сетями – мы готовы реализовать самые смелые идеи.
+              </p>
+            </div>
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className=''>
+                <span className='text-[#004C97] font-semibold block mb-2'>
+                  Продвижение с результатом:
+                </span>
+                Наши специалисты по продвижению знают, как сделать ваш сайт видимым для вашей целевой аудитории. Мы разрабатываем персонализированные стратегии SEO, контекстной рекламы и других методов, которые привлекают и конвертируют посетителей. Наша цель – не просто увеличить трафик, а обеспечить вас реальными результатами.
+              </p>
+            </div>
+
+            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+              <p className='font-semibold text-[#004C97]'>
+                Когда вы выбираете VI:TECH, вы выбираете команду профессионалов, которая не только делает свою работу, но и разделяет ваши цели. Мы создаем не просто сайты, а партнерские отношения, направленные на ваш успех. С нами ваш онлайн-мир становится ярким и результативным.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   )
 }
