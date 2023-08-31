@@ -6,8 +6,8 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between py-24">
       <div className="container mx-auto">
         <section className='pt-10'>
-          <h1 className='uppercase text-3xl'>
-            Разработка <span className='text-[#004C97]'>сайтов</span> в Минске
+          <h1 className='uppercase text-[#004C97] text-3xl font-semibold'>
+            Разработка сайтов в Минске
           </h1>
 
           <div className='mt-16 text-[#004C97] uppercase '>
@@ -59,7 +59,7 @@ export default function Home() {
             когда они ищут такие товары и услуги как ваши. Вы получите стабильный прирост посетителей и заказов с минимальными затратами.
           </p>
 
-          <p className="mt-2 text-right p-2 text-white/90 font-semibold">
+          <p className="mt-2 text-right px-2 pt-2 text-white/90 font-semibold">
             Мы гарантируем высокие результаты в продвижении за счет использования передовых технологий,
             опыта специалистов и индивидуального подхода к каждому проекту. Зарабатывайте больше с помощью интернет-маркетинга вместе с нами!
           </p>
@@ -67,13 +67,13 @@ export default function Home() {
           <Image
             src='/stakan.webp'
             alt='Логотип компании vi-tech на визитке'
-            width={100} height={30}
+            width={130} height={130}
             className=''
           />
         </div>
       </article>
 
-      <section className='mt-16 min-h-screen'>
+      <section className='mt-16'>
         <div className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
 
-      <section className='mt-16 min-h-screen'>
+      <section className='mt-16'>
         <div className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
 
-      <section className='mt-16 min-h-screen'>
+      <section className='mt-16'>
         <div className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
@@ -239,7 +239,7 @@ export default function Home() {
       <VideoPlayer />
 
 
-      <section className='mt-4 min-h-screen'>
+      <section className='mt-16'>
         <div className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
@@ -254,7 +254,6 @@ export default function Home() {
             alt='задачи при продвижении сайта'
             width={370} height={246}
           />
-
 
           <div className="text-sm mt-4" >
 
@@ -298,7 +297,7 @@ export default function Home() {
       </section>
 
 
-      <section className='mt-16 min-h-screen'>
+      <section className='mt-16'>
         <div className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
@@ -308,57 +307,58 @@ export default function Home() {
               Почему VI:TECH?
             </h2>
           </div>
-
           <Image src='/pochemu.webp'
             alt=' Почему VI:TECH'
             width={370} height={246}
           />
-
-
           <div className="text-sm mt-4" >
-
-            <h3 className='p-3 font-semibold'>
-              Наш подход к разработке и продвижению сайтов.
+            <h3 className='p-3 font-semibold uppercase'>
+              Наш подход к разработке и продвижению сайтов
             </h3>
             <p className='mb-3 p-3'>
               Добро пожаловать в мир VI:TECH, где ваш веб-опыт превращается в эффективное средство достижения целей. Наша философия заключается в том, чтобы не только создавать красивые сайты, но и обеспечивать их максимальную функциональность, видимость и привлекательность для вашей аудитории. Позвольте рассказать о том, почему именно VI:TECH – это правильный выбор.
             </p>
 
-            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+
+
+            <div className='bg-teal-100 p-3 rounded-md mb-1'>
               <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2'>
+                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
                   Целенаправленный подход:
                 </span>
                 Мы не просто разрабатываем сайты. Мы создаем инструменты, которые помогают вам достигать ваших бизнес-целей. Наша команда вникает в ваши потребности, анализирует ваш рынок и аудиторию, чтобы создать веб-решение, которое идеально подходит для вашего бренда. Мы преображаем ваши идеи в стратегический онлайн-план.
               </p>
             </div>
-            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+
+
+            <div className='bg-cyan-100 p-3 rounded-md mb-1'>
               <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2'>
+                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
                   Современный дизайн и пользовательский опыт:
                 </span>
                 Мы понимаем, что первое впечатление имеет огромное значение. Наши дизайнеры и разработчики тщательно продумывают каждую деталь, чтобы ваш сайт не только выглядел современно, но и был удобен в использовании. Мы стремимся создать платформу, которая навигируется интуитивно и оставляет положительное впечатление на посетителей.
               </p>
             </div>
 
-            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+            <div className='bg-teal-100 p-3 rounded-md mb-1'>
               <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2'>
+                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
                   Интеграция технологий и инноваций:
                 </span>
                 Мир онлайн-технологий постоянно меняется, и мы всегда на шаг впереди. Мы используем передовые инструменты и методы, чтобы обеспечить ваш сайт современными возможностями. Будь то адаптивный дизайн, мобильная оптимизация или интеграция с социальными сетями – мы готовы реализовать самые смелые идеи.
               </p>
             </div>
-            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+
+            <div className='bg-cyan-100  p-3 rounded-md mb-1'>
               <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2'>
+                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
                   Продвижение с результатом:
                 </span>
                 Наши специалисты по продвижению знают, как сделать ваш сайт видимым для вашей целевой аудитории. Мы разрабатываем персонализированные стратегии SEO, контекстной рекламы и других методов, которые привлекают и конвертируют посетителей. Наша цель – не просто увеличить трафик, а обеспечить вас реальными результатами.
               </p>
             </div>
 
-            <div className='bg-slate-100 p-3 rounded-md mb-1'>
+            <div className='bg-teal-100 p-3 rounded-md mb-1'>
               <p className='font-semibold text-[#004C97]'>
                 Когда вы выбираете VI:TECH, вы выбираете команду профессионалов, которая не только делает свою работу, но и разделяет ваши цели. Мы создаем не просто сайты, а партнерские отношения, направленные на ваш успех. С нами ваш онлайн-мир становится ярким и результативным.
               </p>
@@ -367,6 +367,177 @@ export default function Home() {
 
         </div>
       </section>
+
+
+      <section className='mt-16'>
+        <div className='container mx-auto'>
+          <div className='mb-6'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h3 className='text-[#004C97] uppercase text-lg mb-4'>
+              Наши ключевые направления работы
+            </h3>
+            <p className='text-sm p-2'>
+              С многолетним опытом в сфере веб-разработки и маркетинга, мы гордимся возможностью предложить вам наши услуги в области продвижения, которые делают ваш бизнес видимым, привлекательным и успешным.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/ads.svg' alt='Google ads' className='mx-auto' width={100} height={100} />
+            <p className='mb-2'>
+              Google Ads
+            </p>
+            <p className='font-light text-sm px-10'>
+              Мы создаем и оптимизируем рекламные кампании на Google, обеспечивая максимальную видимость вашего бренда и привлекая целевую аудиторию.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/analytics.svg' alt='Google Analytics' className='mx-auto' width={100} height={100} />
+            <p className='mb-2'>
+              Google Analytics
+            </p>
+            <p className='font-light text-sm px-10'>
+              Анализ данных - ключевой аспект успешного маркетинга. Мы используем Google Analytics для максимально точного мониторинга и анализа поведения пользователей на вашем сайте.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/direct.svg' alt='Яндекс Директ' className='mx-auto' width={100} height={100} />
+            <p className='mb-2'>
+              Яндекс Директ
+            </p>
+            <p className='font-light text-sm px-10'>
+              Эффективные рекламные кампании в Яндекс Директ, которые приводят к росту конверсии и продаж.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/metrika.svg' alt='Яндекс Метрика' className='mx-auto' width={100} height={100} />
+            <p className='mb-2 mt-2'>
+              Яндекс Метрика
+            </p>
+            <p className='font-light text-sm px-10'>
+              Мы используем Яндекс Метрику для детального анализа посещаемости вашего сайта, понимания потребностей аудитории и оптимизации пользовательского опыта.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/ScreamingFrog.svg' alt='Screaming Frog' className='mx-auto' width={100} height={100} />
+            <p className='mb-2 mt-2'>
+              Screaming Frog
+            </p>
+            <p className='font-light text-sm px-10'>
+              Тщательный аудит вашего сайта с использованием Screaming Frog позволяет выявить технические проблемы и оптимизировать структуру сайта.
+            </p>
+          </div>
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/replain.svg' alt=' Re:plain' className='mx-auto' width={100} height={100} />
+            <p className='mb-2 mt-2'>
+              Re:plain
+            </p>
+            <p className='font-light text-sm px-10'>
+              Эффективная коммуникация с клиентами - залог успешного бизнеса. Мы интегрируем Re:plain для оперативной связи с вашей аудиторией.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/arsenkin.svg' alt='Arsenkin' className='mx-auto' width={90} height={90} />
+            <p className='mb-2 mt-2'>
+              Arsenkin
+            </p>
+            <p className='font-light text-sm px-10'>
+              Уникальные инструменты для автоматизации процессов продвижения сайтов.
+            </p>
+          </div>
+
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/serpstat.svg' alt='serpstat' className='mx-auto pt-2' width={180} height={80} />
+            <p className='mb-2 mt-2'>
+              Serpstat
+            </p>
+            <p className='font-light text-sm px-10'>
+              Используя Serpstat, мы анализируем ключевые слова и конкурентное окружение, чтобы определить наилучшую стратегию продвижения.
+            </p>
+          </div>
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/rush.svg' alt=' Rush-Analytic' className='mx-auto pt-2' width={180} height={80} />
+            <p className='mb-2 mt-2'>
+              Rush-Analytic
+            </p>
+            <p className='font-light text-sm px-10'>
+              Для успешной оптимизации и анализа SEO-параметров мы полагаемся на инструменты, такие как Rush-Analytic.
+            </p>
+          </div>
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/SEOpult.png' alt='SEOpult' className='mx-auto pt-2' width={180} height={80} />
+            <p className='mb-2 mt-2'>
+              SEOpult
+            </p>
+            <p className='font-light text-sm px-10'>
+              С помощью SEOpult мы эффективно управляем SEO-стратегией, обеспечивая наилучшие результаты в органической выдаче.
+            </p>
+          </div>
+
+          <div className='text-center border p-2 bg-slate-50 mb-2'>
+            <Image src='/partnery/search.svg' alt='Google Search Console' className='mx-auto pt-2' width={220} height={120} />
+            {/* <p className='mb-2 mt-2'>
+              Google Search Console
+            </p> */}
+            <p className='font-light text-sm px-10 mt-3'>
+              Мониторинг здоровья вашего сайта и оптимизация для поисковых систем через Google Search Console.
+            </p>
+          </div>
+
+          <p className='mt-5 text-sm p-2'>
+            Мы стремимся к тому, чтобы ваш сайт стал не только функциональным, но и востребованным. Наша цель - предоставить вам комплексный и качественный сервис, который поможет вашему бизнесу процветать в онлайн-мире.
+          </p>
+          <p className='font-bold mt-1 p-2'>
+            Присоединяйтесь к нам, и давайте вместе создадим историю успеха вашей идеи в интернете!
+          </p>
+        </div>
+      </section>
+
+      <section className='mt-16'>
+        <div className='container mx-auto'>
+          <div className='mb-6'>
+            <Image src='/line.svg' alt='Линия' width={50} height={10}
+              className='rotate-45'
+            />
+            <h3 className='text-[#004C97] uppercase text-lg mb-4'>
+              Наши работы
+            </h3>
+            <p className='text-sm'>
+              Откройте вдохновляющий мир наших работ. Мы создаем уникальные сайты, сочетая креативный дизайн с передовыми технологиями, достигая видимых результатов и успеха для наших клиентов.
+            </p>
+          </div>
+
+
+          <div className='mt-5 text-center border p-3 rounded-xl'>
+            <p className='uppercase text-lime-600'>
+              Тюнинг ателье
+            </p>
+            <Image src='/portfolio/aprostyle.webp'
+              alt='фото работ компании vi-tech'
+              width={150} height={280}
+              className='mx-auto'
+            />
+          </div>
+
+        </div>
+      </section>
+
 
     </main>
   )
