@@ -10,9 +10,9 @@ export default function Home() {
             Разработка сайтов в Минске
           </h1>
 
-          <div className='mt-16 text-[#004C97] uppercase '>
+          <div className='mt-16  uppercase '>
             <div className='relative mb-5'>
-              <Image src='/line.svg' alt='Линия' width={50} height={10}
+              <Image src='/line-black.svg' alt='Линия' width={50} height={10}
                 className='rotate-45 absolute top-0 left-0'
               />
               <p className=''>
@@ -20,7 +20,7 @@ export default function Home() {
               </p>
             </div>
             <div className='relative mb-5'>
-              <Image src='/line.svg' alt='Линия' width={50} height={10}
+              <Image src='/line-black.svg' alt='Линия' width={50} height={10}
                 className='rotate-45 absolute top-0 left-0'
               />
               <p className=''>
@@ -28,7 +28,7 @@ export default function Home() {
               </p>
             </div>
             <div className='relative'>
-              <Image src='/line.svg' alt='Линия' width={50} height={10}
+              <Image src='/line-black.svg' alt='Линия' width={50} height={10}
                 className='rotate-45 absolute top-0 left-0'
               />
               <p className=''>
@@ -74,7 +74,7 @@ export default function Home() {
       </article>
 
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -86,19 +86,33 @@ export default function Home() {
             <Image src='/baner.webp' alt='Логотип компании vi-tech на баннере' width={375} height={100} />
 
             <div className='text-sm mt-2 p-2 text-gray-600'>
-              <p className=''>
+              <p className='text-justify'>
                 Компания VI:TECH предоставляет полный спектр услуг для продвижения и развития вашего бизнеса онлайн:
-                <br /> Разработка сайтов и интернет-магазинов.
-                <br />Продвижение в поисковых системах (SEO).
-                <br />Настройка и ведение рекламных кампаний.
-                <br />Контент-маркетинг.
-                <br />Брендинг и дизайн.
-                <br />Digital стратегии для бизнеса.
               </p>
-              <p>
+              <ul className='mb-2 mt-1'>
+                <li>
+                  • Разработка сайтов и интернет-магазинов
+                </li>
+                <li>
+                  • Продвижение в поисковых системах (SEO).
+                </li>
+                <li>
+                  • Настройка и ведение рекламых кампаний
+                </li>
+                <li>
+                  • Контент-маркетинг
+                </li>
+                <li>
+                  • Брендинг и дизайн
+                </li>
+                <li>
+                  • Digital стратегии для бизнеса
+                </li>
+              </ul>
+              <p className='text-justify'>
                 Мы выбираем оптимальные решения, чтобы реализовать цифровой потенциал вашего бизнеса. Работаем на результат - увеличение продаж и популярности бренда.
               </p>
-              <p className='font-semibold mt-1'>
+              <p className='font-bold mt-2'>
                 Доверьте интернет-продвижение профессионалам!
               </p>
             </div>
@@ -129,12 +143,11 @@ export default function Home() {
               Осуществляем техническую поддержку и обновление сайтов. Ваш ресурс всегда работает быстро и без сбоев.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
-
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -149,30 +162,29 @@ export default function Home() {
             width={370} height={263}
           />
 
-          <div className="text-sm mt-4" >
+          <div className="text-sm mt-6 text-justify" >
 
-            <p className="mt-1">
+            <p className="">
               Одна из основных целей - это привлечение новых клиентов, рост продаж и заказов. Сайт должен эффективно конвертировать посетителей в платежеспособных пользователей.
             </p>
 
-            <p className="mt-1">
+            <p className="mt-2">
               Еще одна распространенная цель - раскрутка бренда и повышение его узнаваемости с помощью сайта. Качественный сайт формирует имидж компании в глазах аудитории.
             </p>
 
-            <p className="mt-1">
+            <p className="mt-2">
               Создание закрытых корпоративных сервисов, образовательных платформ - это тоже востребованное направление разработки сайтов.
             </p>
 
-            <p className="mt-1">
+            <p className="mt-2">
               Наконец, часто возникает необходимость вновь создать или модернизировать имеющийся сайт с улучшенным дизайном и удобством использования.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
-
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -187,7 +199,7 @@ export default function Home() {
             width={370} height={246}
           />
 
-          <div className="text-sm mt-4" >
+          <div className="text-sm mt-4 text-justify" >
 
             <p className='mb-3 p-3'>
               Добро пожаловать в мир веб-разработки и продвижения, где наши сайты становятся мостом между вашей идеей и целевой аудиторией. Наша команда специалистов горит желанием создавать уникальные и эффективные веб-платформы, нацеленные на результат. Позвольте рассказать вам о том, какие задачи мы решаем, когда приступаем к разработке вашего сайта.
@@ -233,14 +245,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <VideoPlayer />
 
-
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -255,7 +266,7 @@ export default function Home() {
             width={370} height={246}
           />
 
-          <div className="text-sm mt-4" >
+          <div className="text-sm mt-4 text-justify" >
 
             <p className='mb-3 p-3'>
               Мы – команда разработчиков и маркетологов, чья цель состоит в том, чтобы ваш сайт не только выделялся на фоне конкурентов, но и привлекал к себе целевую аудиторию с помощью самых современных и эффективных методов продвижения.
@@ -272,7 +283,7 @@ export default function Home() {
             <div className='bg-slate-100 p-3 rounded-md mb-1'>
               <p className=''>
                 <span className='text-[#004C97] font-semibold block mb-2'>
-                  Поисковая реклама (контекстная) Google и Яндекс: Оплата за клик, оплата за конверсию:
+                  Поисковая реклама (контекстная) Google и Яндекс: оплата за клик, оплата за конверсию:
                 </span>
                 Мы гордимся своим опытом в создании успешных кампаний по контекстной рекламе. Наши специалисты подберут ключевые слова, настроят объявления и оптимизируют ставки, чтобы ваш бюджет работал максимально эффективно. Мы фокусируемся не на количестве кликов, а на качестве – привлекаем только тех пользователей, которые действительно заинтересованы.
               </p>
@@ -293,12 +304,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
-
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-3'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -315,62 +325,61 @@ export default function Home() {
             <h3 className='p-3 font-semibold uppercase'>
               Наш подход к разработке и продвижению сайтов
             </h3>
-            <p className='mb-3 p-3'>
+            <p className='mb-3 p-3 text-justify'>
               Добро пожаловать в мир VI:TECH, где ваш веб-опыт превращается в эффективное средство достижения целей. Наша философия заключается в том, чтобы не только создавать красивые сайты, но и обеспечивать их максимальную функциональность, видимость и привлекательность для вашей аудитории. Позвольте рассказать о том, почему именно VI:TECH – это правильный выбор.
             </p>
 
 
 
-            <div className='bg-teal-100 p-3 rounded-md mb-1'>
-              <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
-                  Целенаправленный подход:
-                </span>
+            <div className='bg-teal-50 p-3 rounded-md mb-1'>
+              <h4 className='text-[#004C97] font-semibold block mb-2 uppercase'>
+                Целенаправленный подход:
+              </h4>
+              <p className='text-justify'>
                 Мы не просто разрабатываем сайты. Мы создаем инструменты, которые помогают вам достигать ваших бизнес-целей. Наша команда вникает в ваши потребности, анализирует ваш рынок и аудиторию, чтобы создать веб-решение, которое идеально подходит для вашего бренда. Мы преображаем ваши идеи в стратегический онлайн-план.
               </p>
             </div>
 
 
-            <div className='bg-cyan-100 p-3 rounded-md mb-1'>
-              <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
-                  Современный дизайн и пользовательский опыт:
-                </span>
+            <div className='bg-cyan-50 p-3 rounded-md mb-1'>
+              <h4 className='text-[#004C97] font-semibold block mb-2 uppercase'>
+                Современный дизайн и пользовательский опыт:
+              </h4>
+              <p className='text-justify'>
                 Мы понимаем, что первое впечатление имеет огромное значение. Наши дизайнеры и разработчики тщательно продумывают каждую деталь, чтобы ваш сайт не только выглядел современно, но и был удобен в использовании. Мы стремимся создать платформу, которая навигируется интуитивно и оставляет положительное впечатление на посетителей.
               </p>
             </div>
 
-            <div className='bg-teal-100 p-3 rounded-md mb-1'>
-              <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
-                  Интеграция технологий и инноваций:
-                </span>
+            <div className='bg-teal-50 p-3 rounded-md mb-1'>
+              <h4 className='text-[#004C97] font-semibold block mb-2 uppercase'>
+                Интеграция технологий и инноваций:
+              </h4>
+              <p className='text-justify'>
                 Мир онлайн-технологий постоянно меняется, и мы всегда на шаг впереди. Мы используем передовые инструменты и методы, чтобы обеспечить ваш сайт современными возможностями. Будь то адаптивный дизайн, мобильная оптимизация или интеграция с социальными сетями – мы готовы реализовать самые смелые идеи.
               </p>
             </div>
 
-            <div className='bg-cyan-100  p-3 rounded-md mb-1'>
-              <p className=''>
-                <span className='text-[#004C97] font-semibold block mb-2 uppercase'>
-                  Продвижение с результатом:
-                </span>
+            <div className='bg-cyan-50  p-3 rounded-md mb-1'>
+              <h4 className='text-[#004C97] font-semibold block mb-2 uppercase'>
+                Продвижение с результатом:
+              </h4>
+              <p className='text-justify'>
                 Наши специалисты по продвижению знают, как сделать ваш сайт видимым для вашей целевой аудитории. Мы разрабатываем персонализированные стратегии SEO, контекстной рекламы и других методов, которые привлекают и конвертируют посетителей. Наша цель – не просто увеличить трафик, а обеспечить вас реальными результатами.
               </p>
             </div>
 
-            <div className='bg-teal-100 p-3 rounded-md mb-1'>
+            <div className='p-3 rounded-md mb-1 text-justify'>
               <p className='font-semibold text-[#004C97]'>
                 Когда вы выбираете VI:TECH, вы выбираете команду профессионалов, которая не только делает свою работу, но и разделяет ваши цели. Мы создаем не просто сайты, а партнерские отношения, направленные на ваш успех. С нами ваш онлайн-мир становится ярким и результативным.
               </p>
             </div>
           </div>
 
-        </div>
+        </article>
       </section>
 
-
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-6'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -378,7 +387,7 @@ export default function Home() {
             <h3 className='text-[#004C97] uppercase text-lg mb-4'>
               Наши ключевые направления работы
             </h3>
-            <p className='text-sm p-2'>
+            <p className='text-sm p-2 text-justify'>
               С многолетним опытом в сфере веб-разработки и маркетинга, мы гордимся возможностью предложить вам наши услуги в области продвижения, которые делают ваш бизнес видимым, привлекательным и успешным.
             </p>
           </div>
@@ -506,11 +515,11 @@ export default function Home() {
           <p className='font-bold mt-1 p-2'>
             Присоединяйтесь к нам, и давайте вместе создадим историю успеха вашей идеи в интернете!
           </p>
-        </div>
+        </article>
       </section>
 
       <section className='mt-16'>
-        <div className='container mx-auto'>
+        <article className='container mx-auto'>
           <div className='mb-6'>
             <Image src='/line.svg' alt='Линия' width={50} height={10}
               className='rotate-45'
@@ -525,7 +534,7 @@ export default function Home() {
 
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Автоателье
             </p>
             <Image src='/portfolio/aprostyle.webp'
@@ -540,7 +549,7 @@ export default function Home() {
 
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Разаботка докумендации в экологии
             </p>
             <Image src='/portfolio/ecosan.webp'
@@ -553,7 +562,7 @@ export default function Home() {
             </p>
           </div>
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Ремонт бытовой техники
             </p>
             <Image src='/portfolio/rem-teh.webp'
@@ -568,7 +577,7 @@ export default function Home() {
 
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Аренда и ремонт строительной техники
             </p>
             <Image src='/portfolio/arenda.webp'
@@ -583,7 +592,7 @@ export default function Home() {
 
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Химчистка мебели и ковров
             </p>
             <Image src='/portfolio/him.webp'
@@ -597,7 +606,7 @@ export default function Home() {
           </div>
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Грузвоперевозки
             </p>
             <Image src='/portfolio/beltrans.webp'
@@ -615,7 +624,7 @@ export default function Home() {
           </div>
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Интернет магазин сантехники
             </p>
             <Image src='/portfolio/soqo.webp'
@@ -629,7 +638,7 @@ export default function Home() {
           </div>
 
           <div className='mt-5 text-center bg-slate-50 shadow-lg border p-3 rounded-xl'>
-            <p className='uppercase text-lime-600'>
+            <p className='uppercase text-[#004C97]'>
               Сайт-визитка
             </p>
             <Image src='/portfolio/vizitka.webp'
@@ -643,14 +652,15 @@ export default function Home() {
           </div>
 
           <div className='mt-8'>
-            <p className='text-sm font-semibold  p-2 text-justify'>
+            <p className='text-sm font-semibold  p-2 text-justify mb-10'>
               Мы — разработчики сайтов, готовые реализовать ваши потребности, учитывая ваши бюджетные рамки. От небольших, но важных сайтов-визиток, до полноценных одностраничных ресурсов и глубоких многостраничных веб-проектов. Мы также специализируемся на разработке интернет-магазинов, закрытых корпоративных приложений и образовательных платформ. Независимо от вашей цели, мы готовы создать цифровое пространство, которое эффективно будет работать для вас и вашей аудитории
             </p>
+
+            <Image src='/logo/logo-street.webp' alt='Логотип компании по разработке сайтов' width={370} height={226} />
           </div>
 
-        </div>
+        </article>
       </section>
-
 
     </main>
   )
