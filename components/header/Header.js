@@ -1,6 +1,8 @@
-// "use client"
+"use client"
 import Image from "next/image";
 import { Popover } from 'antd';
+import MenuMobil from "./menuMobil/MenuMobil";
+import { useState } from "react";
 
 const content = (
 	<div>
@@ -19,6 +21,16 @@ const content = (
 
 
 const Header = () => {
+	const [isMenuMobil, setMenuMobil] = useState(false)
+
+
+	const isOpenMenu = () => {
+		setMenuMobil(true)
+	}
+	const isCloseMenu = () => {
+		setMenuMobil(false)
+	}
+
 	return (
 		<header className="py-1 bg-white fixed top-0 left-0 right-0 z-50">
 			<div className="container mx-auto">
@@ -27,7 +39,7 @@ const Header = () => {
 					<Image src='/logo/logoAnime.svg'
 						alt="Логотип компании vi-tech"
 						width={170} height={37}
-						className="pt-2"
+						className="pt-2 z-50"
 					/>
 
 					<div className="">
@@ -36,11 +48,13 @@ const Header = () => {
 						</Popover>
 					</div>
 
-					<div className="">
+					<div className="" onClick={isOpenMenu}>
 						<Image src='/menu.svg' alt="Кнопка меню" width={40} height={40} />
 					</div>
 				</div>
 			</div>
+		<MenuMobil isCloseMenu={isCloseMenu} isMenuMobil={isMenuMobil} />
+	
 		</header>
 	)
 }
