@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 
 const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
@@ -21,11 +22,17 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 				<div className="flex flex-col justify-center items-center h-screen pt-6">
 					<nav className="">
 						<ul className="text-center">
-							<li className="text-white text-2xl uppercase mb-3">
-								Главная
+							<li className="text-white text-2xl uppercase mb-6"
+								onClick={isCloseMenu}
+							>
+								<Link href='/'>
+									Главная
+								</Link>
 							</li>
-							<li className="text-white text-2xl uppercase mb-6">
-								О нас
+							<li className="text-white text-2xl uppercase mb-6"
+								onClick={isCloseMenu}
+							>
+								<Link href='/o-nas'>О нас</Link>
 							</li>
 							<li className="text-blue-400 text-center text-sm uppercase mb-6 font-semibold">
 								Разаботка
@@ -64,11 +71,17 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									</li>
 								</ul>
 							</li>
-							<li className="text-white text-2xl uppercase mb-3">
-								Портфолио
+							<li className="text-white text-2xl uppercase mb-6"
+								onClick={isCloseMenu}
+							>
+								<Link href='/portfolio'>
+									Портфолио</Link>
 							</li>
-							<li className="text-white text-2xl uppercase mb-3">
-								Контакты
+							<li className="text-white text-2xl uppercase mb-3"
+								onClick={isCloseMenu}
+							>
+								<Link href='/kontakty'>
+									Контакты</Link>
 							</li>
 
 						</ul>
