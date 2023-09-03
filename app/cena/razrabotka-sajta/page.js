@@ -1,5 +1,10 @@
 import CardComp from "@/components/cardComp/CardComp"
+import { dataContentPrice, itemsPriceQuestions } from "@/constans/price/PriceData"
+import { Collapse } from "antd"
 import Image from "next/image"
+
+
+
 
 export const metadata = {
 	title: 'Стоимость разработки сайта в Минске | IT-Компания VI:TECH',
@@ -14,9 +19,8 @@ const PricePage = () => {
 				<Image
 					src="/logo/logo-price.webp"
 					alt="Стоимость разработки сайта, vi-tech"
-					layout="responsive"
-					objectFit="cover"
 					width={370} height={223}
+					className="object-cover w-screen h-full"
 				/>
 			</div>
 			<div className="container mx-auto">
@@ -42,12 +46,44 @@ const PricePage = () => {
 
 
 				<section className="pt-10">
-
 					<CardComp />
-
 					<p className="text-sm">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
-
 				</section>
+
+				<section className="mt-32">
+					{
+						dataContentPrice.map(el => {
+							return (
+								<div className="" key={el.id}>
+									{el.content.text}
+								</div>
+							)
+						})
+					}
+				</section>
+				<section className="mt-16 mb-8">
+					<Image src='/price/questions.webp'
+						alt='Вопрос-ответ стоимости создания сайта'
+						className="object-cover w-screen h-full"
+						style={{ width: 'auto', height: 'auto' }}
+						width={370} height={223} />
+					<h4 className="mt-8 text-center uppercase">
+						Ответы на популярные вопросы
+					</h4>
+					<article className="mt-4">
+						<Collapse items={itemsPriceQuestions} bordered={false} />
+					</article>
+				</section>
+
+				<Image
+					src='/price/logo-price2.webp'
+					alt='Логотип компании VI:TECH стоимость создания сайта'
+					className="object-cover w-screen h-full"
+					width={370} height={223} />
+
+				<p className="font-bold text-center mt-6">
+					Не откладывайте на завтра то, что можно начать сегодня. Позвоните нам прямо сейчас, и мы с удовольствием проконсультируем вас по всем вопросам, связанным с вашим будущим сайтом. Расскажем о стоимости, сроках и всем, что вам нужно знать. Начнем работу над вашим проектом, чтобы он стал мощным инструментом для развития вашего бизнеса. Не упустите шанс – звоните уже сегодня!
+				</p>
 			</div>
 		</main>
 	)

@@ -16,6 +16,7 @@ const Footer = () => {
 								<Image src='/iconfont-phone.svg'
 									alt='Телефон компании по разработке сайтов'
 									width={25} height={25}
+									style={{ width: '25px', height: '25px' }}
 									className="mr-4"
 								/>
 								8 033 351-15-97
@@ -23,9 +24,10 @@ const Footer = () => {
 						</div>
 
 						<Button type="link"
-							style={{ background: '#fff', color: '#000', borderRadius: '0px', fontSize: '13px', paddingLeft: '20px', paddingRight: '20px' }}
+							style={{ background: '#fff', color: '#000', borderRadius: '0px', fontSize: '13px', paddingLeft: '20px', paddingRight: '20px', paddingTop:'10px' }}
 							className="uppercase border-black font-semibold tracking-wider"
 							size="large"
+							href="/kontakty"
 						>
 							Контакты
 						</Button>

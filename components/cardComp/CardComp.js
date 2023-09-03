@@ -1,12 +1,13 @@
-import { Button, Collapse, Divider, Tag, Popover } from "antd"
-import { RocketOutlined, LaptopOutlined, EditOutlined } from '@ant-design/icons'
+import { Collapse, Divider } from "antd"
 import Image from "next/image";
 import Link from "next/link";
-import { dataPrice } from "../constans/price/PriceData";
+import { dataPrice } from "../../constans/price/PriceData";
+import BtnComp from "../btnComp/BtnComp";
 
 
 
 const CardComp = () => {
+
 	return (
 		<div className="mt-10 mb-10">
 			{dataPrice.map(el => {
@@ -41,34 +42,38 @@ const CardComp = () => {
 				];
 
 				return (
-					<div className="border bg-slate-50 rounded-md pt-5 mb-16" key={el.id}>
-						<div className="px-2 text-center">
-							<h3 className="text-xl mb-3 uppercase">{el.title}</h3>
-							<p className="text-xs text-gray-500">
-								<Link href={el.link} className="underline">
-									{el.title}
-								</Link>
-								{el.p}
-							</p>
-							<p className="mt-6 mb-1 uppercase font-light text-xs">цена</p>
-							<p className="text-2xl mb-4">{el.price}</p>
-							<p className="uppercase text-[10px] text-slate-600 mb-7">
-								Срок разработки: {el.time}
-							</p>
-							<Button
-								type="primary"
-								style={{ paddingLeft: '30px', paddingRight: '30px' }}
-							>
-								Заказать
-							</Button>
+					<div className="border bg-sky-100 shadow-xl rounded-md mb-16" key={el.id}>
+						<div className="">
+							<div className="xy:h-[58vh] xz:h-[64vh] flex flex-col justify-between items-center text-center">
+								<div className="pb-4 px-2  pt-4">
+									<h2 className="text-xl mb-3 uppercase">{el.title}</h2>
+									<p className="text-xs text-center">
+										<Link href={el.link} className="underline font-semibold">
+											{el.title}
+										</Link>
+										{' '}{el.p}
+									</p>
+								</div>
+								{/* <Divider style={{ marginBottom: '0px' }} /> */}
+								<div className="text-center">
+									<p className="mt-4 mb-1 uppercase font-light text-xs">цена</p>
+									<p className="text-2xl mb-4">{el.price}</p>
+								</div>
+								<p className="uppercase text-[10px] text-slate-600 mb-7">
+									Срок разработки: {el.time}
+								</p>
+								<BtnComp el={el.title} />
+							</div>
 							<Divider style={{ marginBottom: '0px' }} />
-							<div className="text-left">
+							<div className="text-center">
 								<Collapse items={items} ghost bordered={false} expandIconPosition='end' />
 							</div>
 						</div>
 					</div>
 				);
 			})}
+
+
 		</div>
 	);
 };

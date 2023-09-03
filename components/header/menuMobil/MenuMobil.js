@@ -19,10 +19,10 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 					<Image src='/close.svg' alt="Кнопка закрытия меню" width={40} height={40} />
 				</div>
 
-				<div className="flex flex-col justify-center items-center h-screen pt-6">
+				<div className="flex flex-col justify-center items-center h-screen pt-10">
 					<nav className="">
 						<ul className="text-center">
-							<li className="text-white text-2xl uppercase mb-6"
+							<li className="text-white text-2xl uppercase mb-4"
 								onClick={isCloseMenu}
 							>
 								<Link href='/'>
@@ -36,24 +36,27 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									Цены
 								</Link>
 							</li>
-							<li className="text-blue-400 text-center text-sm uppercase mb-6 font-semibold">
-								Разработка
+							<li className="text-center text-sm uppercase mb-6 font-semibold">
+								<span className="text-blue-400">Разработка</span>
 								<ul className="text-sm mt-2 font-light">
+
 									<li className="text-gray-100 uppercase mb-2 relative">
-										Многостраничный сайт
-										<Image
-											src='/arrow.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 right-12"
-										/>
+										<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta'>
+											Многостраничный сайт
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 -right-4"
+											/>
+										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative">
 										<Link href='/uslugi/sozdanie-sajta-vizitki'>
 											Сайт-визитка
 											<Image
-												src='/arrow.svg'
+												src='/arrow-blue.svg'
 												alt="ссылка на страницу разработка сайтов"
 												width={10}
 												height={10}
@@ -62,21 +65,21 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative">
-									<Link href='/uslugi/sozdanie-odnostranichnogo-sajta'>
-										Одностраничный сайт
-										<Image
-											src='/arrow.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 -right-5"
+										<Link href='/uslugi/sozdanie-odnostranichnogo-sajta'>
+											Одностраничный сайт
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 -right-5"
 											/>
-											</Link>
+										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative">
 										Лендинг
 										<Image
-											src='/arrow.svg'
+											src='/arrow-blue.svg'
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
@@ -86,7 +89,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative">
 										Интернет-магазин
 										<Image
-											src='/arrow.svg'
+											src='/arrow-blue.svg'
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
@@ -96,7 +99,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative">
 										Готовые сайты
 										<Image
-											src='/arrow.svg'
+											src='/arrow-blue.svg'
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
@@ -106,7 +109,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative">
 										Корпоративные сайты
 										<Image
-											src='/arrow.svg'
+											src='/arrow-blue.svg'
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
@@ -129,24 +132,24 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 										/>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative">
-										Реклама
+										Реклама Google и Яндекс
 										<Image
 											src='/arrow.svg'
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
-											className="absolute top-0 right-10"
+											className="absolute top-0 -right-6"
 										/>
 									</li>
 								</ul>
 							</li>
-							<li className="text-white text-2xl uppercase mb-6"
+							<li className="text-white text-2xl uppercase mb-4"
 								onClick={isCloseMenu}
 							>
 								<Link href='/portfolio'>
 									Портфолио</Link>
 							</li>
-							<li className="text-white text-2xl uppercase mb-3"
+							<li className="text-white text-2xl uppercase"
 								onClick={isCloseMenu}
 							>
 								<Link href='/kontakty'>
