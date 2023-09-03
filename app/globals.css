@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+button, [type='button'], [type='submit']
+{
+  color: #fff;
+  background-color: #0d1fa1;
+}

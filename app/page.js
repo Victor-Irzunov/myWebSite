@@ -341,7 +341,7 @@ export default function Home() {
             </div>
 
 
-            <div className='bg-cyan-50 p-3 rounded-md mb-1'>
+            <div className='bg-slate-50 p-3 rounded-md mb-1'>
               <h4 className='text-[#004C97] font-semibold block mb-2 uppercase'>
                 Современный дизайн и пользовательский опыт:
               </h4>
@@ -359,7 +359,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className='bg-cyan-50  p-3 rounded-md mb-1'>
+            <div className='bg-slate-50  p-3 rounded-md mb-1'>
               <h4 className='text-[#004C97] font-semibold block mb-2 uppercase'>
                 Продвижение с результатом:
               </h4>

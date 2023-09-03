@@ -32,42 +32,111 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 							<li className="text-white text-2xl uppercase mb-6"
 								onClick={isCloseMenu}
 							>
-								<Link href='/o-nas'>О нас</Link>
+								<Link href='/cena/razrabotka-sajta'>
+									Цены
+								</Link>
 							</li>
 							<li className="text-blue-400 text-center text-sm uppercase mb-6 font-semibold">
-								Разаботка
+								Разработка
 								<ul className="text-sm mt-2 font-light">
-									<li className="text-white uppercase mb-2">
-										Сайт
+									<li className="text-gray-100 uppercase mb-2 relative">
+										Многостраничный сайт
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 right-12"
+										/>
 									</li>
-									<li className="text-white uppercase mb-2">
-										Сайт-визитка
+									<li className="text-gray-100 uppercase mb-2 relative">
+										<Link href='/uslugi/sozdanie-sajta-vizitki'>
+											Сайт-визитка
+											<Image
+												src='/arrow.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 right-4"
+											/>
+										</Link>
 									</li>
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
+									<Link href='/uslugi/sozdanie-odnostranichnogo-sajta'>
 										Одностраничный сайт
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 -right-5"
+											/>
+											</Link>
 									</li>
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
 										Лендинг
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 right-10"
+										/>
 									</li>
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
 										Интернет-магазин
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 -right-2"
+										/>
 									</li>
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
 										Готовые сайты
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 right-2"
+										/>
 									</li>
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
 										Корпоративные сайты
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 -right-4"
+										/>
 									</li>
 								</ul>
 							</li>
 							<li className="text-blue-400 text-sm uppercase font-semibold mb-6">
 								Продвижение
 								<ul className="text-sm mt-2 font-light">
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
 										SEO продвижение
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 right-0"
+										/>
 									</li>
-									<li className="text-white uppercase mb-2">
+									<li className="text-gray-100 uppercase mb-2 relative">
 										Реклама
+										<Image
+											src='/arrow.svg'
+											alt="ссылка на страницу разработка сайтов"
+											width={10}
+											height={10}
+											className="absolute top-0 right-10"
+										/>
 									</li>
 								</ul>
 							</li>
