@@ -22,14 +22,14 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 				<div className="flex flex-col justify-center items-center h-screen pt-10">
 					<nav className="">
 						<ul className="text-center">
-							<li className="text-white text-2xl uppercase mb-4"
+							<li className="text-white text-xl uppercase mb-3"
 								onClick={isCloseMenu}
 							>
 								<Link href='/'>
 									Главная
 								</Link>
 							</li>
-							<li className="text-white text-2xl uppercase mb-6"
+							<li className="text-white text-xl uppercase mb-6"
 								onClick={isCloseMenu}
 							>
 								<Link href='/cena/razrabotka-sajta'>
@@ -161,13 +161,19 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									</li>
 								</ul>
 							</li>
-							<li className="text-white text-2xl uppercase mb-4"
+							<li className="text-white text-xl uppercase mb-3"
+								onClick={isCloseMenu}
+							>
+								<Link href='/o-nas'>
+									О нас</Link>
+							</li>
+							<li className="text-white text-xl uppercase mb-3"
 								onClick={isCloseMenu}
 							>
 								<Link href='/portfolio'>
 									Портфолио</Link>
 							</li>
-							<li className="text-white text-2xl uppercase"
+							<li className="text-white text-xl uppercase"
 								onClick={isCloseMenu}
 							>
 								<Link href='/kontakty'>

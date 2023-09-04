@@ -22,7 +22,7 @@ export const FormQuestion = ({ handleCancel, link, title = 'Заказ с мое
 		sendOrderTelegram(messageForm)
 			.then(data => {
 				if (data.ok) {
-					message.success('Ваш заказ принят!')
+					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
 					setIsActive(true)
 					if (handleCancel) {
 						handleCancel()
@@ -116,7 +116,6 @@ export const FormQuestion = ({ handleCancel, link, title = 'Заказ с мое
 					</Button>
 				</Form.Item>
 			</Form>
-			<p className='text-xs text-gray-500'>Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта.</p>
 		</>
 	)
 }
