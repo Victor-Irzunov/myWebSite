@@ -40,7 +40,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 								<span className="text-blue-400">Разработка</span>
 								<ul className="text-sm mt-2 font-light">
 
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta'>
 											Многостраничный сайт
 											<Image
@@ -52,7 +54,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											/>
 										</Link>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										<Link href='/uslugi/sozdanie-sajta-vizitki'>
 											Сайт-визитка
 											<Image
@@ -64,7 +68,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											/>
 										</Link>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										<Link href='/uslugi/sozdanie-odnostranichnogo-sajta'>
 											Одностраничный сайт
 											<Image
@@ -76,7 +82,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											/>
 										</Link>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										Лендинг
 										<Image
 											src='/arrow-blue.svg'
@@ -86,7 +94,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											className="absolute top-0 right-10"
 										/>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										Интернет-магазин
 										<Image
 											src='/arrow-blue.svg'
@@ -96,7 +106,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											className="absolute top-0 -right-2"
 										/>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										Готовые сайты
 										<Image
 											src='/arrow-blue.svg'
@@ -106,7 +118,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											className="absolute top-0 right-2"
 										/>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										Корпоративные сайты
 										<Image
 											src='/arrow-blue.svg'
@@ -121,7 +135,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 							<li className="text-blue-400 text-sm uppercase font-semibold mb-6">
 								Продвижение
 								<ul className="text-sm mt-2 font-light">
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										SEO продвижение
 										<Image
 											src='/arrow.svg'
@@ -131,7 +147,9 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											className="absolute top-0 right-0"
 										/>
 									</li>
-									<li className="text-gray-100 uppercase mb-2 relative">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
 										Реклама Google и Яндекс
 										<Image
 											src='/arrow.svg'

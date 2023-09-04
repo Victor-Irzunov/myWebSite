@@ -42,10 +42,10 @@ const CardComp = () => {
 				];
 
 				return (
-					<div className="border bg-sky-100 shadow-xl rounded-md mb-16" key={el.id}>
+					<div className="border bg-white shadow-xl rounded-md mb-16" key={el.id}>
 						<div className="">
-							<div className="xy:h-[58vh] xz:h-[64vh] flex flex-col justify-between items-center text-center">
-								<div className="pb-4 px-2  pt-4">
+							<div className="xy:h-[59vh] xz:h-[65vh] flex flex-col justify-between items-center text-center">
+								<div className="pb-4 px-2  pt-5">
 									<h2 className="text-xl mb-3 uppercase">{el.title}</h2>
 									<p className="text-xs text-center">
 										<Link href={el.link} className="underline font-semibold">

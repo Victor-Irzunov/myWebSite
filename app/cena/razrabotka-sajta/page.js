@@ -23,10 +23,10 @@ const PricePage = () => {
 					className="object-cover w-screen h-full"
 				/>
 			</div>
-			<div className="container mx-auto">
+			<div className="">
 
 
-				<div className="">
+				<div className="container mx-auto">
 					<h1 className="text-[#004C97] uppercase font-semibold text-2xl mb-6">
 						Стоимость разработки сайта в Минске
 					</h1>
@@ -45,12 +45,14 @@ const PricePage = () => {
 				</div>
 
 
-				<section className="pt-10">
-					<CardComp />
-					<p className="text-sm">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
+				<section className="pt-5 pb-10 bg-slate-100 mt-20 text-center">
+					<div className="container mx-auto">
+						<CardComp />
+						<p className="text-sm font-semibold">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
+					</div>
 				</section>
 
-				<section className="mt-32">
+				<section className="mt-32 container mx-auto">
 					{
 						dataContentPrice.map(el => {
 							return (
@@ -61,7 +63,7 @@ const PricePage = () => {
 						})
 					}
 				</section>
-				<section className="mt-16 mb-8">
+				<section className="mt-16 mb-8 container mx-auto">
 					<Image src='/price/questions.webp'
 						alt='Вопрос-ответ стоимости создания сайта'
 						className="object-cover w-screen h-full"
@@ -75,15 +77,17 @@ const PricePage = () => {
 					</article>
 				</section>
 
-				<Image
-					src='/price/logo-price2.webp'
-					alt='Логотип компании VI:TECH стоимость создания сайта'
-					className="object-cover w-screen h-full"
-					width={370} height={223} />
+				<div className="container mx-auto">
+					<Image
+						src='/price/logo-price2.webp'
+						alt='Логотип компании VI:TECH стоимость создания сайта'
+						className="object-cover w-screen h-full"
+						width={370} height={223} />
 
-				<p className="font-bold text-center mt-6">
-					Не откладывайте на завтра то, что можно начать сегодня. Позвоните нам прямо сейчас, и мы с удовольствием проконсультируем вас по всем вопросам, связанным с вашим будущим сайтом. Расскажем о стоимости, сроках и всем, что вам нужно знать. Начнем работу над вашим проектом, чтобы он стал мощным инструментом для развития вашего бизнеса. Не упустите шанс – звоните уже сегодня!
-				</p>
+					<p className="font-bold text-center mt-6">
+						Не откладывайте на завтра то, что можно начать сегодня. Позвоните нам прямо сейчас, и мы с удовольствием проконсультируем вас по всем вопросам, связанным с вашим будущим сайтом. Расскажем о стоимости, сроках и всем, что вам нужно знать. Начнем работу над вашим проектом, чтобы он стал мощным инструментом для развития вашего бизнеса. Не упустите шанс – звоните уже сегодня!
+					</p>
+				</div>
 			</div>
 		</main>
 	)
