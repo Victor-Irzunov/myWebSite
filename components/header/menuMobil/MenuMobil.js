@@ -85,26 +85,30 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										Лендинг
-										<Image
-											src='/arrow-blue.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 right-10"
-										/>
+										<Link href='/uslugi/sozdanie-lendinga'>
+											Лендинг
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка лендинга"
+												width={10}
+												height={10}
+												className="absolute top-0 right-10"
+											/>
+										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										Интернет-магазин
-										<Image
-											src='/arrow-blue.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 -right-2"
-										/>
+										<Link href='/uslugi/sozdanie-internet-magazina'>
+											Интернет-магазин
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 -right-2"
+											/>
+										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}

@@ -226,20 +226,3 @@ export const data = [
 ];
 
 
-export const title = {
-	h1: 'Создание одностраничного сайта в Минске',
-	img: '/service/odnostranichnyj/main1.webp',
-	alt: "Создание одностраничного сайта",
-}
-
-export const priceAndDate = {
-	price: '330 BYN',
-	date: '5-7 дней'
-}
-
-
-export const dataOdnostranichnyj = {
-	data,
-	title,
-	priceAndDate
-}

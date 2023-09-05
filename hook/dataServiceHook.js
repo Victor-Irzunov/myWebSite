@@ -15,6 +15,14 @@ export const useDataService = async (link) => {
 			const { dataOdnostranichnyj } = await import('@/constans/service/dataOdnostranichnyj');
 			data = dataOdnostranichnyj;
 			break
+		case 'sozdanie-lendinga':
+			const { dataLending } = await import('@/constans/service/dataLending');
+			data = dataLending;
+			break
+		case 'sozdanie-internet-magazina':
+			const { dataInternetMagazin } = await import('@/constans/service/dataInternetMagazina');
+			data = dataInternetMagazin;
+			break
 	
 	
 	}
