@@ -27,6 +27,14 @@ export function generateMetadata({ params: { link } }) {
 			title = 'Создание интернет-магазина в Минске | IT компания VI:TECH';
 			description = 'Хотите запустить свой интернет-магазин? Мы создаем мощные и удобные интернет-магазины, которые помогут вам успешно продвигать товары в сети. Контактируйте с нами прямо сейчас и начните развивать свой бизнес в интернете!'
 			break;
+		case 'sozdanie-korporativnogo-sajta':
+			title = 'Создание корпоративных сайтов в Минске | IT компания VI:TECH';
+			description = 'Закажите разработку корпоративного сайта для вашего бизнеса в Минске у профессиональной IT компании VI:TECH. Разработка корпоративных сайтов под ключ.';
+			break;
+		case 'vnutrennee-korporativnoe-veb-prilozhenie':
+			title = 'Разработка внутреннего корпоративного сайта в Минске | IT компания VI:TECH';
+			description = 'Закажите разработку внутреннего корпоративного веб-приложения для оптимизации внутренних бизнес-процессов у профессиональной IT компании VI:TECH.';
+			break;
 
 		default:
 			title = 'Создание сайтов в Минске | Заказать разработку сайта под ключ, стоимость';
@@ -48,7 +56,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 			<section>
 				<div className="">
 					<div className="container mx-auto">
-						<h1 className="text-[#004C97] leading-10 uppercase font-semibold text-2xl mb-6">
+						<h1 className="text-[#004C97] leading-10 uppercase font-semibold text-3xl mb-6">
 							{data.title.h1}
 						</h1>
 						<Image
@@ -62,12 +70,29 @@ const UniversalServicePage = async ({ params: { link } }) => {
 
 				</div>
 				{data.data.map((el, idx) => (
-					<article className={`mt-20 mb-24 ${idx === 2 ? '' : ''}`} key={el.id}>
+					<article className={`mt-20 mb-24`} key={el.id}>
 						<div className="container mx-auto">
-							{el.h2 && <h2 className="font-semibold uppercase mb-3 text-center text-lg">{el.h2}</h2>}
-							{el.h3 && <h3 className="font-semibold uppercase mb-3 text-center text-lg">{el.h3}</h3>}
-							{el.h4 && <h4 className="font-semibold uppercase mb-3 text-center text-lg">{el.h4}</h4>}
-							{el.h5 && <h5 className="font-semibold uppercase mb-3 text-center text-lg">{el.h5}</h5>}
+							{el.h2 &&
+								<div className='mb-3'>
+									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
+									<h2 className='text-[#004C97] uppercase text-xl mb-6'>{el.h2}</h2>
+								</div>}
+							{el.h3 &&
+								<div className='mb-3'>
+									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
+									<h3 className='text-[#004C97] uppercase text-xl mb-6'>{el.h3}</h3>
+								</div>}
+							{el.h4 &&
+								<div className='mb-3'>
+									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
+									<h4 className='text-[#004C97] uppercase text-xl mb-6'>{el.h4}</h4>
+								</div>}
+							{el.h5 &&
+								<div className='mb-3'>
+									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
+									<h5 className='text-[#004C97] uppercase text-xl mb-6'>{el.h5}</h5>
+								</div>}
+
 							{el.img ? (
 								<figure>
 									<Image
@@ -84,7 +109,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							<div className="mt-5">
 								<p className="text-justify">
 									{el.content.description.split(' ').map((word, index) => (
-										index < 2 ? <b key={index}>{word} </b> : word + ' '
+										index < el.content.counSymb ? <b key={index}>{word} </b> : word + ' '
 									))}
 								</p>
 							</div>
@@ -93,14 +118,14 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							<div className="mt-6">
 								{el.content.steps1 && el.content.steps1.map(elem => {
 									return (
-										<div className="bg-slate-50 mb-2 rounded-lg p-3" key={elem.id}>
-											<h3 className="mb-2 pt-1 font-semibold">
+										<div className={`bg-[#004C97] text-white ${idx === 0 ? 'text-center' : 'text-left'} mb-2.5 rounded-lg p-3`} key={elem.id}>
+											<h3 className="mb-2 pt-1 uppercase">
 												{elem.title}
 											</h3>
 											<ul className="">
 												{elem.points.map((item, idx) => {
 													return (
-														<li className="mb-2 pl-1" key={idx}>
+														<li className="mb-2 pl-1 font-light" key={idx}>
 															{item}
 														</li>
 													)
@@ -115,14 +140,14 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								{el.content.steps2 ?
 									el.content.steps2.map(elem => {
 										return (
-											<div className="bg-slate-50 rounded-lg p-3 mt-4" key={elem.id}>
+											<div className="bg-[#004C97] text-white text-center rounded-lg p-3 mt-4" key={elem.id}>
 												<h3 className="mb-3 mt-5 font-semibold">
 													{elem.title}
 												</h3>
 												<ul className="">
 													{elem.points.map((item, idx) => {
 														return (
-															<li className="pl-2 mb-2" key={idx}>
+															<li className="pl-2 mb-2 font-light" key={idx}>
 																{item}
 															</li>
 														)
@@ -137,7 +162,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							</div>
 
 							{el.content.conclusion &&
-								<div className="mt-6 text-justify">
+								<div className="mt-10 text-center text-[#004C97] text-lg">
 									<p className="font-semibold">
 										{el.content.conclusion}
 									</p>
@@ -146,7 +171,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 
 							{
 								el.content.action &&
-								<div className="text-center mt-16">
+								<div className="text-center text-[#004C97] mt-16 text-lg">
 									<p className="font-bold">
 										{el.content.action}
 									</p>
@@ -158,7 +183,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								<div className="mt-4">
 									{el.content.example.map((elem, idx) => {
 										return (
-											<div className="mb-2 bg-slate-50 rounded-lg px-2 py-4 text-justify" key={idx}>
+											<div className={`mb-2 ${idx === el.content.example.length - 1 ? 'bg-white' : 'bg-slate-50'} rounded-lg px-2 py-4 text-justify`} key={idx}>
 												<p className={`${idx === el.content.example.length - 1 ? 'font-semibold' : ''}`}>
 													{elem}
 												</p>
@@ -170,10 +195,10 @@ const UniversalServicePage = async ({ params: { link } }) => {
 
 						</div>
 						{idx === data.data.length - 2 && (
-							<div className="mt-16 mb-16 py-20">
+							<div className="mt-16 mb-16 pt-24 pb-36 bg-[#004C97] text-white">
 								<div className="container mx-auto">
 									<div className="flex items-center justify-between">
-										<div className="w-7/12 text-sm font-semibold">
+										<div className="w-1/2 text-xs">
 											Стоимость разработки многостраничного сайта
 										</div>
 										<p className="font-bold text-xl">
@@ -181,14 +206,14 @@ const UniversalServicePage = async ({ params: { link } }) => {
 										</p>
 									</div>
 									<div className="mt-10 flex items-center justify-between">
-										<div className="w-7/12 text-sm font-semibold">
+										<div className="w-1/2 text-xs">
 											Срок разработки
 										</div>
 										<p className="font-bold text-lg">
 											{data.priceAndDate.date}
 										</p>
 									</div>
-									<div className="float-right mt-9">
+									<div className="float-right mt-12">
 										<BtnComp el={data.title.h1} />
 									</div>
 								</div>

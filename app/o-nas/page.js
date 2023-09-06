@@ -9,15 +9,7 @@ export const metadata = {
 const AboutPage = () => {
 	return (
 		<main className="pt-10 pb-20">
-			<div className="w-full relative">
-				<Image
-					src="/logo/logo-about.webp"
-					alt="О компании по созданию сайтов vi:tech"
-					layout="responsive"
-					objectFit="cover"
-					width={370} height={223}
-				/>
-			</div>
+			
 			<div className="container mx-auto">
 
 				<div className="mt-16 text-[#004C97] font-semibold text-center">

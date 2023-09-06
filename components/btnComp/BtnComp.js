@@ -27,6 +27,7 @@ const BtnComp = ({el}) => {
 				type="primary"
 				style={{ paddingLeft: '30px', paddingRight: '30px' }}
 				onClick={() => showModal(`${el}`, "order")}
+				className='shadow-md'
 			>
 				Заказать
 			</Button>

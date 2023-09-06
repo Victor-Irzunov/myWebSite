@@ -50,7 +50,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 												alt="ссылка на страницу разработка сайтов"
 												width={10}
 												height={10}
-												className="absolute top-0 -right-4"
+												className="absolute top-0 right-0"
 											/>
 										</Link>
 									</li>
@@ -64,7 +64,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 												alt="ссылка на страницу разработка сайтов"
 												width={10}
 												height={10}
-												className="absolute top-0 right-4"
+												className="absolute top-0 right-10"
 											/>
 										</Link>
 									</li>
@@ -78,7 +78,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 												alt="ссылка на страницу разработка сайтов"
 												width={10}
 												height={10}
-												className="absolute top-0 -right-5"
+												className="absolute top-0 right-0"
 											/>
 										</Link>
 									</li>
@@ -92,7 +92,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 												alt="ссылка на страницу разработка лендинга"
 												width={10}
 												height={10}
-												className="absolute top-0 right-10"
+												className="absolute top-0 right-16"
 											/>
 										</Link>
 									</li>
@@ -106,33 +106,51 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 												alt="ссылка на страницу разработка сайтов"
 												width={10}
 												height={10}
-												className="absolute top-0 -right-2"
+												className="absolute top-0 right-6"
 											/>
 										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										Готовые сайты
-										<Image
-											src='/arrow-blue.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 right-2"
-										/>
+										<Link href='/gotovye-sajty'>
+											Готовые сайты
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 right-8"
+											/>
+										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										Корпоративные сайты
-										<Image
-											src='/arrow-blue.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 -right-4"
-										/>
+										<Link href='/uslugi/sozdanie-korporativnogo-sajta'>
+											Корпоративные сайты
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 right-2"
+											/>
+										</Link>
+									</li>
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
+										<Link href='/uslugi/vnutrennee-korporativnoe-veb-prilozhenie'>
+											Внутреннее веб-приложение
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 -right-4"
+											/>
+										</Link>
 									</li>
 								</ul>
 							</li>
@@ -148,7 +166,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
-											className="absolute top-0 right-0"
+											className="absolute top-0 right-6"
 										/>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
@@ -160,7 +178,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 											alt="ссылка на страницу разработка сайтов"
 											width={10}
 											height={10}
-											className="absolute top-0 -right-6"
+											className="absolute top-0 -right-2"
 										/>
 									</li>
 								</ul>

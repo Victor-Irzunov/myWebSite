@@ -23,6 +23,14 @@ export const useDataService = async (link) => {
 			const { dataInternetMagazin } = await import('@/constans/service/dataInternetMagazina');
 			data = dataInternetMagazin;
 			break
+		case 'sozdanie-korporativnogo-sajta':
+			const { dataKorporativnyj } = await import('@/constans/service/dataKorporativnyj');
+			data = dataKorporativnyj;
+			break
+		case 'vnutrennee-korporativnoe-veb-prilozhenie':
+			const { dataVnutrennee } = await import('@/constans/service/dataVnutrennee');
+			data = dataVnutrennee;
+			break
 	
 	
 	}
