@@ -1,9 +1,9 @@
 "use client"
-import { Button } from 'antd';
+import { Button, Tag } from 'antd';
 import { useState } from 'react'
 import { ModalUniversal } from '../modal/ModalUniversal';
 
-const BtnComp = ({el}) => {
+const BtnComp = ({ el, tag }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [title, setTitle] = useState('');
 	const [isActive, setIsActive] = useState({
@@ -23,14 +23,24 @@ const BtnComp = ({el}) => {
 	}
 	return (
 		<>
-			<Button
-				type="primary"
-				style={{ paddingLeft: '30px', paddingRight: '30px' }}
-				onClick={() => showModal(`${el}`, "order")}
-				className='shadow-md'
-			>
-				Заказать
-			</Button>
+			{
+				tag ?
+					<Tag color='blue'
+						onClick={() => showModal(`${el}`, "order")}
+					>
+						Узнать точную стоимость
+					</Tag>
+					:
+					<Button
+						type="primary"
+						style={{ paddingLeft: '30px', paddingRight: '30px' }}
+						onClick={() => showModal(`${el}`, "order")}
+						className='shadow-md'
+					>
+						Заказать
+					</Button>
+			}
+
 			<ModalUniversal
 				isModalOpen={isModalOpen}
 				title={title}

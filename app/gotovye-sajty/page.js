@@ -1,4 +1,4 @@
-import GotoviCardComp from "@/components/gotoviCardComp/GotoviCardComp"
+import GotovyeCardComp from "@/components/gotoviCardComp/GotovyeCardComp"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,9 +11,7 @@ export const metadata = {
 const GotovyePage = () => {
 	return (
 		<main className="pt-10 pb-20">
-
 			<div className="container mx-auto">
-
 				<div className="mt-16 text-[#004C97] font-semibold">
 					<h1 className="uppercase text-3xl">
 						Готовые сайты в Минске
@@ -23,9 +21,9 @@ const GotovyePage = () => {
 					<Image
 						src="/service/gotovie/main.webp"
 						alt="Компания по продажи готовых сайтов vi:tech"
-						layout="responsive"
-						objectFit="cover"
-						width={370} height={223}
+						className="object-cover w-full h-full mx-auto mt-12"
+						style={{ width: '370px', height: 'auto' }}
+						width={370} height={370}
 					/>
 				</div>
 			</div>
@@ -46,19 +44,19 @@ const GotovyePage = () => {
 								Преимущества покупки готового сайта
 							</h3>
 							<ul className="mt-6">
-								<li className="mb-3 bg-blue-600 px-3 shadow-xl py-4 font-light rounded-md">
+								<li className="mb-3 bg-blue-700 px-3 shadow-xl py-4 font-light rounded-md">
 									<span className="font-semibold">Сэкономьте время: </span>Когда вы покупаете готовый сайт, вы сразу же получаете готовую платформу, которую можно начать использовать. Нет необходимости ждать месяцами, пока разработчики создадут новый сайт.
 								</li>
-								<li className="mb-3 bg-blue-600 px-3 shadow-xl py-4 font-light rounded-md">
+								<li className="mb-3 bg-blue-700 px-3 shadow-xl py-4 font-light rounded-md">
 									<span className="font-semibold">Дизайн включен:  </span>Готовый сайт уже имеет установленный и настроенный дизайн. Это значит, что вам не нужно долго обсуждать дизайнерские концепции и ждать их реализации.
 								</li>
-								<li className="mb-3 bg-blue-600 px-3 shadow-xl py-4 font-light rounded-md">
+								<li className="mb-3 bg-blue-700 px-3 shadow-xl py-4 font-light rounded-md">
 									<span className="font-semibold">Бесплатное редактирование включено: </span> Мы предоставляем бесплатную услугу редактирования сайта с учетом ваших требований.
 								</li>
-								<li className="mb-3 bg-blue-600 px-3 shadow-xl py-4 font-light rounded-md">
+								<li className="mb-3 bg-blue-700 px-3 shadow-xl py-4 font-light rounded-md">
 									<span className="font-semibold">Запуск сайта: </span> Когда вы покупаете готовый сайт, он уже настроен и готов к запуску. Это означает, что вы быстро можете начать привлекать посетителей и клиентов.
 								</li>
-								<li className="mb-3 bg-blue-600 px-3 shadow-xl py-4 font-light rounded-md">
+								<li className="mb-3 bg-blue-700 px-3 shadow-xl py-4 font-light rounded-md">
 									<span className="font-semibold">Экономия средств: </span> Покупка готового сайта обычно обходится дешевле, чем полная разработка с нуля. Это позволяет сэкономить средства, которые можно вложить в другие аспекты бизнеса.
 								</li>
 							</ul>
@@ -70,7 +68,7 @@ const GotovyePage = () => {
 				</article>
 			</section>
 
-			<GotoviCardComp />
+			<GotovyeCardComp />
 		</main>
 	)
 }

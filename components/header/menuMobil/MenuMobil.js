@@ -9,7 +9,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 
 	return (
 		<div
-			className={`w-full h-screen fixed top-0 left-0 right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
+			className={`w-full  fixed top-0 left-0 right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
 		>
 			<div className="bg-gradient-to-t from-black/0 to-black/90
 			 h-20 relative">
@@ -22,21 +22,21 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 				<div className="flex flex-col justify-center items-center h-screen pt-10">
 					<nav className="">
 						<ul className="text-center">
-							<li className="text-white text-xl uppercase mb-3"
+							<li className="text-white text-xl uppercase mb-2"
 								onClick={isCloseMenu}
 							>
 								<Link href='/'>
 									Главная
 								</Link>
 							</li>
-							<li className="text-white text-xl uppercase mb-6"
+							<li className="text-white text-xl uppercase mb-5"
 								onClick={isCloseMenu}
 							>
 								<Link href='/cena/razrabotka-sajta'>
 									Цены
 								</Link>
 							</li>
-							<li className="text-center text-sm uppercase mb-6 font-semibold">
+							<li className="text-center text-sm uppercase mb-5 font-semibold">
 								<span className="text-blue-400">Разработка</span>
 								<ul className="text-sm mt-2 font-light">
 
@@ -154,9 +154,23 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									</li>
 								</ul>
 							</li>
-							<li className="text-blue-400 text-sm uppercase font-semibold mb-6">
+							<li className="text-cyan-400 text-sm uppercase font-semibold mb-5">
 								Продвижение
 								<ul className="text-sm mt-2 font-light">
+									<li className="text-gray-100 uppercase mb-2 relative"
+										onClick={isCloseMenu}
+									>
+										<Link href='/prodvizhenie-sajta'>
+											Продвижение сайта
+											<Image
+												src='/arrow.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 right-4"
+											/>
+										</Link>
+									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
@@ -183,13 +197,13 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									</li>
 								</ul>
 							</li>
-							<li className="text-white text-xl uppercase mb-3"
+							<li className="text-white text-xl uppercase mb-2"
 								onClick={isCloseMenu}
 							>
 								<Link href='/o-nas'>
 									О нас</Link>
 							</li>
-							<li className="text-white text-xl uppercase mb-3"
+							<li className="text-white text-xl uppercase mb-2"
 								onClick={isCloseMenu}
 							>
 								<Link href='/portfolio'>

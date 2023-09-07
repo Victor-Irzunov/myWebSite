@@ -84,7 +84,11 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								</div>}
 							{el.h4 &&
 								<div className='mb-3'>
-									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
+									<Image src='/line.svg'
+										alt='Линия'
+										width={50}
+										height={10}
+										className='rotate-45' />
 									<h4 className='text-[#004C97] uppercase text-xl mb-6'>{el.h4}</h4>
 								</div>}
 							{el.h5 &&
@@ -118,8 +122,8 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							<div className="mt-6">
 								{el.content.steps1 && el.content.steps1.map(elem => {
 									return (
-										<div className={`bg-[#004C97] text-white ${idx === 0 ? 'text-center' : 'text-left'} mb-2.5 rounded-lg p-3`} key={elem.id}>
-											<h3 className="mb-2 pt-1 uppercase">
+										<div className={`bg-slate-100  ${idx === 0 ? 'text-center' : 'text-left'} mb-2.5 rounded-lg p-3`} key={elem.id}>
+											<h3 className="mb-2 pt-1 text-[#004C97] uppercase">
 												{elem.title}
 											</h3>
 											<ul className="">
@@ -140,8 +144,8 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								{el.content.steps2 ?
 									el.content.steps2.map(elem => {
 										return (
-											<div className="bg-[#004C97] text-white text-center rounded-lg p-3 mt-4" key={elem.id}>
-												<h3 className="mb-3 mt-5 font-semibold">
+											<div className="bg-slate-100 text-center rounded-lg p-3 mt-4" key={elem.id}>
+												<h3 className="mb-3 mt-5 text-[#004C97]  uppercase">
 													{elem.title}
 												</h3>
 												<ul className="">
