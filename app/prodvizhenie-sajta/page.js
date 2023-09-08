@@ -17,7 +17,7 @@ const ProdvizheniePage = () => {
 						Продвижение сайта в Минске и Беларуси
 					</h1>
 					<Image
-						src='/prodzhenie/main.webp'
+						src='/prodvizhenie/main.webp'
 						alt='Продвижение сайтов'
 						className="object-cover w-full h-full mx-auto mt-8"
 						style={{ width: 'auto', height: 'auto' }}
@@ -304,7 +304,7 @@ const ProdvizheniePage = () => {
 				</p>
 
 				<Image
-						src='/prodzhenie/plane2.webp'
+						src='/prodvizhenie/plane2.webp'
 						alt='Продвижение сайтов'
 						className="object-cover w-full h-full mx-auto mt-8"
 						style={{ width: 'auto', height: 'auto' }}
