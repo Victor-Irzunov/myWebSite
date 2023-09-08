@@ -174,26 +174,30 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										SEO продвижение
-										<Image
-											src='/arrow.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 right-6"
-										/>
+										<Link href='/seo-prodvizhenie-sajta'>
+											SEO продвижение
+											<Image
+												src='/arrow.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 right-6"
+											/>
+										</Link>
 									</li>
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										Реклама Google и Яндекс
-										<Image
-											src='/arrow.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 -right-2"
-										/>
+										<Link href='/kontekstnaya-reklama'>
+											Реклама Google и Яндекс
+											<Image
+												src='/arrow.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="absolute top-0 -right-2"
+											/>
+										</Link>
 									</li>
 								</ul>
 							</li>
