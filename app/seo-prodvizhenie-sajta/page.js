@@ -134,7 +134,6 @@ const SeoProdvizheniePage = () => {
 							</h4>
 
 							<ul className="">
-
 								<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 border border-black">
 									<h5 className="font-semibold">
 										Ключевые слова и релевантность
@@ -295,7 +294,7 @@ const SeoProdvizheniePage = () => {
 						</div>
 
 						<div className="mt-8 text-right">
-							<BtnComp tag={true} />
+							<BtnComp tag={true} title2='Узнать точную стоимость' />
 						</div>
 					</div>
 				</article>

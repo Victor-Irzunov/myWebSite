@@ -7,11 +7,11 @@ import { sendOrderTelegram } from '../../http/telegramAPI';
 
 const { TextArea } = Input
 
-export const FormQuestion = ({ handleCancel, link, title = 'Заказ с моего сайта', el }) => {
+export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 	const [tel, setTel] = useState('')
 	const [isActive, setIsActive] = useState(false)
 	const onFinish = (values) => {
-		let messageForm = `<b>${title}</b>\n`
+		let messageForm = `<b> Заказ с моего сайта ${title}</b>\n`
 		messageForm += `<b>Интерисует: ${el} </b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Клиент по имени ${values.name || ''} задал вопрос </b>\n`
@@ -112,7 +112,7 @@ export const FormQuestion = ({ handleCancel, link, title = 'Заказ с мое
 					}}
 				>
 					<Button type="primary" htmlType="submit">
-						Заказать
+						{tag ? title : 'Заказать'}
 					</Button>
 				</Form.Item>
 			</Form>
