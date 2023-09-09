@@ -17,7 +17,7 @@ const KontekstnayaReklamaPage = () => {
 						Контекстная реклама в Минске и Беларуси
 					</h1>
 					<Image
-						src='/prodzhenie/main.webp'
+						src='/prodvizhenie/main.webp'
 						alt='Контекстная реклама'
 						className="object-cover w-full h-full mx-auto mt-8"
 						style={{ width: 'auto', height: 'auto' }}
