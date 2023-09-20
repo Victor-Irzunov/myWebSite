@@ -237,7 +237,7 @@ const SeoProdvizheniePage = () => {
 					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/http://localhost:3000/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+				<Link href='/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
 					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 			</section>
