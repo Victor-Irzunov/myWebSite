@@ -474,9 +474,14 @@ export default function Home() {
         </article>
       </section>
 
-      <div className='container mx-auto'>
-        <div className='flex justify-end w-full mt-9 pr-8'>
-          <BtnComp title2='Получить консультацию' tag={true} konsultaciya={true} />
+      <div className='bg-purple-100 mt-16 px-3 py-5 rounded-sm'>
+        <div className='container mx-auto'>
+          <p className='font-semibold text-base sd:text-lg'>
+            Не уверены, с чего начать при создании своего сайта? Нажмите кнопку «Получить консультацию» прямо сейчас, и наши эксперты по разработке сайтов будут рады предоставить вам первоклассную консультацию, которая поможет вам определить необходимые шаги для создания качественного сайта.
+          </p>
+          <div className='flex justify-end w-full mt-9 pr-8'>
+            <BtnComp title2='Получить консультацию' tag={true} konsultaciya={true} />
+          </div>
         </div>
       </div>
 
@@ -757,7 +762,7 @@ export default function Home() {
           </div>
 
           <div className='mt-20'>
-            <p className='font-semibold  p-2 text-justify mb-10'>
+            <p className='font-semibold sd:text-xl xz:text-lg p-2 text-justify mb-10'>
               Мы — разработчики сайтов, готовые реализовать ваши потребности, учитывая ваши бюджетные рамки. От небольших, но важных сайтов-визиток, до полноценных одностраничных ресурсов и глубоких многостраничных веб-проектов. Мы также специализируемся на разработке интернет-магазинов, закрытых корпоративных приложений и образовательных платформ. Независимо от вашей цели, мы готовы создать цифровое пространство, которое эффективно будет работать для вас и вашей аудитории
             </p>
 
