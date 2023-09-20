@@ -1,8 +1,8 @@
-import { Button } from "antd"
-import Image from "next/image"
-
+import Image from "next/image";
+import BtnContact from "../btnContactFooter/BtnContact";
 
 const Footer = () => {
+
 	return (
 		<footer className="bg-[#15579e] py-20">
 			<div className="container mx-auto px-3">
@@ -23,14 +23,7 @@ const Footer = () => {
 							</a>
 						</div>
 
-						<Button type="link"
-							style={{ background: '#fff', color: '#000', borderRadius: '0px', fontSize: '13px', paddingLeft: '20px', paddingRight: '20px', paddingTop:'10px' }}
-							className="uppercase border-black font-semibold tracking-wider"
-							size="large"
-							href="/kontakty"
-						>
-							Контакты
-						</Button>
+						<BtnContact />
 					</div>
 					<div className="">
 						<Image

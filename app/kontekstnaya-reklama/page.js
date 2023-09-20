@@ -1,5 +1,6 @@
 import BtnComp from "@/components/btnComp/BtnComp"
 import Image from "next/image"
+import Link from "next/link"
 
 export const metadata = {
 	title: 'Контекстная реклама - быстрое продвижение сайта',
@@ -13,7 +14,7 @@ const KontekstnayaReklamaPage = () => {
 			<div className="container mx-auto">
 
 				<div className="mt-16 text-[#004C97] font-semibold">
-					<h1 className="uppercase text-2xl">
+					<h1 className="uppercase xz:text-3xl sd:text-4xl">
 						Контекстная реклама в Минске и Беларуси
 					</h1>
 					<Image
@@ -28,93 +29,126 @@ const KontekstnayaReklamaPage = () => {
 				<section className="mt-10">
 					<article className="">
 						<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-						<h2 className="uppercase text-[#004C97] mb-5 text-lg">
+						<h2 className="uppercase text-[#004C97] mb-5 xz:text-lg sd:text-xl">
 							Контекстная реклама Google и Яндекс
 						</h2>
 						<p className="text-justify px-3">
-							Контекстная реклама - это эффективный способ быстро достичь высокой видимости вашего бизнеса в поисковых результатах Google и Яндекс. Она предоставляет возможность ваших объявлений появиться на первой странице поисковой выдачи практически мгновенно, без необходимости долгого ожидания. Это особенно удобно для новых сайтов, которые только начинают свой путь в интернете, а также для рекламных акций, когда нужно быстро привлечь внимание к вашему продукту или услуге.
+							Контекстная реклама - это эффективный способ быстро достичь высокой видимости вашего бизнеса в поисковых результатах Google и Яндекс. Она предоставляет возможность ваших объявлений появиться на первой странице поисковой выдачи практически мгновенно, без необходимости долгого ожидания. Это особенно удобно для новых сайтов, которые только начинают свой путь в интернете, а также для рекламных акций, когда нужно быстро привлечь внимание к вашему продукту или услуге. Давайте рассмотрим, как этот процесс функционирует и почему он так важен для вашего онлайн-присутствия.
 						</p>
 
+						<div className="flex justify-end mt-4">
+							<Image
+								src='/partnery/ads.svg'
+								alt='Продвижение сайтов'
+								className=""
+								style={{ width: '45px', height: 'auto' }}
+								width={45} height={45}
+							/>
+							<Image
+								src='/partnery/direct.svg'
+								alt='Продвижение сайтов'
+								className="ml-5"
+								style={{ width: '40px', height: 'auto' }}
+								width={40} height={40}
+							/>
+						</div>
 						<h3 className="font-semibold text-[#004C97] mt-5 relative text-lg">
-							Как работает реклама:
+							Как работает контекстная реклама:
 						</h3>
 						<ul className="mt-3">
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Выбор ключевых слов
+									Создание аккаунта и выбор ключевых слов
 								</h4>
 								<p className="">
-									Сначала мы выбираем ключевые слова, которые наилучшим образом соответствуют вашему продукту или услуге. Например, если вы продаете книги, вы можете выбрать ключевые слова, такие как "купить книги онлайн" или "литературный магазин".
+									В первую очередь, для запуска контекстной рекламы необходимо создать аккаунт в рекламной платформе,например такой как Google Ads. Затем вы выбираете ключевые слова, которые наилучшим образом описывают вашу продукцию или услуги. Эти ключевые слова определяют, когда ваша реклама будет отображаться.
 								</p>
 							</li>
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Создание объявлений
+									Написание качественных заголовков и объявлений
 								</h4>
 								<p className="">
-									Затем мы создаём текст объявлений, которые будут отображаться, когда кто-то вводит одно из собраных ключевых слов в поисковую строку Google. Объявления обычно состоят из заголовка, описания и ссылки на ваш сайт.
+									Создание привлекательных и информативных заголовков и объявлений - ключевой этап. Ваши объявления должны быть краткими, но содержательными, их цель - привлечь внимание и заинтересовать пользователей.
 								</p>
 							</li>
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Задание бюджета
+									Установка бюджета на день
 								</h4>
 								<p className="">
-									Мы устанавливаем бюджет, который вы готовы потратить на рекламу каждый день. Это позволяет вам контролировать свои затраты.
+									Вы определяете дневной бюджет, который готовы потратить на рекламу. Это позволяет вам контролировать свои расходы и обеспечивает гибкость в управлении рекламной кампанией.
 								</p>
 							</li>
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Аукцион ключевых слов
+									Отображение в результатах поиска
 								</h4>
 								<p className="">
-									Когда кто-то ищет что-то в Google, происходит аукцион ключевых слов. Google определяет, какие объявления отображать и в каком порядке, основываясь на качестве объявлений и ставках рекламодателей.
+									Когда пользователь выполняет поисковый запрос, похожий на ваши ключевые слова, ваша реклама может появиться в результатах поиска. Реклама обычно помечается как "Реклама", чтобы пользователи могли отличить ее от органических результатов.
 								</p>
 							</li>
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Отображение объявлений
+									Первая страница по запросу
 								</h4>
 								<p className="">
-									Если ваше объявление считается наилучшим в данном запросе, оно отображается в верхней части страницы поисковой выдачи или на сайтах-партнерах Google.
+									Целью контекстной рекламы является размещение вашего сайта на первой странице результатов поиска по ключевым словам. Это место более видимо и часто привлекает больше кликов.
 								</p>
 							</li>
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Оплата за клик
+									Важность качественного сайта и релевантной страницы
 								</h4>
 								<p className="">
-									Вы платите только тогда, когда кто-то кликает на ваше объявление и переходит на ваш сайт. Это называется оплатой за клик (PPC - Pay-Per-Click).
+									Ключевым фактором успеха контекстной рекламы является качество вашего сайта и страницы, на которую ведет объявление. Сайт должен быть легким для навигации, информативным и отзывчивым. Реклама должна быть релевантной запросу пользователя, чтобы повысить вероятность конверсии.
 								</p>
 							</li>
-							<li className="bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-5 rounded-md mb-4 shadow-xl">
+							<li className="bg-gradient-to-r from-cyan-300 to-blue-300 px-3 py-5 rounded-md mb-4 shadow-xl">
 								<h4 className="uppercase mb-2 font-semibold ">
-									Быстрый результат
+									Преимущество над органическими результатами
 								</h4>
 								<p className="">
-									Ваши объявления могут быть показаны потенциальным клиентам практически мгновенно, что делает контекстную рекламу идеальным выбором для тех, кто хочет быстро привлечь внимание к своему бизнесу.
+									Интересный момент в контекстной рекламе заключается в том, что даже если ваш сайт уже показывается в органических результатах, реклама может помочь вам занять более высокую позицию и привлечь дополнительный трафик. Вы платите только за клики или конверсии, что делает этот метод рекламы эффективным и экономически выгодным.
 								</p>
 							</li>
 						</ul>
-						<p className="mt-7 text-lg text-center font-bold">
-							Контекстная реклама в Google и Яндекс позволяет вашему бизнесу моментально появиться в результатах поиска, без необходимости ждать долгих результатов SEO продвижения. Это особенно полезно для новых сайтов, которые могут начать с 2-8 страницы результатов поиска, или для проведения рекламных акций, когда нужно быстро привлечь внимание к вашим продуктам или услугам.
+						<p className="mt-7 px-2 text-justify font-semibold">
+							Контекстная реклама в Google и Яндекс позволяет вашему бизнесу моментально появиться в результатах поиска, без необходимости ждать долгих результатов SEO продвижения. Это особенно полезно для новых сайтов, которые могут начать с 2-8 страницы результатов поиска (в зависимости от конкуренции), или для проведения рекламных акций, когда нужно быстро привлечь внимание к вашим продуктам или услугам.
 							Таким образом, контекстная реклама дает вам возможность моментально попасть на первую страницу и привлечь потенциальных клиентов.
 						</p>
 					</article>
 				</section>
 			</div>
 
+			<section className="my-20">
+				<div className="container mx-auto text-center font-semibold">
+					<h3 className="mb-3 xz:text-base sd:text-xl">
+						Получите бесплатную консультацию по рекламе в Google и Яндекс для вашего сайта
+					</h3>
+					<div className="">
+						<a href='tel:80333511597' className="font-bold xz:text-xl sd:text-2xl">
+							+375 33 351-15-97
+						</a>
+					</div>
+
+					<p className="xz:mt-3 sd:mt-14">
+						Мы с удовольствием ответим на все ваши вопросы и поможем разобраться в мире рекламы, чтобы ваш сайт привлекал больше клиентов и достигал новых высот.
+					</p>
+				</div>
+			</section>
+
 			<section className="mt-20 bg-[#004C97] pt-6 pb-20 text-white">
 				<article className="container mx-auto">
 					<Image src='/line-white.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-					<h2 className="uppercase mb-5 text-lg">
+					<h2 className="uppercase mb-5  xz:text-lg sd:text-xl">
 						Нужна ли вам контекстная реклама?
 					</h2>
 					<p className="text-justify font-light px-3">
 						Контекстная реклама - это мощный способ доставить ваше сообщение потенциальным клиентам в интернете быстро. Но давайте разберемся, действительно ли вам она нужна.
 					</p>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="xz:mt-4 sd:mt-8 bg-blue-700 px-3 xz:py-4 sd:py-6 rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Расписание показа рекламы
 						</h3>
@@ -123,7 +157,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3 xz:py-4 sd:py-6 rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Настройка устройств
 						</h3>
@@ -132,7 +166,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3 xz:py-4 sd:py-6 rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Настройка аудитории
 						</h3>
@@ -141,7 +175,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3 xz:py-4 sd:py-6 rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Аналитика
 						</h3>
@@ -150,7 +184,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3  xz:py-4 sd:py-6  rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Просмотр показов
 						</h3>
@@ -159,7 +193,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3  xz:py-4 sd:py-6  rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							CTR (Click-Through Rate)
 						</h3>
@@ -168,7 +202,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3  xz:py-4 sd:py-6  rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Клики и конверсии
 						</h3>
@@ -177,7 +211,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3  xz:py-4 sd:py-6  rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Предоплата или автоматические платежи
 						</h3>
@@ -186,7 +220,7 @@ const KontekstnayaReklamaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
+					<div className="mt-4 bg-blue-700 px-3  xz:py-4 sd:py-6  rounded-md text-center">
 						<h3 className="mb-2 uppercase">
 							Возможность поставить на паузу
 						</h3>
@@ -201,77 +235,124 @@ const KontekstnayaReklamaPage = () => {
 				</article>
 			</section>
 
+			<section className="container mx-auto mt-20">
+				<p className="font-semibold uppercase mb-7 text-lg">
+					Наши услуги по разрабоки сайтов и веб-приложений
+				</p>
+				<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/http://localhost:3000/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+			</section>
+
 
 			<section className="pb-20 mt-20">
 				<article className="container mx-auto">
 					<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
 					<h3 className="uppercase mb-5 text-lg text-[#004C97]">
-						Контекстная реклама для малого и среднего бизнеса: как стартовать и получить результаты
+						Виды рекламы в Google, которые мы можем предложить
 					</h3>
 
-					<Image
-						src='/kontekstnaya/price.webp'
-						alt='Контекстная реклама для продвижения'
-						className="object-cover w-full h-full mx-auto mt-8"
-						style={{ width: 'auto', height: 'auto' }}
-						width={150} height={397}
-					/>
 					<p className="text-justify mt-8 font-semibold">
-						Здравствуйте, уважаемые предприниматели! Мы - ваш надежный партнер в мире цифровой рекламы и готовы поделиться с вами секретами успешного старта в контекстной рекламе для малого и среднего бизнеса.
+						В Беларуси Google занимает около 90% рынка поиска, но не стоит забывать о популярности Яндекса. Оптимальное решение - запустить рекламу на обеих платформах и максимально охватить аудиторию. В данном разделе мы рассмотрим виды контекстной рекламы, доступные в Google.
+						Google предоставляет несколько видов контекстной рекламы, предназначенных для разных целей и форматов. Вот некоторые из наиболее популярных видов контекстной рекламы, предоставляемых Google Ads:
 					</p>
 
-					<ul className="mt-7">
-						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 border border-black">
+
+					<ul className="mt-7 text-center">
+						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 ">
 							<h4 className="font-semibold">
-								Выбор между Google и Яндекс
+								Поисковая реклама (Search Ads)
 							</h4>
-							<p className="mt-2 pl-2">
-								Какими бы ни были ваши бизнес-приоритеты, оба гиганта - Google и Яндекс - имеют свои преимущества. В Беларуси Google занимает около 90% рынка поиска, но не стоит забывать о популярности Яндекса, особенно среди белорусских пользователей. Оптимальное решение - запустить рекламу на обеих платформах и максимально охватить аудиторию.
-							</p>
-						</li>
-						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 border border-black">
-							<h4 className="font-semibold">
-								Не зависимо от бюджета, трафик будет
-							</h4>
-							<p className="mt-2 pl-2">
-								Контекстная реклама - это инструмент, который доступен даже с небольшим бюджетом. Не важно, сколько вы готовы инвестировать в рекламу, трафик на вашем сайте будет. Однако помните, что чем больше бюджет, тем больше возможностей для привлечения клиентов.
-							</p>
-						</li>
-						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 border border-black">
-							<h4 className="font-semibold">
-								Тонкая настройка рекламы
-							</h4>
-							<p className="mt-2 pl-2">
-								Чтобы добиться максимальной эффективности, необходима тонкая настройка рекламной кампании. Эксперты нашей компании готовы провести глубокий анализ вашего бизнеса, определить целевую аудиторию, подобрать ключевые слова и создать привлекательные объявления. Мы заботимся о каждой детали, чтобы ваша реклама работала на 100%.
+
+							<Image
+								src='/kontekstnaya/search.webp'
+								alt='Поисковая реклама в Google'
+								className="object-cover w-full h-full mx-auto mt-6"
+								style={{ width: 'auto', height: 'auto' }}
+								width={150} height={208}
+							/>
+							<p className="mt-6 pl-2">
+								Этот вид рекламы отображается в результатах поиска Google, когда пользователи вводят ключевые слова, связанные с вашими продуктами или услугами. Рекламодатели оплачивают за клики на свои объявления.
 							</p>
 						</li>
 
-						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 border border-black">
+						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 ">
 							<h4 className="font-semibold">
-								Наши советы для вас
+								Дисплейная реклама (КМС)
 							</h4>
-							<p className="mt-2">
-								В завершение, хотим поделиться с вами несколькими советами
+							<Image
+								src='/kontekstnaya/display.webp'
+								alt='Дисплейная реклама в Google Ads'
+								className="object-cover w-full h-full mx-auto mt-6"
+								style={{ width: 'auto', height: 'auto' }}
+								width={150} height={208}
+							/>
+							<p className="mt-6 pl-2">
+								Реклама в сети Google Display Network (GDN) предоставляет возможность размещать баннерные, текстовые и мультимедийные объявления на тысячах веб-сайтов и в мобильных приложениях, которые сотрудничают с Google.
 							</p>
-							<ul className="mt-4 pl-3">
-								<li className="mb-2">
-									Регулярно отслеживайте и анализируйте результаты вашей кампании. Это позволит вам быстро реагировать и оптимизировать рекламу.
-								</li>
-								<li className="mb-2">
-									Экспериментируйте с разными ключевыми словами и объявлениями. Тестирование поможет выявить наилучшие варианты.
-								</li>
-								<li className="mb-2">
-									Следите за бюджетом и контролируйте расходы. Постепенно увеличивайте бюджет, когда убедитесь в эффективности кампании.
-								</li>
-								<li className="mb-2">
-									Обратите внимание на мобильный трафик. Многие пользователи совершают покупки с мобильных устройств.
-								</li>
-							</ul>
+						</li>
+
+
+						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 ">
+							<h4 className="font-semibold">
+								Реклама в YouTube (YouTube Ads)
+							</h4>
+							<Image
+								src='/kontekstnaya/youTube.webp'
+								alt='Реклама на YouTube в Google Ads'
+								className="object-cover w-full h-full mx-auto mt-6"
+								style={{ width: 'auto', height: 'auto' }}
+								width={150} height={208}
+							/>
+							<p className="mt-6 pl-2">
+								Этот формат позволяет размещать видеорекламу на YouTube. Рекламодатели могут выбирать различные типы объявлений, включая прероллы, бамперы, дисплейные объявления и другие.
+							</p>
+						</li>
+
+						<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4 ">
+							<h4 className="font-semibold">
+								Реклама в Google Shopping
+							</h4>
+							<Image
+								src='/kontekstnaya/shop.webp'
+								alt='Реклама в Google Shopping'
+								className="object-cover w-full h-full mx-auto mt-6"
+								style={{ width: 'auto', height: 'auto' }}
+								width={150} height={208}
+							/>
+							<p className="mt-6 pl-2">
+								Этот формат предназначен для интернет-магазинов и позволяет отображать информацию о продуктах (включая цены и изображения) прямо в результатах поиска Google.
+							</p>
 						</li>
 					</ul>
 
-					<p className="text-center font-semibold px-2 mt-10">
-						Мы уверены, что контекстная реклама - это мощный инструмент для вашего бизнеса. Мы готовы помочь вам в каждом этапе создания и оптимизации вашей кампании. Доверьтесь нам, и ваши результаты не заставят себя ждать!
+					<p className="font-semibold text-justify px-2 mt-10">
+						Эти разнообразные виды контекстной рекламы в Google Ads позволяют рекламодателям выбирать наиболее подходящие форматы и стратегии в зависимости от их бизнес-целей и целевой аудитории. Мы уверены, что контекстная реклама - это мощный инструмент для вашего бизнеса. Мы готовы помочь вам на каждом этапе создания и оптимизации вашей кампании. Полагайтесь на нас, и результаты не заставят себя ждать!
+
 					</p>
 				</article>
 			</section>

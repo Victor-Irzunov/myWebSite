@@ -3,7 +3,7 @@ import { Button, Tag } from 'antd';
 import { useState } from 'react'
 import { ModalUniversal } from '../modal/ModalUniversal';
 
-const BtnComp = ({ el, tag, title2 = '' }) => {
+const BtnComp = ({ el, tag, title2 = '', konsultaciya }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [title, setTitle] = useState('');
 	const [isActive, setIsActive] = useState({
@@ -23,7 +23,7 @@ const BtnComp = ({ el, tag, title2 = '' }) => {
 		<>
 			{
 				tag ?
-					<Tag color='blue'
+					<Tag color='cyan' className='cursor-pointer'
 						onClick={() => showModal(`${el}`, "order")}
 					>
 						{title2}
@@ -31,9 +31,8 @@ const BtnComp = ({ el, tag, title2 = '' }) => {
 					:
 					<Button
 						type="primary"
-						style={{ paddingLeft: '30px', paddingRight: '30px' }}
 						onClick={() => showModal(`${el}`, "order")}
-						className='shadow-md'
+						className='shadow-md w-full'
 					>
 						{!tag ? 'Заказать' : title2}
 					</Button>
@@ -45,6 +44,7 @@ const BtnComp = ({ el, tag, title2 = '' }) => {
 				tag={tag}
 				handleCancel={handleCancel}
 				isActive={isActive}
+				konsultaciya={konsultaciya}
 			/>
 		</>
 	)

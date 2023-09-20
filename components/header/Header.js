@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Popover } from 'antd';
 import MenuMobil from "./menuMobil/MenuMobil";
 import { useState } from "react";
+import Link from "next/link";
 
 const content = (
 	<div>
@@ -36,25 +37,27 @@ const Header = () => {
 			<div className="container mx-auto">
 
 				<div className="flex justify-between items-center">
-					<Image src='/logo/logoAnime.svg'
-						alt="Логотип компании vi-tech"
-						width={170} height={37}
-						className="pt-2 z-50"
-					/>
+					<Link href='/' className="pt-2 z-50">
+						<Image src='/logo/logoAnime.svg'
+							alt="Логотип компании vi-tech"
+							width={170} height={37}
+							className="z-50"
+						/>
+					</Link>
 
 					<div className="">
 						<Popover content={content} title="Позвоните нам" trigger="click">
-							<Image src='/telephone.svg' alt="Иконка телефона" width={25} height={25} />
+							<Image src='/telephone.svg' alt="Иконка телефона" width={25} height={25} className="cursor-pointer" />
 						</Popover>
 					</div>
 
 					<div className="" onClick={isOpenMenu}>
-						<Image src='/menu.svg' alt="Кнопка меню" width={40} height={40} />
+						<Image src='/menu.svg' className="cursor-pointer" alt="Кнопка меню" width={40} height={40} />
 					</div>
 				</div>
 			</div>
-		<MenuMobil isCloseMenu={isCloseMenu} isMenuMobil={isMenuMobil} />
-	
+			<MenuMobil isCloseMenu={isCloseMenu} isMenuMobil={isMenuMobil} />
+
 		</header>
 	)
 }

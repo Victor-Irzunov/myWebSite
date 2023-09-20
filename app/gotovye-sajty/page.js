@@ -11,19 +11,19 @@ export const metadata = {
 const GotovyePage = () => {
 	return (
 		<main className="pt-10 pb-20">
-			<div className="container mx-auto">
-				<div className="mt-16 text-[#004C97] font-semibold">
-					<h1 className="uppercase text-3xl">
+			<div className="container mx-auto sd:flex xz:flex-row">
+				<div className="xz:mt-16 sd:mt-0 sd:pt-32 xz:pt-0 text-[#004C97] font-semibold sd:w-1/2 xz:w-full">
+					<h1 className="uppercase xz:text-3xl sd:text-5xl">
 						Готовые сайты в Минске
 					</h1>
 				</div>
-				<div className="w-full relative mt-8">
+				<div className="xz:w-full sd:w-1/2 relative mt-8">
 					<Image
 						src="/service/gotovie/main.webp"
 						alt="Компания по продажи готовых сайтов vi:tech"
 						className="object-cover w-full h-full mx-auto mt-12"
-						style={{ width: '370px', height: 'auto' }}
-						width={370} height={370}
+						style={{ width: 'auto', height: 'auto' }}
+						width={1492} height={490}
 					/>
 				</div>
 			</div>
@@ -31,7 +31,7 @@ const GotovyePage = () => {
 			<section className="mt-6">
 				<article className="">
 					<div className="container mx-auto">
-						<h2 className="text-[#004C97] uppercase">
+						<h2 className="text-[#004C97] uppercase xz:text-base sd:text-xl">
 							Купить готовый сайт
 						</h2>
 						<p className="mt-4 text-justify">
@@ -69,6 +69,104 @@ const GotovyePage = () => {
 			</section>
 
 			<GotovyeCardComp />
+
+			<section className="container mx-auto mt-20 mb-16">
+				<p className="font-semibold uppercase mb-7 text-lg">
+					Наши услуги по разрабоки сайтов и веб-приложений
+				</p>
+				<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/http://localhost:3000/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+			</section>
+
+			<section className="py-10">
+				<article className="container mx-auto">
+					<h4 className="mb-5 text-xl font-semibold uppercase">
+						Купить у нас готовый сайт
+					</h4>
+					<p className="">
+						Наша компания предоставляет уникальные решения для тех, кто ищет надежное и эффективное присутствие в интернете. Наша компания создает веб-сайты, которые не только выделяются на фоне конкурентов, но и помогают клиентам достичь своих целей в онлайн-мире.
+					</p>
+					<h5 className="mt-5 mb-3 font-semibold">
+						Качество и Профессионализм
+					</h5>
+					<p className="">
+						Мы гордимся своими профессиональными навыками и способностью создавать сайты высокого качества. Наша команда веб-разработчиков и дизайнеров обладает богатым опытом и глубокими знаниями в создании уникальных веб-решений.
+					</p>
+
+					<h5 className="mt-5 mb-3 font-semibold">
+						Готовые Решения для Эффективного Старта
+					</h5>
+					<p className="">
+						Наши готовые сайты представляют собой идеальное решение для тех, кто ценит время и хочет начать свой онлайн-проект максимально быстро. Мы предлагаем готовые шаблоны, которые можно настроить под ваши потребности, сэкономив при этом время и ресурсы.
+					</p>
+
+					<h5 className="mt-5 mb-3 font-semibold">
+						Индивидуальный Подход
+					</h5>
+					<p className="">
+						Несмотря на то, что мы предлагаем готовые решения, мы всегда готовы адаптировать их под уникальные потребности каждого клиента. Мы прислушиваемся к вашим пожеланиям и предоставляем индивидуальные решения, которые отражают вашу уникальную идентичность.
+					</p>
+					<h5 className="mt-5 mb-3 font-semibold">
+						Современный Дизайн и Технологии
+					</h5>
+					<p className="">
+						Мы следим за последними трендами в дизайне и технологиях, чтобы предоставлять клиентам современные и функциональные сайты. Наши решения отличаются привлекательным дизайном и высокой производительностью.
+					</p>
+					<h5 className="mt-5 mb-3 font-semibold">
+						Поддержка и Сопровождение
+					</h5>
+					<p className="">
+						Наши услуги не заканчиваются созданием сайта. Мы предоставляем надежную поддержку и сопровождение вашего веб-проекта. Наша команда всегда готова помочь вам в решении любых вопросов или проблем, связанных с вашим сайтом.
+					</p>
+
+					<h5 className="mt-5 mb-3 font-semibold">
+						Сфера Применения
+					</h5>
+					<p className="">
+						Мы разрабатываем готовые сайты для различных сфер бизнеса, начиная от малого бизнеса и заканчивая крупными корпорациями. Наши решения подходят для интернет-магазинов, корпоративных сайтов, портфолио, блогов и многих других видов веб-проектов.
+					</p>
+					<h5 className="mt-5 mb-3 font-semibold">
+						Ваш Успех - Наша Миссия
+					</h5>
+					<p className="">
+						Мы считаем, что ваш успех - это наша миссия. Мы готовы работать рядом с вами, чтобы создать сайт, который поможет вам достичь ваших целей и привлечь вашу целевую аудиторию. Доверьтесь нам, и ваш онлайн-проект станет источником гордости и успешных результатов.
+					</p>
+
+					<p className="mt-10 font-semibold text-center">
+						Сейчас самое время взять в свои руки будущее вашего бизнеса и вложиться в готовый сайт, который будет работать на вас 24/7. Наши готовые веб-решения - это быстрый и надежный способ стать видимым в интернете и начать привлекать клиентов.
+					</p>
+					<p className="mt-6 font-semibold text-center">
+						Нажмите на кнопку "Купить" и начните свой онлайн-путь к успеху прямо сейчас! Наша команда готова поддержать вас на каждом этапе, чтобы сделать ваш выбор максимально удобным и выгодным.
+
+						Не упустите шанс стать видимыми для миллионов пользователей в сети. Кликните и начните вашу онлайн историю успеха!
+					</p>
+				</article>
+			</section>
 		</main>
 	)
 }

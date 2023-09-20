@@ -1,3 +1,4 @@
+import BtnComp from "@/components/btnComp/BtnComp"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -12,22 +13,26 @@ const ProdvizheniePage = () => {
 
 			<div className="container mx-auto">
 
-				<div className="mt-16 text-[#004C97] font-semibold">
-					<h1 className="uppercase text-2xl">
-						Продвижение сайта в Минске и Беларуси
-					</h1>
-					<Image
-						src='/prodvizhenie/main.webp'
-						alt='Продвижение сайтов'
-						className="object-cover w-full h-full mx-auto mt-8"
-						style={{ width: 'auto', height: 'auto' }}
-						width={370} height={208}
-					/>
+				<div className="sd:flex xz:flex-row">
+					<div className="xz:mt-16 sd:mt-0 sd:pt-24 xz:pt-0 text-[#004C97] font-semibold">
+						<h1 className="uppercase xz:text-3xl sd:text-5xl sd:leading-[60px]">
+							Продвижение сайта в Минске и Беларуси
+						</h1>
+					</div>
+					<div className="xz:w-full sd:w-1/2">
+						<Image
+							src='/prodvizhenie/main.webp'
+							alt='Продвижение сайтов'
+							className="object-cover w-full h-full xz:mx-auto xz:mt-12"
+							style={{ width: 'auto', height: 'auto' }}
+							width={1280} height={720}
+						/>
+					</div>
 				</div>
 				<section className="mt-10">
 					<article className="">
 						<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-						<h2 className="uppercase text-[#004C97] mb-5">
+						<h2 className="uppercase text-[#004C97] mb-5 xz:text-base sd:text-xl">
 							виды продвижения сайта
 						</h2>
 						<p className="text-justify px-3">
@@ -35,17 +40,21 @@ const ProdvizheniePage = () => {
 						</p>
 
 						<ul className="mt-6">
-							<li className="bg-slate-100 rounded-md p-4 mb-3">
-								<h3 className="font-semibold text-[#004C97] underline relative">
+							<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4">
+								<h3 className="font-semibold text-[#004C97] underline  sd:text-lg">
 									<Link href='/seo-prodvizhenie-sajta'>
-										Органическое (SEO) продвижение сайта
-										<Image
-											src='/arrow-blue.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 right-0"
-										/>
+										<div className="flex justify-start">
+											<span className="">
+												Органическое (SEO) продвижение сайта
+											</span>
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="ml-2 inline"
+											/>
+										</div>
 									</Link>
 								</h3>
 								<p className="text-justify mt-2">
@@ -78,17 +87,21 @@ const ProdvizheniePage = () => {
 									</li>
 								</ul>
 							</li>
-							<li className="bg-slate-100 rounded-md p-4 mb-3">
-								<h3 className="font-semibold text-[#004C97] underline relative">
+							<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4">
+								<h3 className="font-semibold text-[#004C97] underline relative sd:text-lg">
 									<Link href='/kontekstnaya-reklama'>
-										Контекстная реклама
-										<Image
-											src='/arrow-blue.svg'
-											alt="ссылка на страницу разработка сайтов"
-											width={10}
-											height={10}
-											className="absolute top-0 right-40"
-										/>
+										<div className="flex justify-start">
+											<span className="">
+												Контекстная реклама
+											</span>
+											<Image
+												src='/arrow-blue.svg'
+												alt="ссылка на страницу разработка сайтов"
+												width={10}
+												height={10}
+												className="ml-2"
+											/>
+										</div>
 									</Link>
 								</h3>
 								<p className="text-justify mt-2">
@@ -131,8 +144,8 @@ const ProdvizheniePage = () => {
 							</li>
 
 
-							<li className="bg-slate-100 rounded-md p-4 mb-3">
-								<h3 className="font-semibold text-[#004C97] relative">
+							<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4">
+								<h3 className="font-semibold text-[#004C97] relative sd:text-lg">
 									Социальное продвижение
 								</h3>
 								<p className="text-justify mt-2">
@@ -158,8 +171,8 @@ const ProdvizheniePage = () => {
 								</ul>
 							</li>
 
-							<li className="bg-slate-100 rounded-md p-4 mb-3">
-								<h3 className="font-semibold text-[#004C97] relative">
+							<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4">
+								<h3 className="font-semibold text-[#004C97] relative sd:text-lg">
 									Email-маркетинг
 								</h3>
 								<p className="text-justify mt-2">
@@ -185,7 +198,7 @@ const ProdvizheniePage = () => {
 								</ul>
 							</li>
 						</ul>
-						<p className="font-bold text-center mt-6">
+						<p className="font-bold text-center xz:mt-6 sd:mt-14">
 							Каждый из этих видов продвижения имеет свои особенности и может быть эффективен в зависимости от бизнес-целей и аудитории вашего сайта. Важно разработать комплексную стратегию продвижения, которая сочетает в себе несколько методов для максимального успеха в поисковых системах Google и Яндекс.
 						</p>
 					</article>
@@ -193,126 +206,108 @@ const ProdvizheniePage = () => {
 			</div>
 
 
-			<section className="mt-20 bg-[#004C97] pt-6 pb-20 text-white">
+			<section className="container mx-auto mt-20">
+				<p className="font-semibold uppercase mb-7 text-lg">
+					Наши услуги по разрабоки сайтов и веб-приложений
+				</p>
+				<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/http://localhost:3000/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+			</section>
+
+
+			<section className="mt-20 bg-[#004C97] pt-6 pb-10 text-white">
 				<article className="container mx-auto">
 					<Image src='/line-white.svg' alt='Линия' width={50} height={10} className='rotate-45' />
 					<h2 className="uppercase mb-5 text-lg">
-						Правильное продвижение сайта: как это работает и почему оно важно
+						Продвижение сайта: как это работает и что важно
 					</h2>
 					<p className="text-justify font-light">
-						Продвижение сайта - это не просто задача, которую нужно выполнить, чтобы привлечь посетителей. Это искусство, в котором каждая деталь имеет значение. Правильное продвижение - это множество шагов и стратегий, направленных на то, чтобы ваш сайт не только появился в результатах поиска, но и действительно привлекал целевую аудиторию и предоставлял им ценную информацию или услуги.
+						Мы предлагаем услуги продвижения вашего сайта с помощью контекстной рекламы и SEO. Но как это происходит и почему это важно?
 					</p>
 
 					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Качество сайта
-						</h3>
+
 						<p className="font-light">
-							Качество вашего сайта играет фундаментальную роль. Это включает в себя дизайн, навигацию, структуру, контент и функциональность. Чем лучше сайт с точки зрения пользователя, тем лучше его оценят и поисковые системы.
+							Продвижение сайта - это способ сделать ваш сайт более заметным в интернете. Когда люди ищут что-то в поисковых системах Google и Яндекс, хорошо продвигаемые сайты появляются выше в результатах поиска. Это помогает привлечь больше посетителей на ваш сайт.
 						</p>
 					</div>
 
 					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Индексация
-						</h3>
+
 						<p className="font-light">
-							Поисковые роботы должны индексировать ваш сайт, чтобы он мог появиться в результатах поиска. Правильная индексация позволяет поисковым системам понять, о чем ваш сайт.
+							Контекстная реклама - это реклама, которая показывается людям, когда они ищут что-то в интернете. Это помогает привлечь посетителей, которые интересуются тем, что вы предлагаете.
 						</p>
 					</div>
 
 					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Релевантность запросам
-						</h3>
+
 						<p className="font-light">
-							Ваш контент должен быть релевантным запросам пользователей. Используйте ключевые слова и фразы, которые соответствуют тому, что люди ищут.
+							SEO - это оптимизация вашего сайта, чтобы он стал более привлекательным для поисковых систем. Когда ваш сайт оптимизирован, поисковики легче находят его и показывают пользователям.
 						</p>
 					</div>
 
 					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Скорость загрузки
-						</h3>
 						<p className="font-light">
-							Быстрая скорость загрузки сайта важна для удовлетворения пользователей и ранжирования в поисковых системах.
+							Важные вещи для продвижения включают в себя качество сайта, его скорость загрузки, и то, насколько он соответствует запросам пользователей. Это важные детали, которые помогают сайту привлекать больше посетителей.
 						</p>
 					</div>
 
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Повиденческий фактор
-						</h3>
-						<p className="font-light">
-							Это метрики, которые показывают, как пользователи взаимодействуют с вашим сайтом. Это может включать в себя время, проведенное на сайте, клики, отказы и другие показатели.
-						</p>
-					</div>
-
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Метатеги
-						</h3>
-						<p className="font-light">
-							Метатеги - это краткие описания страниц, которые отображаются в результатах поиска. Они должны быть информативными и привлекательными.
-						</p>
-					</div>
-
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Ключевые слова
-						</h3>
-						<p className="font-light">
-							Используйте ключевые слова стратегически в тексте контента, чтобы подчеркнуть их важность для поисковых систем.
-						</p>
-					</div>
-
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Правильные теги
-						</h3>
-						<p className="font-light">
-							Используйте теги заголовков (H1, H2, H3 и так далее) для организации контента и выделения ключевых моментов.
-						</p>
-					</div>
-
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Анализ конкурентов
-						</h3>
-						<p className="font-light">
-							Изучите своих конкурентов, чтобы понять, какие стратегии работают в вашей нише.
-						</p>
-					</div>
-
-					<div className="mt-4 bg-blue-700 px-3 py-4 rounded-md text-center">
-						<h3 className="mb-2 uppercase">
-							Региональность продвижения
-						</h3>
-						<p className="font-light">
-							Если ваш бизнес ориентирован на конкретное местоположение, настройте свою стратегию продвижения с учетом этого региона.
-						</p>
-					</div>
-					<p className="text-center mt-8 text-lg">
-						Правильное продвижение сайта - это комбинация этих и многих других факторов. Оно требует непрерывного анализа и оптимизации. Когда все элементы сходятся воедино, вы можете ожидать улучшения видимости в поисковых системах и увеличения трафика на ваш сайт.
+					<p className="text-center mt-8">
+						Мы заботимся о том, чтобы ваш сайт не только появился в результатах поиска и рекламе, но и привлекал людей и предоставлял им нужную информацию или услуги. Для этого мы используем разные методы и постоянно следим за результатами. Когда все хорошо настроено, ваш сайт будет более заметным и привлечет больше посетителей
 					</p>
 				</article>
 			</section>
 
-			<div className="container mx-auto text-center mt-12 font-bold">
-				<p className="">
-					Дайте вашему сайту крылья с нашими услугами! Мы предлагаем продвижение вашего сайта с использованием <Link href='/seo-prodvizhenie-sajta' className="text-blue-800 underline">SEO </Link> и быструю раскрутку через <Link href='/kontekstnaya-reklama'  className="text-blue-800 underline">контекстную рекламу</Link>. Гарантируем высокие результаты, увеличение посещаемости и привлечение целевой аудитории. Доверьтесь нам и дайте вашему бизнесу возможность процветать онлайн!
-				</p>
+			<div className="container mx-auto text-justify mt-12 font-bold">
+				<div className="sd:flex flex-row sd:justify-between sd:items-start">
+					<div className="sd:w-1/2 w-full">
+						<Image
+							src='/prodvizhenie/plane2.webp'
+							alt='Продвижение сайтов'
+							className="object-cover w-full h-full xz:mx-auto xz:mt-8"
+							style={{ width: 'auto', height: 'auto' }}
+							width={1920} height={1080}
+						/>
+					</div>
+					<div className="sd:w-1/2 w-full sd:ml-7 xz:ml-0 sd:pt-10">
+						<p className="sd:text-lg xz:text-base">
+							Дайте вашему сайту крылья с нашими услугами! Мы предлагаем продвижение вашего сайта с использованием <Link href='/seo-prodvizhenie-sajta' className="text-blue-800 underline">SEO </Link> и быструю раскрутку через <Link href='/kontekstnaya-reklama' className="text-blue-800 underline">контекстную рекламу</Link>. Гарантируем высокие результаты, увеличение посещаемости и привлечение целевой аудитории. Доверьтесь нам и дайте вашему бизнесу возможность процветать онлайн!
+						</p>
+					</div>
 
-				<Image
-						src='/prodvizhenie/plane2.webp'
-						alt='Продвижение сайтов'
-						className="object-cover w-full h-full mx-auto mt-8"
-						style={{ width: 'auto', height: 'auto' }}
-						width={370} height={208}
-					/>
-				<p className="mt-4">
+				</div>
+				<p className="xz:mt-8 sd:mt-12 mb-8 sd:text-lg text-base">
 					Давайте вместе достигнем успеха в интернете! Начните продвижение вашего сайта с нами уже сегодня. Нажмите на кнопку 'Заказать' и убедитесь сами, как мы можем повысить вашу онлайн видимость и прибыльность. Ваш успех - наша гордость!
 				</p>
+
+				<div className="flex justify-end">
+					<BtnComp tag={true} title2={`Заказать продвижение сайта`} />
+				</div>
 			</div>
 		</main >
 	)

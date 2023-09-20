@@ -1,21 +1,22 @@
-import { Collapse, Divider } from "antd"
+import { Collapse } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { dataPrice } from "../../constans/price/PriceData";
 import BtnComp from "../btnComp/BtnComp";
 
 
-
 const CardComp = () => {
 
+
+
 	return (
-		<div className="mt-10 mb-10">
+		<div className="mt-10 mb-10 sd:flex sd:flex-wrap xz:flex-row sd:justify-evenly">
 			{dataPrice.map(el => {
 				const items = [
 					{
-						key: '1',
+						key: el.id,
 						label: (
-							<span className="uppercase font-semibold text-[10px]">
+							<span className="uppercase font-semibold text-[12px]">
 								{el.info_title}
 							</span>
 						),
@@ -27,10 +28,10 @@ const CardComp = () => {
 										className={`border-t border-gray-400/50 py-1 px-2 flex justify-between items-center ${item.id === 1 ? 'border-t-0 border-gray-400/50' : ''
 											}`}
 									>
-										{item.title}
+										<span className="text-left">{item.title}</span>
 										<Image
 											src={item.isCheck ? '/check.svg' : '/cross.svg'}
-											alt={item.isCheck ? 'входит в сайт-визитку' : 'не входит в сайт-визитку'}
+											alt={item.isCheck ? 'входит в сайт' : 'не входит в сайт'}
 											width={item.isCheck ? 20 : 16}
 											height={item.isCheck ? 20 : 16}
 										/>
@@ -42,30 +43,33 @@ const CardComp = () => {
 				];
 
 				return (
-					<div className="border bg-white shadow-xl rounded-md mb-16" key={el.id}>
-						<div className="">
-							<div className="xy:h-[59vh] xz:h-[65vh] flex flex-col justify-between items-center text-center">
-								<div className="pb-4 px-2  pt-5">
+					<div className="border border-gray-600 bg-white shadow-xl overflow-hidden sd:w-2/5 xz:w-full sd:mx-3 xz:mx-0 rounded-md mb-16" key={el.id}>
+						<div className="relative xz:px-3 sd:px-4">
+							<div className="xy:h-[70vh] pb-16 xz:h-[70vh] sd:h-[80vh] lg:h-[65vh] flex flex-col justify-between items-center ">
+								<div className="pb-4 pt-5 sd:h-[270px] xz:h-auto">
 									<h2 className="text-xl mb-3 uppercase">{el.title}</h2>
-									<p className="text-xs text-center">
+									<p className="xz:text-xs sd:text-sm text-justify">
 										<Link href={el.link} className="underline font-semibold">
 											{el.title}
 										</Link>
 										{' '}{el.p}
 									</p>
 								</div>
-								{/* <Divider style={{ marginBottom: '0px' }} /> */}
-								<div className="text-center">
-									<p className="mt-4 mb-1 uppercase font-light text-xs">цена</p>
-									<p className="text-2xl mb-4">{el.price}</p>
+								<div className="flex justify-between items-center w-full  mb-5">
+
+									<p className="xz:text-xl xy:text-2xl mb-2">{el.price}</p>
+									<div className="text-right">
+										<p className="uppercase text-[9px] text-slate-500">
+											Срок разработки:
+										</p>
+										<p className="uppercase text-[12px]">
+											{el.time}
+										</p>
+									</div>
 								</div>
-								<p className="uppercase text-[10px] text-slate-600 mb-7">
-									Срок разработки: {el.time}
-								</p>
 								<BtnComp el={el.title} />
 							</div>
-							<Divider style={{ marginBottom: '0px' }} />
-							<div className="text-center">
+							<div className="text-center absolute bottom-0 right-0 left-0 bg-white  w-full max-h-full overflow-y-scroll">
 								<Collapse items={items} ghost bordered={false} expandIconPosition='end' />
 							</div>
 						</div>

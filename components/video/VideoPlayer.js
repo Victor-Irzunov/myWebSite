@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 
-const VideoPlayer = () => {
+const VideoPlayer = ({portfolio}) => {
   const videoRef = useRef(null);
   const [videoVisible, setVideoVisible] = useState(false); // Состояние видимости видео
 
@@ -46,9 +46,10 @@ const VideoPlayer = () => {
   }, [videoVisible]);
 
   return (
-    <div ref={ref} className="w-full mt-16 container mx-auto">
-      <video ref={videoRef} className="w-[370px] h-20 object-cover" muted autoPlay playsInline>
-        <source src="/logovideo.mp4" type="video/mp4" />
+    <div ref={ref} className="w-full xz:mt-16 sd:mt-0 container mx-auto">
+      <video ref={videoRef} className="w-auto h-auto object-cover" muted autoPlay playsInline>
+        <source src={!portfolio ? "/logovideo.mp4" : "/video2.mp4"} type="video/mp4" />
+        <track kind="captions" src="/subtitles.vtt" srcLang="ru" label="Russian" default={false} />
       </video>
     </div>
   );

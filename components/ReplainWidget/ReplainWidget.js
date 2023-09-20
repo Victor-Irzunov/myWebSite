@@ -12,7 +12,7 @@ export default function ReplainWidget() {
     }
     setTimeout(() => {
       f1('https://widget.replain.cc/dist/client.js');
-    }, 10000);
+    }, 20000);
   }, []);
 
   return null;

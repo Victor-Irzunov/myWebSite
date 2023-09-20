@@ -9,17 +9,19 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 
 	return (
 		<div
-			className={`w-full  fixed top-0 left-0 right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
+			className={`w-full max-h-screen fixed top-0 left-0 right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
 		>
 			<div className="bg-gradient-to-t from-black/0 to-black/90
 			 h-20 relative">
-				<div className="absolute top-2.5 right-4"
-					onClick={isCloseMenu}
-				>
-					<Image src='/close.svg' alt="Кнопка закрытия меню" width={40} height={40} />
-				</div>
+				<div className="container mx-auto pt-3">
+					<div className="flex justify-end pr-1"
+						onClick={isCloseMenu}
+					>
+						<Image src='/close.svg' alt="Кнопка закрытия меню" width={40} height={40} />
+					</div>
 
-				<div className="flex flex-col justify-center items-center h-screen pt-10">
+				</div>
+				<div className="flex flex-col justify-center items-center pt-24 pb-10 h-[90vh] overflow-y-scroll ">
 					<nav className="">
 						<ul className="text-center">
 							<li className="text-white text-xl uppercase mb-2"

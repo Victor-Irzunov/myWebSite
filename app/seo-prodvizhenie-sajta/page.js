@@ -13,21 +13,25 @@ const SeoProdvizheniePage = () => {
 
 			<div className="container mx-auto">
 
-				<div className="mt-16 text-[#004C97] font-semibold">
-					<h1 className="uppercase text-2xl">
-						SEO продвижение сайта в Минске и Беларуси
-					</h1>
-					<Image
-						src='/seo/main.webp'
-						alt='Продвижение сайтов'
-						className="object-cover w-full h-full mx-auto mt-8"
-						style={{ width: 'auto', height: 'auto' }}
-						width={370} height={208}
-					/>
+				<div className="text-[#004C97] font-semibold sd:flex xz:flex-row">
+					<div className="mr-7 pt-10">
+						<h1 className="uppercase xz:text-3xl sd:text-4xl">
+							SEO продвижение сайта в Минске и Беларуси
+						</h1>
+					</div>
+					<div className="">
+						<Image
+							src='/seo/main.webp'
+							alt='Продвижение сайтов'
+							className="object-cover w-full h-full mx-auto mt-8"
+							style={{ width: 'auto', height: 'auto' }}
+							width={1920} height={1080}
+						/>
+					</div>
 				</div>
 
 				<section>
-					<article className="mt-20">
+					<article className="xz:mt-20 sd:mt-6">
 						<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
 						<h2 className='text-[#004C97] uppercase text-xl mb-6'>
 							Что такое SEO?
@@ -111,13 +115,23 @@ const SeoProdvizheniePage = () => {
 				</section>
 			</div>
 
+			<div className='mt-16 container mx-auto'>
+				<p className="font-semibold uppercase mb-3">
+					Наши услуги по продвижению
+				</p>
+				<Link href='/kontekstnaya-reklama' className="flex underline uppercase text-[#004C97] text-sm">
+					Реклама в Google и Яндекс <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2' />
+				</Link>
+			</div>
+
+
 
 			<section className="mt-20">
 				<article className="">
 					<div className="container mx-auto">
 						<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
 						<h3 className='text-[#004C97] uppercase text-xl mb-6'>
-							Как это работает SEO продвижение
+							Как работает SEO продвижение
 						</h3>
 
 						<p className="mt-4 text-justify">
@@ -129,7 +143,7 @@ const SeoProdvizheniePage = () => {
 						</p>
 
 						<div className="mt-8">
-							<h4 className="uppercase mb-6 underline">
+							<h4 className="uppercase mb-6">
 								Вот какие основные аспекты включает в себя SEO продвижение:
 							</h4>
 
@@ -195,25 +209,67 @@ const SeoProdvizheniePage = () => {
 				</article>
 			</section>
 
+			<section className="container mx-auto mt-20">
+				<p className="font-semibold uppercase mb-7 text-lg">
+					Наши услуги по разрабоки сайтов и веб-приложений
+				</p>
+				<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
 
-			<section className="mt-20">
+				<Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+
+				<Link href='/http://localhost:3000/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
+				</Link>
+			</section>
+
+
+			<section className="mt-24">
 				<article className="">
 					<div className="container mx-auto">
 						<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
 						<h3 className='text-[#004C97] uppercase text-xl mb-6'>
 							Cтоимость SEO продвижения
 						</h3>
-						<p className="text-justify">
-							Стоимость SEO продвижения – это вопрос, который часто интересует предпринимателей и владельцев веб-сайтов. Эта стоимость может варьироваться в зависимости от множества факторов, и понимание этих факторов может помочь вам понять, что определяет цену SEO продвижения.
-						</p>
 
-						<Image
-							src='/seo/price2.webp'
-							alt='Продвижение сайтов'
-							className="object-cover w-full h-full mx-auto mt-8"
-							style={{ width: 'auto', height: 'auto' }}
-							width={370} height={208}
-						/>
+						<div className="sd:flex flex-row">
+							<div className="sd:w-1/2 xz:w-full mr-8 sd:pt-20">
+								<p className="text-justify">
+									Стоимость SEO продвижения представляет собой важную тему, которая активно обсуждается предпринимателями и владельцами веб-сайтов. Эта цена подвержена колебаниям в зависимости от многочисленных факторов, и понимание этих влияющих аспектов поможет вам разобраться в том, как формируется стоимость SEO продвижения.
+									<br />
+									Ключевыми факторами, влияющими на цену, могут быть конкурентность рынка, объем работы, выбранные стратегии продвижения и опытность выбранной SEO компании. Важно учитывать эти факторы при принятии решения о бюджете для SEO продвижения вашего веб-сайта. Давайте рассмотрим основные факторы, которые влияют на стоимость:
+								</p>
+							</div>
+							<div className="sd:w-1/2 xz:w-full">
+								<Image
+									src='/seo/price2.webp'
+									alt='Продвижение сайтов'
+									className="object-cover w-full h-full mx-auto mt-8"
+									style={{ width: 'auto', height: 'auto' }}
+									width={992} height={882}
+								/>
+							</div>
+						</div>
+
 
 						<ul className="mt-10 mb-9">
 							<li className="mb-5">
@@ -262,33 +318,35 @@ const SeoProdvizheniePage = () => {
 							</li>
 						</ul>
 
-						<Image
-							src='/seo/price.webp'
-							alt='Продвижение сайтов'
-							className="object-cover w-full h-full mx-auto mt-8"
-							style={{ width: 'auto', height: 'auto' }}
-							width={370} height={208}
-						/>
+						<div className="sd:flex xz:flex-row">
+							<Image
+								src='/seo/price.webp'
+								alt='Продвижение сайтов'
+								className="object-cover w-full h-full mx-auto mt-8"
+								style={{ width: 'auto', height: 'auto' }}
+								width={370} height={208}
+							/>
 
-						<div className="mt-8 text-justify">
-							<p className="mb-5">
-								Теперь давайте представим работу <span className="font-semibold"> SEO специалиста как уход за деревом</span>, которое каждый день поливается и заботится о нем. В начале, когда дерево только посажено (ваш сайт), оно требует особенно внимательного ухода. SEO специалист (сеошник) начинает с анализа земли (вашего сайта) и определяет, какие улучшения и внесение питательных веществ (оптимизация и контент) необходимы.
-							</p>
+							<div className="mt-8 text-justify sd:ml-7">
+								<p className="mb-5">
+									Теперь давайте представим работу <span className="font-semibold"> SEO специалиста как уход за деревом</span>, которое каждый день поливается и заботится о нем. В начале, когда дерево только посажено (ваш сайт), оно требует особенно внимательного ухода. SEO специалист (сеошник) начинает с анализа земли (вашего сайта) и определяет, какие улучшения и внесение питательных веществ (оптимизация и контент) необходимы.
+								</p>
 
-							<p className="mb-5">
-								Затем, каждый день, сеошник уделяет время ухаживанию за деревом, поддерживая правильное увлажнение (содержание сайта актуальным), обрезая лишние ветви (оптимизация контента), и охраняя дерево от вредных насекомых (улучшение безопасности сайта). С течением времени, дерево начинает расти и приносить сочные плоды (увеличение посещаемости и конверсии).
-							</p>
+								<p className="mb-5">
+									Затем, каждый день, сеошник уделяет время ухаживанию за деревом, поддерживая правильное увлажнение (содержание сайта актуальным), обрезая лишние ветви (оптимизация контента), и охраняя дерево от вредных насекомых (улучшение безопасности сайта). С течением времени, дерево начинает расти и приносить сочные плоды (увеличение посещаемости и конверсии).
+								</p>
 
-							<p className="font-bold text-center text-lg text-[#004C97] ">
-								Таким образом, SEO продвижение - это непрерывный процесс ухода за вашим веб-сайтом, который требует постоянных усилий и внимания. Как и с деревом, с течением времени результаты становятся более яркими и удовлетворительными, и ваш сайт начинает приносить вкусные плоды в виде посетителей и клиентов.
-							</p>
+								<p className="font-bold text-center text-lg text-[#004C97] ">
+									Таким образом, SEO продвижение - это непрерывный процесс ухода за вашим веб-сайтом, который требует постоянных усилий и внимания. Как и с деревом, с течением времени результаты становятся более яркими и удовлетворительными, и ваш сайт начинает приносить вкусные плоды в виде посетителей и клиентов.
+								</p>
+							</div>
 						</div>
 
 						<div className="flex justify-between mt-20 items-center">
-							<div className="w-1/2 text-sm">
+							<div className="w-1/2 xz:text-sm sd:text-base">
 								Стоимость нашей работы по SEO продвижению (в месяц)
 							</div>
-							<div className="font-bold pr-3">
+							<div className="font-bold pr-3 text-base sd:text-xl">
 								от 300 BYN
 							</div>
 						</div>
