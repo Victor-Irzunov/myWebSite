@@ -23,14 +23,14 @@ const BtnComp = ({ el, tag, title2 = '', konsultaciya }) => {
 		<>
 			{
 				tag ?
-					<Tag color='cyan' className='cursor-pointer'
+					<Tag color='purple' className='cursor-pointer animate-bounce'
 						onClick={() => showModal(`${el}`, "order")}
 					>
-						{title2}
+					<span className='uppercase'>{title2}</span>
 					</Tag>
 					:
 					<Button
-						type="primary"
+						type="primary" size='large'
 						onClick={() => showModal(`${el}`, "order")}
 						className='shadow-md w-full'
 					>

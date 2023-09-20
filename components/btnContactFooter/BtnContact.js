@@ -1,6 +1,6 @@
 "use client"
 import { usePathname } from 'next/navigation';
-import { Button } from "antd";
+import Link from 'next/link';
 
 const BtnContact = () => {
 	const pathname = usePathname()
@@ -8,14 +8,13 @@ const BtnContact = () => {
 	return (
 		<div>
 			{!isContactPage && (
-				<Button type="link"
-					style={{ background: '#fff', color: '#000', borderRadius: '0px', fontSize: '13px', paddingLeft: '20px', paddingRight: '20px', paddingTop: '10px' }}
-					className="uppercase border-black font-semibold tracking-wider"
+				<Link
+					className="uppercase border border-black font-semibold tracking-wider bg-white py-2 px-5"
 					size="large"
 					href="/kontakty"
 				>
 					Контакты
-				</Button>
+				</Link>
 			)
 			}
 		</div>

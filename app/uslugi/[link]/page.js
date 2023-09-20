@@ -204,14 +204,16 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							}
 							{
 								idx === 0 && <div className="my-20 px-2">
-									<div className="mb-20">
+									<div className="mb-20 bg-purple-50 rounded-sm px-2 py-5">
 										<p className="font-semibold uppercase mb-2 sd:text-xl xz:text-lg">
 											Оцените свой проект
 										</p>
 										<p className="mb-4">
 											Хотите узнать, сколько будет стоить и сколько времени потребуется для разработки вашего проекта? Оцените свой проект прямо сейчас! Поделитесь с нами ваши пожелания и требования, и наши эксперты предоставят вам детальную информацию о стоимости и сроках реализации. Начнем работу над вашей идеей вместе!
 										</p>
-										<BtnComp tag={true} title2={`Оценить свой проект`} konsultaciya={true} />
+										<div className="mt-8 pl-2">
+											<BtnComp tag={true} title2={`Оценить свой проект`} konsultaciya={true} />
+										</div>
 									</div>
 									<p className="font-semibold uppercase mb-3 text-lg">
 										Наши услуги по продвижению
@@ -234,7 +236,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 											Закажите свой сайт сегодня и превратите свои идеи в реальность! Свяжитесь с нами прямо сейчас, и мы с удовольствием начнем работу над вашим будущим cайтом
 										</p>
 										<a href="tel:80333511597" >
-											<Tag bordered={false} color="#108ee9" className="text-xl">
+											<Tag bordered={false} color="#108ee9" className="text-xl animate-pulse">
 												+375 33 351-15-97
 											</Tag>
 										</a>
@@ -244,27 +246,37 @@ const UniversalServicePage = async ({ params: { link } }) => {
 
 						</div>
 						{idx === data.data.length - 2 && (
-							<div className="mt-16 mb-16 pt-24 pb-36 bg-[#004C97] text-white">
-								<div className="container mx-auto">
-									<div className="flex items-center justify-between">
-										<div className="w-1/2 xz:text-xs sd:text-lg">
-											Стоимость разработки многостраничного сайта
-										</div>
-										<p className="font-bold text-xl sd:text-2xl">
-											{data.priceAndDate.price}
+							<div className="mt-16 mb-16">
+								<div className="pt-12 pb-32 bg-[#004C97] text-white">
+									<div className="container mx-auto">
+										<p className="sd:text-3xl xz:text-2xl uppercase text-center">
+											Стоимость и сроки
 										</p>
-									</div>
-									<div className="mt-10 flex items-center justify-between">
-										<div className="w-1/2 xz:text-xs sd:text-lg">
-											Срок разработки
+										<div className="flex items-center justify-between mt-16">
+											<div className="w-1/2 xz:text-sm sd:text-lg">
+												Стоимость разработки сайта
+											</div>
+											<p className="font-bold text-xl sd:text-2xl">
+												{data.priceAndDate.price}
+											</p>
 										</div>
-										<p className="font-bold text-xl">
-											{data.priceAndDate.date}
-										</p>
+										<div className="mt-10 flex items-center justify-between">
+											<div className="w-1/2 xz:text-sm sd:text-lg">
+												Срок разработки
+											</div>
+											<p className="font-bold text-xl">
+												{data.priceAndDate.date}
+											</p>
+										</div>
+										<div className="float-right mt-16">
+											<BtnComp el={data.title.h1} />
+										</div>
 									</div>
-									<div className="float-right mt-12">
-										<BtnComp el={data.title.h1} />
-									</div>
+								</div>
+								<div className="mt-10 flex justify-end container mx-auto">
+									<Link href='/cena/razrabotka-sajta' className="text-blue-700 underline sd:text-lg">
+										подробнее о стоимости
+									</Link>
 								</div>
 							</div>
 						)}

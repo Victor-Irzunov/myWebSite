@@ -17,7 +17,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 					<div className="flex justify-end pr-1"
 						onClick={isCloseMenu}
 					>
-						<Image src='/close.svg' alt="Кнопка закрытия меню" width={40} height={40} />
+						<Image src='/close.svg' alt="Кнопка закрытия меню" className="cursor-pointer" width={40} height={40} />
 					</div>
 
 				</div>
