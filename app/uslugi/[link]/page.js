@@ -70,7 +70,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							alt={data.title.alt}
 							className="object-cover w-full h-full mx-auto"
 							style={{ width: '512px', height: 'auto' }}
-							width={512} height={370}
+							width={512} height={370} loading="eager"
 						/>
 					</div>
 				</div>
