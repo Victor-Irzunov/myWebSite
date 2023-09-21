@@ -1,7 +1,10 @@
 import BtnComp from '@/components/btnComp/BtnComp'
-import VideoPlayer from '@/components/video/VideoPlayer'
+// import VideoPlayer from '@/components/video/VideoPlayer'
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic';
+
+const VideoPlayer = dynamic(() => import('@/components/video/VideoPlayer'));
 
 export default function Home() {
 
@@ -20,7 +23,7 @@ export default function Home() {
               alt='Компания по разрбатке сайтов'
               className="object-cover w-full h-full xz:mx-auto sd:mx-0"
               style={{ width: '512px', height: 'auto' }}
-              width={512} height={370}
+              width={512} height={370} loading="eager"
             />
 
 
@@ -479,7 +482,7 @@ export default function Home() {
           <p className='font-semibold text-base sd:text-lg'>
             Не уверены, с чего начать при создании своего сайта? Нажмите кнопку «Получить консультацию» прямо сейчас, и наши эксперты по разработке сайтов будут рады предоставить вам первоклассную консультацию, которая поможет вам определить необходимые шаги для создания качественного сайта.
           </p>
-          <div className='flex justify-end w-full mt-9 pr-8'>
+          <div className='flex justify-end w-full mt-9 pr-2'>
             <BtnComp title2='Получить консультацию' tag={true} konsultaciya={true} />
           </div>
         </div>

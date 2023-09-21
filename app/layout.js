@@ -1,7 +1,10 @@
 import Header from '@/components/header/Header'
 import './globals.css'
 import Footer from '@/components/footer/Footer'
-import ReplainWidget from '@/components/ReplainWidget/ReplainWidget'
+// import ReplainWidget from '@/components/ReplainWidget/ReplainWidget'
+import dynamic from 'next/dynamic';
+
+const ReplainWidget = dynamic(() => import('@/components/ReplainWidget/ReplainWidget'));
 
 export const metadata = {
   title: 'Создание сайтов в Минске | Заказать разработку сайта под ключ, стоимость',
