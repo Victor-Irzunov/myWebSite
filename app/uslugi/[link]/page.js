@@ -85,7 +85,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							{el.h3 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h3 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h3}</h3>
+									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h3}</h2>
 								</div>}
 							{el.h4 &&
 								<div className='mb-3'>
@@ -94,12 +94,12 @@ const UniversalServicePage = async ({ params: { link } }) => {
 										width={50}
 										height={10}
 										className='rotate-45' />
-									<h4 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h4}</h4>
+									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h4}</h2>
 								</div>}
 							{el.h5 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h5 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h5}</h5>
+									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h5}</h2>
 								</div>}
 
 							{el.img ? (
@@ -230,15 +230,18 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								</div>
 							}
 							{
-								idx === 1 && <div className="my-20 bg-blue-300 rounded-2xl pt-8 pb-8">
+								idx === 1 && <div className="my-20 bg-blue-600 rounded-2xl pt-8 pb-8">
 									<div className="text-center px-2">
-										<p className="mb-6 font-semibold sd:text-lg xz:text-base">
-											Закажите свой сайт сегодня и превратите свои идеи в реальность! Свяжитесь с нами прямо сейчас, и мы с удовольствием начнем работу над вашим будущим cайтом
+										<p className="mb-2 font-semibold sd:text-xl xz:text-lg text-white uppercase tracking-wider">
+											Закажите свой сайт сегодня и превратите свои идеи в реальность!
+										</p>
+										<p className="mb-6 font-semibold sd:text-xl xz:text-lg text-white">
+											Свяжитесь с нами прямо сейчас, и мы с удовольствием начнем работу над вашим будущим cайтом.
 										</p>
 										<a href="tel:80333511597" >
-											<Tag bordered={false} color="#108ee9" className="text-xl animate-pulse">
-												+375 33 351-15-97
-											</Tag>
+											<span className="text-3xl text-white font-bold blok w-full text-center">
+												8 (033) 351-15-97
+											</span>
 										</a>
 									</div>
 								</div>
