@@ -1,6 +1,6 @@
 import BtnComp from "@/components/btnComp/BtnComp";
 import { useDataService } from "@/hook/dataServiceHook";
-import { Empty, Tag } from "antd";
+import { Empty} from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -85,7 +85,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							{el.h3 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h3}</h2>
+									<h3 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h3}</h3>
 								</div>}
 							{el.h4 &&
 								<div className='mb-3'>
@@ -94,12 +94,12 @@ const UniversalServicePage = async ({ params: { link } }) => {
 										width={50}
 										height={10}
 										className='rotate-45' />
-									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h4}</h2>
+									<h4 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h4}</h4>
 								</div>}
 							{el.h5 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h5}</h2>
+									<h5 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h5}</h5>
 								</div>}
 
 							{el.img ? (
