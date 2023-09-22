@@ -173,7 +173,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							</div>
 
 							{el.content.conclusion &&
-								<div className="xz:mt-6 sd:mt-12 text-center text-[#004C97] xz:text-lg sd:text-xl">
+								<div className="xz:mt-6 sd:mt-12 text-center text-[#004C97] xz:text-lg sd:text-2xl">
 									<p className="">
 										{el.content.conclusion}
 									</p>
