@@ -80,12 +80,12 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							{el.h2 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h2}</h2>
+									<h2 className='text-[#004C97] uppercase xz:text-xl sd:text-3xl mb-6'>{el.h2}</h2>
 								</div>}
 							{el.h3 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h3 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h3}</h3>
+									<h3 className='text-[#004C97] uppercase xz:text-xl sd:text-3xl mb-6'>{el.h3}</h3>
 								</div>}
 							{el.h4 &&
 								<div className='mb-3'>
@@ -94,12 +94,12 @@ const UniversalServicePage = async ({ params: { link } }) => {
 										width={50}
 										height={10}
 										className='rotate-45' />
-									<h4 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h4}</h4>
+									<h4 className='text-[#004C97] uppercase xz:text-xl sd:text-3xl mb-6'>{el.h4}</h4>
 								</div>}
 							{el.h5 &&
 								<div className='mb-3'>
 									<Image src='/line.svg' alt='Линия' width={50} height={10} className='rotate-45' />
-									<h5 className='text-[#004C97] uppercase xz:text-xl sd:text-2xl mb-6'>{el.h5}</h5>
+									<h5 className='text-[#004C97] uppercase xz:text-xl sd:text-3xl mb-6'>{el.h5}</h5>
 								</div>}
 
 							{el.img ? (
@@ -122,7 +122,6 @@ const UniversalServicePage = async ({ params: { link } }) => {
 									))}
 								</p>
 							</div>
-
 
 							<div className="mt-6">
 								{el.content.steps1 && el.content.steps1.map(elem => {
