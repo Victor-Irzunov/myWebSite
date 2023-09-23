@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 const ReplainWidget = dynamic(() => import('@/components/ReplainWidget/ReplainWidget'));
 
 export const metadata = {
-  title: 'Создание сайтов в Минске | Заказать разработку сайта под ключ, стоимость',
+  title: 'Создание сайтов в Минске | Заказать разработку сайта под ключ',
   description: 'Мы разрабатываем и продвигаем сайты в Минске и Беларуси. Закажите сайт у нас и получите клиентов из Google и Яндекс. Высокий результат по приятной цене!'
 }
 
@@ -26,6 +26,8 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon/apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
+
+        <meta name="yandex-verification" content="4c1774881f86806f" />
       </head>
       <body>
         <Header />

@@ -56,7 +56,7 @@ const PricePage = () => {
 						Стоимость наших услуг по разработки сайта
 					</h2>
 					<CardComp />
-					<p className="font-semibold xz:text-lg sd:text-2xl">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
+					<p className="font-semibold text-white xz:text-xl sd:text-2xl">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
 				</div>
 			</section>
 

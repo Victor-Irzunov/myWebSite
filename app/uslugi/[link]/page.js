@@ -203,7 +203,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 							}
 							{
 								idx === 0 && <div className="my-20 px-2">
-									<div className="mb-20 bg-purple-50 rounded-sm px-2 py-5">
+									<div className="mb-20 bg-purple-100 rounded-lg px-3 py-5">
 										<p className="font-semibold uppercase mb-2 sd:text-xl xz:text-lg">
 											Оцените свой проект
 										</p>

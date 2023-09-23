@@ -30,7 +30,7 @@ const GotovyeCardComp = () => {
 										style={{ width: 'auto', height: 'auto' }}
 										width={370} height={223}
 									/>
-									<div className='px-4 py-6 mt-6'>
+									<div className='px-4 py-6 sd:mt-6 xz:mt-3'>
 										<h4 className="uppercase mb-5">
 											{el.title}
 										</h4>
@@ -45,7 +45,7 @@ const GotovyeCardComp = () => {
 											{el.content}
 										</Paragraph>
 
-										<div className='mt-14 flex justify-between items-center'>
+										<div className='sd:mt-14 xz:mt-8 flex justify-between items-center'>
 											<p className=''>Цена:</p>
 											<p className='font-semibold xz:text-lg sd:text-xl'>{el.price} BYN</p>
 										</div>
