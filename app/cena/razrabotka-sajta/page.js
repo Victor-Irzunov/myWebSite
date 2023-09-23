@@ -31,9 +31,6 @@ const PricePage = () => {
 					/>
 				</div>
 
-
-
-
 				<div className="xz:container xz:mx-auto sd:mr-7 sd:pt-6 xz:pt-0">
 					<h1 className="text-[#004C97] uppercase font-semibold xz:text-3xl sd:text-4xl mb-8">
 						Стоимость разработки сайта в Минске
@@ -53,13 +50,13 @@ const PricePage = () => {
 				</div>
 			</section>
 
-			<section className="pt-10 pb-10 bg-slate-100 mt-20 text-center">
+			<section className="pt-10 pb-10 bg-gradient-to-r from-cyan-500 to-blue-500 mt-20 text-center">
 				<div className="container mx-auto">
 					<h2 className="uppercase text-xl font-semibold mb-6">
 						Стоимость наших услуг по разработки сайта
 					</h2>
 					<CardComp />
-					<p className="font-semibold">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
+					<p className="font-semibold xz:text-lg sd:text-2xl">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
 				</div>
 			</section>
 

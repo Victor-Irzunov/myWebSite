@@ -8,7 +8,7 @@ const { Paragraph } = Typography;
 
 const GotovyeCardComp = () => {
 	return (
-		<section className="py-16 bg-slate-100">
+		<section className="py-16 bg-slate-200">
 			<div className="container mx-auto">
 				<h3 className="uppercase text-center text-2xl">
 					Готовые сайты
@@ -36,7 +36,7 @@ const GotovyeCardComp = () => {
 										</h4>
 										<Paragraph
 											ellipsis={{
-												rows: 2,
+												rows: 6,
 												expandable: true,
 												symbol: 'читать',
 											}}
@@ -47,7 +47,7 @@ const GotovyeCardComp = () => {
 
 										<div className='mt-14 flex justify-between items-center'>
 											<p className=''>Цена:</p>
-											<p className='font-semibold'>{el.price} BYN</p>
+											<p className='font-semibold xz:text-lg sd:text-xl'>{el.price} BYN</p>
 										</div>
 
 										<div className='flex justify-between items-center mt-7'>
