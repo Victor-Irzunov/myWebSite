@@ -7,6 +7,8 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 		? "opacity-100 translate-x-0"
 		: "opacity-0 -translate-x-full";
 
+	// console.log('process.env.NEXT_PUBLIC_BASE_URL:', process.env.NEXT_PUBLIC_BASE_URL)
+
 	return (
 		<div
 			className={`w-full max-h-screen fixed top-0 left-0 right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
@@ -27,14 +29,14 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 							<li className="text-white text-xl uppercase mb-2"
 								onClick={isCloseMenu}
 							>
-								<Link href={`${process.env.BASE_URL}/`}>
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}>
 									Главная
 								</Link>
 							</li>
 							<li className="text-white text-xl uppercase mb-5"
 								onClick={isCloseMenu}
 							>
-								<Link href={`${process.env.BASE_URL}/cena/razrabotka-sajta`}>
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`}>
 									Цены
 								</Link>
 							</li>
@@ -45,7 +47,10 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`}>
+										<Link
+											as={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`}
+											href='/uslugi/sozdanie-mnogostranichnogo-sajta'
+										>
 											Многостраничный сайт
 											<Image
 												src='/arrow-blue.svg'
@@ -59,7 +64,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-sajta-vizitki`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-sajta-vizitki`}>
 											Сайт-визитка
 											<Image
 												src='/arrow-blue.svg'
@@ -73,7 +78,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`}>
 											Одностраничный сайт
 											<Image
 												src='/arrow-blue.svg'
@@ -87,7 +92,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-lendinga`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-lendinga`}>
 											Лендинг
 											<Image
 												src='/arrow-blue.svg'
@@ -101,7 +106,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-internet-magazina`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-internet-magazina`}>
 											Интернет-магазин
 											<Image
 												src='/arrow-blue.svg'
@@ -115,7 +120,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/gotovye-sajty`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/gotovye-sajty`}>
 											Готовые сайты
 											<Image
 												src='/arrow-blue.svg'
@@ -129,7 +134,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`}>
 											Корпоративные сайты
 											<Image
 												src='/arrow-blue.svg'
@@ -143,7 +148,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`}>
 											Внутреннее веб-приложение
 											<Image
 												src='/arrow-blue.svg'
@@ -162,7 +167,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/prodvizhenie-sajta`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/prodvizhenie-sajta`}>
 											Продвижение сайта
 											<Image
 												src='/arrow.svg'
@@ -176,7 +181,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/seo-prodvizhenie-sajta`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-prodvizhenie-sajta`}>
 											SEO продвижение
 											<Image
 												src='/arrow.svg'
@@ -190,7 +195,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<li className="text-gray-100 uppercase mb-2 relative"
 										onClick={isCloseMenu}
 									>
-										<Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`}>
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontekstnaya-reklama`}>
 											Реклама Google и Яндекс
 											<Image
 												src='/arrow.svg'
@@ -206,19 +211,19 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 							<li className="text-white text-xl uppercase mb-2"
 								onClick={isCloseMenu}
 							>
-								<Link href={`${process.env.BASE_URL}/o-nas`}>
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/o-nas`}>
 									О нас</Link>
 							</li>
 							<li className="text-white text-xl uppercase mb-2"
 								onClick={isCloseMenu}
 							>
-								<Link href={`${process.env.BASE_URL}/portfolio`}>
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio`}>
 									Портфолио</Link>
 							</li>
 							<li className="text-white text-xl uppercase"
 								onClick={isCloseMenu}
 							>
-								<Link href={`${process.env.BASE_URL}/kontakty`}>
+								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontakty`}>
 									Контакты</Link>
 							</li>
 

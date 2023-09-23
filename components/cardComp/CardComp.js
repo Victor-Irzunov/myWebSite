@@ -45,7 +45,7 @@ const CardComp = () => {
 									<h2 className="xz:text-xl sd:text-2xl sd:mb-7 xz:mb-4 uppercase font-semibold">{el.title}</h2>
 
 									<p className="xz:text-xs sd:text-sm text-justify">
-										<Link href={`${process.env.BASE_URL}${el.link}`} className="underline font-bold">
+										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`} className="underline font-bold">
 											{el.title}
 										</Link>
 										{' '}{el.p}

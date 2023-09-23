@@ -37,7 +37,7 @@ const Header = () => {
 			<div className="container mx-auto">
 
 				<div className="flex justify-between items-center">
-					<Link href={`${process.env.BASE_URL}/`} className="pt-2 z-50">
+					<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`} as='/' className="pt-2 z-50">
 						<Image src='/logo/logoAnime.svg'
 							alt="Логотип компании vi-tech"
 							width={170} height={37}

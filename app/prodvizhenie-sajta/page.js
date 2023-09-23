@@ -42,7 +42,7 @@ const ProdvizheniePage = () => {
 						<ul className="mt-6">
 							<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4">
 								<h3 className="font-semibold text-[#004C97] underline  sd:text-lg">
-									<Link href={`${process.env.BASE_URL}/seo-prodvizhenie-sajta`}>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-prodvizhenie-sajta`}>
 										<div className="flex justify-start">
 											<span className="">
 												Органическое (SEO) продвижение сайта
@@ -89,7 +89,7 @@ const ProdvizheniePage = () => {
 							</li>
 							<li className="bg-gradient-to-r from-sky-200 to-indigo-200 mb-4 shadow-xl rounded-md px-3 py-4">
 								<h3 className="font-semibold text-[#004C97] underline relative sd:text-lg">
-									<Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`}>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontekstnaya-reklama`}>
 										<div className="flex justify-start">
 											<span className="">
 												Контекстная реклама
@@ -210,31 +210,31 @@ const ProdvizheniePage = () => {
 				<p className="font-semibold uppercase mb-7 text-lg">
 					Наши услуги по разрабоки сайтов и веб-приложений
 				</p>
-				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-sajta-vizitki`} className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-sajta-vizitki`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-lendinga`} className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-lendinga`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-internet-magazina`} className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-internet-magazina`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href={`${process.env.BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`} className="flex underline uppercase text-[#004C97] ">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`} className="flex underline uppercase text-[#004C97] ">
 					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 			</section>
@@ -296,7 +296,7 @@ const ProdvizheniePage = () => {
 					</div>
 					<div className="sd:w-1/2 w-full sd:ml-7 xz:ml-0 sd:pt-10">
 						<p className="sd:text-lg xz:text-base">
-							Дайте вашему сайту крылья с нашими услугами! Мы предлагаем продвижение вашего сайта с использованием <Link href={`${process.env.BASE_URL}/seo-prodvizhenie-sajta`} className="text-blue-800 underline">SEO </Link> и быструю раскрутку через <Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`} className="text-blue-800 underline">контекстную рекламу</Link>. Гарантируем высокие результаты, увеличение посещаемости и привлечение целевой аудитории. Доверьтесь нам и дайте вашему бизнесу возможность процветать онлайн!
+							Дайте вашему сайту крылья с нашими услугами! Мы предлагаем продвижение вашего сайта с использованием <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-prodvizhenie-sajta`} className="text-blue-800 underline">SEO </Link> и быструю раскрутку через <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontekstnaya-reklama`} className="text-blue-800 underline">контекстную рекламу</Link>. Гарантируем высокие результаты, увеличение посещаемости и привлечение целевой аудитории. Доверьтесь нам и дайте вашему бизнесу возможность процветать онлайн!
 						</p>
 					</div>
 

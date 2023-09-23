@@ -1,8 +1,7 @@
 {
 	"build": {
-	  "env": {
-		 "BASE_URL": "https://vi-tech.by"
-	  }
+		"env": {
+			"NEXT_PUBLIC_NEXT_PUBLIC_BASE_URL": "https://vi-tech.by"
+		}
 	}
- }
- 
+}
