@@ -11,7 +11,7 @@ const BtnContact = () => {
 				<Link
 					className="uppercase border border-black font-semibold tracking-wider bg-white py-2 px-5"
 					size="large"
-					href="/kontakty"
+					href={`${process.env.BASE_URL}/kontakty`}
 				>
 					Контакты
 				</Link>

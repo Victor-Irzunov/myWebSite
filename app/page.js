@@ -218,13 +218,13 @@ export default function Home() {
         <p className="font-semibold uppercase mb-3">
           Наши услуги по продвижению
         </p>
-        <Link href='/prodvizhenie-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/prodvizhenie-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
           Продвижение сайта в Google и Яндекс <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 xz:hidden sd:block' />
         </Link>
-        <Link href='/seo-prodvizhenie-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/seo-prodvizhenie-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
           SEO (органическое) продвижение сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 xz:hidden sd:block' />
         </Link>
-        <Link href='/kontekstnaya-reklama' className="flex underline uppercase text-[#004C97]">
+        <Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`} className="flex underline uppercase text-[#004C97]">
           Реклама в Google и Яндекс <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 xz:hidden sd:block' />
         </Link>
       </div>
@@ -371,35 +371,35 @@ export default function Home() {
         <p className="font-semibold uppercase mb-4 text-lg">
           Наши услуги по разрабоки сайтов и веб-приложений
         </p>
-        <Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
           Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/uslugi/sozdanie-sajta-vizitki`} className="flex underline uppercase text-[#004C97] mb-3">
           Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
           Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/uslugi/sozdanie-lendinga`} className="flex underline uppercase text-[#004C97] mb-3">
           Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/uslugi/sozdanie-internet-magazina`} className="flex underline uppercase text-[#004C97] mb-3">
           Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/gotovye-sajty' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/gotovye-sajty`} className="flex underline uppercase text-[#004C97] mb-3">
           Готовые сайты <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+        <Link href={`${process.env.BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
           Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
 
-        <Link href='/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+        <Link href={`${process.env.BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`} className="flex underline uppercase text-[#004C97] ">
           Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
         </Link>
       </section>
@@ -758,7 +758,7 @@ export default function Home() {
           </div>
 
           <div className='mt-10 flex underline justify-end pr-2 items-center'>
-            <Link href='/portfolio'>
+            <Link href={`${process.env.BASE_URL}/portfolio`}>
               смотреть больше работ
             </Link>
             <Image src='/click.svg' alt='перейти в портфолио' className='ml-2' width={20} height={20} />

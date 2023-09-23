@@ -119,7 +119,7 @@ const SeoProdvizheniePage = () => {
 				<p className="font-semibold uppercase mb-3">
 					Наши услуги по продвижению
 				</p>
-				<Link href='/kontekstnaya-reklama' className="flex underline uppercase text-[#004C97] text-sm">
+				<Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`} className="flex underline uppercase text-[#004C97] text-sm">
 					Реклама в Google и Яндекс <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2' />
 				</Link>
 			</div>
@@ -198,10 +198,10 @@ const SeoProdvizheniePage = () => {
 									В целом,<span className="font-semibold"> SEO продвижение </span>- это долгосрочная стратегия, которая требует терпения и усилий, но она может значительно увеличить посещаемость вашего сайта, привлечь новых клиентов и улучшить вашу онлайн видимость. Это неотъемлемая часть успешного интернет-маркетинга и может служить надежным фундаментом для вашего онлайн бизнеса.
 								</p>
 								<p className="mb-5">
-									Однако, если вам нужны <span className="font-semibold">быстрые результаты и мгновенное привлечение аудитории</span> , то  <Link href='/kontekstnaya-reklama' className="underline font-semibold text-blue-800">контекстная реклама в Google и Яндекс</Link> может быть хорошим дополнением к вашей стратегии. Эти платные рекламные кампании могут обеспечить мгновенный поток посетителей на ваш сайт, что особенно полезно в начале вашей онлайн деятельности или в случае акций и специальных предложений.
+									Однако, если вам нужны <span className="font-semibold">быстрые результаты и мгновенное привлечение аудитории</span> , то  <Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`} className="underline font-semibold text-blue-800">контекстная реклама в Google и Яндекс</Link> может быть хорошим дополнением к вашей стратегии. Эти платные рекламные кампании могут обеспечить мгновенный поток посетителей на ваш сайт, что особенно полезно в начале вашей онлайн деятельности или в случае акций и специальных предложений.
 								</p>
 								<p className="text-center font-bold text-lg">
-									Интеграция SEO продвижения и <Link href='/kontekstnaya-reklama' className="underline font-semibold text-blue-800">контекстной рекламы</Link> может обеспечить комплексный подход к увеличению видимости вашего бизнеса в интернете. Это поможет вам достигнуть разнообразных целей и привлечь как органический, так и платный трафик, укрепив позиции вашего бренда в онлайн-мире.
+									Интеграция SEO продвижения и <Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`} className="underline font-semibold text-blue-800">контекстной рекламы</Link> может обеспечить комплексный подход к увеличению видимости вашего бизнеса в интернете. Это поможет вам достигнуть разнообразных целей и привлечь как органический, так и платный трафик, укрепив позиции вашего бренда в онлайн-мире.
 								</p>
 							</div>
 						</div>
@@ -213,31 +213,31 @@ const SeoProdvizheniePage = () => {
 				<p className="font-semibold uppercase mb-7 text-lg">
 					Наши услуги по разрабоки сайтов и веб-приложений
 				</p>
-				<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-sajta-vizitki`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-lendinga`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-internet-magazina`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+				<Link href={`${process.env.BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`} className="flex underline uppercase text-[#004C97] ">
 					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 			</section>

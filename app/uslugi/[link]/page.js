@@ -217,13 +217,13 @@ const UniversalServicePage = async ({ params: { link } }) => {
 									<p className="font-semibold uppercase mb-3 text-lg">
 										Наши услуги по продвижению
 									</p>
-									<Link href='/prodvizhenie-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+									<Link href={`${process.env.BASE_URL}/prodvizhenie-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 										Продвижение сайта в Google и Яндекс <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 									</Link>
-									<Link href='/seo-prodvizhenie-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+									<Link href={`${process.env.BASE_URL}/seo-prodvizhenie-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 										SEO (органическое) продвижение сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 									</Link>
-									<Link href='/kontekstnaya-reklama' className="flex underline uppercase text-[#004C97]">
+									<Link href={`${process.env.BASE_URL}/kontekstnaya-reklama`} className="flex underline uppercase text-[#004C97]">
 										Реклама в Google и Яндекс <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 									</Link>
 								</div>
@@ -276,7 +276,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 									</div>
 								</div>
 								<div className="mt-10 flex justify-end container mx-auto">
-									<Link href='/cena/razrabotka-sajta' className="text-blue-700 underline sd:text-lg">
+									<Link href={`${process.env.BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">
 										подробнее о стоимости
 									</Link>
 								</div>

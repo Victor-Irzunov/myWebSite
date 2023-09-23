@@ -3,16 +3,14 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
-	title: 'Контекстная реклама - быстрое продвижение сайта',
+	title: 'Контекстная реклама - быстрое продвижение сайта | IT компания VI:TECH',
 	description: 'Контекстная реклама - это мощный инструмент для быстрого продвижения вашего сайта. Узнайте, как она работает и почему она может значительно увеличить ваш бизнес.'
 }
 
 const KontekstnayaReklamaPage = () => {
 	return (
 		<main className="pt-16 pb-20">
-
 			<div className="container mx-auto">
-
 				<div className="mt-16 text-[#004C97] font-semibold">
 					<h1 className="uppercase xz:text-3xl sd:text-4xl">
 						Контекстная реклама в Минске и Беларуси
@@ -239,31 +237,31 @@ const KontekstnayaReklamaPage = () => {
 				<p className="font-semibold uppercase mb-7 text-lg">
 					Наши услуги по разрабоки сайтов и веб-приложений
 				</p>
-				<Link href='/uslugi/sozdanie-mnogostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка многостраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-sajta-vizitki' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-sajta-vizitki`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка сайта-визитки <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-odnostranichnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка одностраничного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-lendinga' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-lendinga`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка лендинга <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-internet-magazina' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-internet-magazina`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка интернет-магазина <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/sozdanie-korporativnogo-sajta' className="flex underline uppercase text-[#004C97] mb-3">
+				<Link href={`${process.env.BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`} className="flex underline uppercase text-[#004C97] mb-3">
 					Разработка корпоративного сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 
-				<Link href='/uslugi/vnutrennee-korporativnoe-veb-prilozhenie' className="flex underline uppercase text-[#004C97] ">
+				<Link href={`${process.env.BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`} className="flex underline uppercase text-[#004C97] ">
 					Разработка внутреннего сайта <Image src='/link.svg' alt='Ссылка для перехода на сайт' width={20} height={20} className='ml-2 sd:block xz:hidden' />
 				</Link>
 			</section>
