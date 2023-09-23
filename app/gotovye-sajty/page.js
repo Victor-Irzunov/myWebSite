@@ -23,7 +23,7 @@ const GotovyePage = () => {
 						alt="Компания по продажи готовых сайтов vi:tech"
 						className="object-cover w-full h-full mx-auto mt-12"
 						style={{ width: 'auto', height: 'auto' }}
-						width={1492} height={490}
+						width={1492} height={490} loading="eager"
 					/>
 				</div>
 			</div>
