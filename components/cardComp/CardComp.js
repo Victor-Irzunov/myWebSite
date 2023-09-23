@@ -42,7 +42,7 @@ const CardComp = () => {
 						<div className="relative xz:px-3 sd:px-4">
 							<div className="xy:h-auto pb-16 xz:h-auto sd:h-[80vh] lg:h-[65vh] flex flex-col justify-between items-center ">
 								<div className="pb-4 pt-5 sd:h-[270px] xz:h-auto">
-									<h2 className="xz:text-xl sd:text-2xl sd:mb-3 xz:mb-4 uppercase font-semibold">{el.title}</h2>
+									<h2 className="xz:text-xl sd:text-2xl sd:mb-7 xz:mb-4 uppercase font-semibold">{el.title}</h2>
 
 									<p className="xz:text-xs sd:text-sm text-justify">
 										<Link href={el.link} className="underline font-bold">

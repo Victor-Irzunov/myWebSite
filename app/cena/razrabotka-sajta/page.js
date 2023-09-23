@@ -92,7 +92,7 @@ const PricePage = () => {
 					className="object-cover w-screen h-full"
 					width={370} height={223} />
 
-				<p className="font-bold sd:ml-7 xz:ml-0 xz:text-center sd:text-justify xz:text-base sd:text-lg mt-6">
+				<p className="font-bold xz:text-[#004C97] sd:text-black sd:ml-7 xz:ml-0 xz:text-center sd:text-justify xz:text-lg sd:text-2xl xz:mt-10 sd:mt-0">
 					Не откладывайте на завтра то, что можно начать сегодня. Позвоните нам прямо сейчас, и мы с удовольствием проконсультируем вас по всем вопросам, связанным с вашим будущим сайтом. Расскажем о стоимости, сроках и всем, что вам нужно знать. Начнем работу над вашим проектом, чтобы он стал мощным инструментом для развития вашего бизнеса. Не упустите шанс – звоните уже сегодня!
 				</p>
 			</div>

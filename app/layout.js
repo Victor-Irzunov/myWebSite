@@ -27,6 +27,8 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon/apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
 
+        <link rel="canonical" href="https://vi-tech.by/" />
+
         <meta name="yandex-verification" content="4c1774881f86806f" />
       </head>
       <body>
