@@ -262,4 +262,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 21,
+		title: '',
+		link: 'https://perevozki.minsk.by/',
+		image: '/portfolio/portfolioCard/perevozki_bus/1.webp',
+		alt: 'Сайт клиента по грузоперевозкам в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/perevozki_bus/2.webp',
+		alt2: 'Сайт клиента по грузоперевозкам в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]

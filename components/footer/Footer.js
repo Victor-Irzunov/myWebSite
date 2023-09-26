@@ -1,10 +1,12 @@
 import Image from "next/image";
 import BtnContact from "../btnContactFooter/BtnContact";
+import Link from "next/link";
+import BtnTehPodderzhka from "../BtnTehPodderzhka/BtnTehPodderzhka";
 
 const Footer = () => {
 
 	return (
-		<footer className="bg-[#15579e] py-20">
+		<footer className="bg-[#15579e] pt-20 pb-10">
 			<div className="container mx-auto px-3">
 				<div className="flex justify-between">
 					<div className="">
@@ -34,7 +36,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-
+				<BtnTehPodderzhka />
 			</div>
 		</footer>
 	)
