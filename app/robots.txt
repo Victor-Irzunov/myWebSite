@@ -1,4 +1,4 @@
 User-agent: *
 Sitemap: https://vi-tech.by/sitemap.xml
 Allow: /
-Disallow:
+Disallow: /*.web$

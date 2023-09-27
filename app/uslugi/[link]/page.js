@@ -152,7 +152,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								{el.content.steps2 ?
 									el.content.steps2.map(elem => {
 										return (
-											<div className="bg-slate-100 rounded-lg p-3 mt-4" key={elem.id}>
+											<div className="bg-slate-100 text-center rounded-lg p-3 mt-4" key={elem.id}>
 												<h3 className="mb-3 mt-5 text-[#004C97]  uppercase">
 													{elem.title}
 												</h3>
