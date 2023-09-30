@@ -275,4 +275,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 22,
+		title: '',
+		link: 'https://pasha-front.vercel.app/',
+		image: '/portfolio/portfolioCard/pasha/1.webp',
+		alt: 'Сайт клиента тестирование it продуктов, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/pasha/2.webp',
+		alt2: 'Сайт клиента тестирование it продуктов, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
