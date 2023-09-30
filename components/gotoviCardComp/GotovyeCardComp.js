@@ -20,9 +20,9 @@ const GotovyeCardComp = () => {
 							return (
 								<div
 									className="text-center mb-16
-									 bg-white rounded-md 
+									 bg-white box-card 
 									 overflow-hidden sd:w-[30%] sd:mx-3 xz:w-full xz:mx-0
-									 shadow-lg border"
+									 box-card border border-gray-400"
 									key={el.id}
 								>
 									<Image src={el.img} alt={el.alt}

@@ -288,4 +288,56 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 23,
+		title: '',
+		link: 'https://movie-html-dusky.vercel.app/',
+		image: '/portfolio/portfolioCard/movie/1.webp',
+		alt: 'Сайт для портфолио, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/movie/2.webp',
+		alt2: 'Сайт для портфолио, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 24,
+		title: '',
+		link: 'https://victor-irzunov.github.io/',
+		image: '/portfolio/portfolioCard/porfolio_my/1.webp',
+		alt: 'Сайт портфолио, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/porfolio_my/2.webp',
+		alt2: 'Сайт портфолио, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 25,
+		title: '',
+		link: 'https://victor-irzunov.github.io/irzunovaMariya/',
+		image: '/portfolio/portfolioCard/masha/1.webp',
+		alt: 'Сайт клиента психолога, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/masha/2.webp',
+		alt2: 'Сайт клиента психолога, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 27,
+		title: '',
+		link: 'https://my-blog-psi-gold.vercel.app/',
+		image: '/portfolio/portfolioCard/my_blog/1.webp',
+		alt: 'Сайт портфолио 2, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/my_blog/2.webp',
+		alt2: 'Сайт портфолио 2, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]

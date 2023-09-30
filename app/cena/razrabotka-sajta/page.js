@@ -50,13 +50,13 @@ const PricePage = () => {
 				</div>
 			</section>
 
-			<section className="pt-10 pb-10 bg-gradient-to-r from-cyan-500 to-blue-500 mt-20 text-center">
+			<section className="pt-10 pb-10 bg-white mt-20 text-center">
 				<div className="container mx-auto">
 					<h2 className="uppercase text-xl font-semibold mb-6">
 						Стоимость наших услуг по разработки сайта
 					</h2>
 					<CardComp />
-					<p className="font-semibold text-white xz:text-xl sd:text-2xl">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
+					<p className="font-semibold xz:text-xl sd:text-2xl">Свяжитесь с нами, чтобы уточнить детали и начать работу над вашим проектом!</p>
 				</div>
 			</section>
 

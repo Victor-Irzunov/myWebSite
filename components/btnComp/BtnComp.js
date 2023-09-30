@@ -3,7 +3,7 @@ import { Button, Tag } from 'antd';
 import { useState } from 'react'
 import { ModalUniversal } from '../modal/ModalUniversal';
 
-const BtnComp = ({ el, tag, title2 = '', konsultaciya }) => {
+const BtnComp = ({ el, tag, title2 = '', konsultaciya, color }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [title, setTitle] = useState('');
 	const [isActive, setIsActive] = useState({
@@ -32,7 +32,9 @@ const BtnComp = ({ el, tag, title2 = '', konsultaciya }) => {
 					<Button
 						type="primary" size='large'
 						onClick={() => showModal(`${el}`, "order")}
-						className='shadow-md w-full'
+						className={`shadow-lg w-full`}
+						style={{background: color}}
+
 					>
 						{!tag ? 'Заказать' : title2}
 					</Button>
