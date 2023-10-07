@@ -11,10 +11,10 @@ export const metadata = {
 
 const PricePage = () => {
 	return (
-		<main className="sd:pt-16 xz:pt-12 pb-20">
+		<main className="pt-10 pb-24">
 
 			<section className="">
-				<div className="w-full relative mb-20 xz:block xm:hidden">
+			<div className="w-full mb-20 xz:block xm:hidden fixed top-10 left-0 right-0 -z-10">
 					<Image
 						src="/logo/logo-price.webp"
 						alt="Стоимость разработки сайта, vi-tech"
@@ -22,35 +22,39 @@ const PricePage = () => {
 						className="object-cover w-full h-full"
 					/>
 				</div>
-				<div className="w-full relative mb-20 xz:hidden xm:block">
-					<Image
-						src="/price/main2.webp"
-						alt="Контакты компании по созданию сайтов vi:tech"
-						width={1492} height={900}
-						className="object-cover w-full h-full"
-					/>
+				<div className="w-full mb-20 xz:hidden xm:block fixed top-1 left-0 right-0 -z-10">
+					<div className="container mx-auto">
+						<Image
+							src="/price/main2.webp"
+							alt="Контакты компании по созданию сайтов vi:tech"
+							width={1492} height={900}
+							className="object-cover w-full h-full"
+						/>
+					</div>
 				</div>
 
-				<div className="xz:container xz:mx-auto sd:mr-7 sd:pt-6 xz:pt-0">
-					<h1 className="text-[#004C97] uppercase font-semibold xz:text-3xl sd:text-4xl mb-8">
-						Стоимость разработки сайта в Минске
-					</h1>
-					<p className="text-justify mb-1">
-						Добро пожаловать на страницу "Стоимость разработки сайта" от VI:TECH! Мы осознаем, что цена играет важную роль в вашем выборе партнера по веб-разработке.
-					</p>
-					<p className="text-justify mb-1">
-						На нашем сайте представлена ориентировочная стоимость разработки сайта, однако более точная стоимость разработки всегда рассчитывается индивидуально с учетом ваших уникальных потребностей.
-					</p>
-					<p className="mb-3 text-justify">
-						Мы придерживаемся принципов честности и прозрачности. У нас нет скрытых или дополнительных платежей. Нашей целью является предоставление вам наиболее выгодного предложения на рынке веб-разработки.
-					</p>
-					<p className="text-justify font-semibold">
-						Давайте воплотим ваши идеи в жизнь и создадим успешный онлайн-проект вместе!
-					</p>
+				<div className="bg-white xm:mt-[20vh] xz:mt-[35vh] xm:pt-20 xz:pt-10 h-full relative">
+					<div className="container mx-auto">
+						<h1 className="text-[#004C97] uppercase font-semibold xz:text-3xl sd:text-5xl mb-8">
+							Стоимость разработки сайта в Минске
+						</h1>
+						<p className="text-justify mb-1">
+							Добро пожаловать на страницу "Стоимость разработки сайта" от VI:TECH! Мы осознаем, что цена играет важную роль в вашем выборе партнера по веб-разработке.
+						</p>
+						<p className="text-justify mb-1">
+							На нашем сайте представлена ориентировочная стоимость разработки сайта, однако более точная стоимость разработки всегда рассчитывается индивидуально с учетом ваших уникальных потребностей.
+						</p>
+						<p className="mb-3 text-justify">
+							Мы придерживаемся принципов честности и прозрачности. У нас нет скрытых или дополнительных платежей. Нашей целью является предоставление вам наиболее выгодного предложения на рынке веб-разработки.
+						</p>
+						<p className="text-justify font-semibold">
+							Давайте воплотим ваши идеи в жизнь и создадим успешный онлайн-проект вместе!
+						</p>
+					</div>
 				</div>
 			</section>
 
-			<section className="pt-10 pb-10 bg-white mt-20 text-center">
+			<section className="pt-32 pb-10 bg-white text-center">
 				<div className="container mx-auto">
 					<h2 className="uppercase text-xl font-semibold mb-6">
 						Стоимость наших услуг по разработки сайта

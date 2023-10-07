@@ -5,9 +5,27 @@ import MenuMobil from "./menuMobil/MenuMobil";
 import { useState } from "react";
 import Link from "next/link";
 
+
+function gtag_report_conversion(url) {
+	var callback = function () {
+		// if (typeof (url) != 'undefined') {
+		// 	window.location = url;
+		// }
+	};
+	window.gtag('event', 'conversion', {
+		'send_to': 'AW-11359232505/FETvCOT4vukYEPnDwKgq',
+		'event_callback': callback
+	});
+	return false;
+}
+
+
 const content = (
 	<div>
-		<a href="tel:80333511597" className="text-lg">
+		<a href="tel:80333511597"
+			className="text-lg"
+			onClick={() => gtag_report_conversion('/')}
+		>
 			+375 33 351-15-97
 		</a>
 		<div className="mt-2">

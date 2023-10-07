@@ -1,3 +1,4 @@
+import BtnTelContactPage from "@/components/btnTelContactPage/BtnTelContactPage";
 import { Badge, Space } from "antd";
 import Image from "next/image";
 
@@ -7,7 +8,6 @@ export const metadata = {
 }
 
 const ContactPage = () => {
-
 	return (
 		<main className="pt-10">
 			<div className="w-full mb-20 xz:block xm:hidden fixed top-10 left-0 right-0 -z-10">
@@ -54,14 +54,17 @@ const ContactPage = () => {
 								/>
 								<span className="ml-3">Республика Беларусь г.Минск ул. К.Туровского 8</span>
 							</div>
-							<div className="flex items-start mb-5">
+							{/* <div className="flex items-start mb-5">
 								<Image src='/contact/phone-blue.svg' alt='Телефон компании VI:TECH' width={30} height={30} />
 								<span className="ml-3">
-									<a href="tel:80333511597">
+									<a href="tel:80333511597"
+										onClick={() => gtag_report_conversion('/')}
+									>
 										+375 33 351-15-97
 									</a>
 								</span>
-							</div>
+							</div> */}
+							<BtnTelContactPage />
 
 							<div className="flex items-start mb-5">
 								<Image src='/contact/mail.svg' alt='Почта  компании VI:TECH' width={30} height={30} />
