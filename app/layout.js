@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
 
         <meta name="yandex-verification" content="4c1774881f86806f" />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -39,6 +39,17 @@ export default function RootLayout({ children }) {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-11166544233');
+              `
+          }}
+        /> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CG6QV5N03T');
               `
           }}
         />
