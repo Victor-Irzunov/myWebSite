@@ -20,7 +20,7 @@ const SeoProdvizheniePage = () => {
 							SEO продвижение сайта в Минске и Беларуси
 						</h1>
 					</div>
-					<div className="">
+					<div className="mx-auto">
 						<Image
 							src='/seo/main.webp'
 							alt='Продвижение сайтов'

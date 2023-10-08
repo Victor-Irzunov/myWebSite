@@ -288,7 +288,7 @@ const KontekstnayaReklamaPage = () => {
 							</h4>
 
 							<Image
-								src='/kontekstnaya/search.webp'
+								src='/kontekstnaya/2.webp'
 								alt='Поисковая реклама в Google'
 								className="object-cover w-full h-full mx-auto mt-6"
 								style={{ width: 'auto', height: 'auto' }}
