@@ -11,10 +11,10 @@ export const metadata = {
 
 const PricePage = () => {
 	return (
-		<main className="pt-10 pb-24">
+		<main className="pt-10">
 
 			<section className="">
-			<div className="w-full mb-20 xz:block xm:hidden fixed top-10 left-0 right-0 -z-10">
+				<div className="w-full mb-20 xz:block xm:hidden fixed top-10 left-0 right-0 -z-10">
 					<Image
 						src="/logo/logo-price.webp"
 						alt="Стоимость разработки сайта, vi-tech"
@@ -64,41 +64,47 @@ const PricePage = () => {
 				</div>
 			</section>
 
-			<section className="mt-32 container mx-auto">
-				{
-					dataContentPrice.map(el => {
-						return (
-							<div className="" key={el.id}>
-								{el.content.text}
-							</div>
-						)
-					})
-				}
+			<section className="pt-24 bg-white">
+				<div className="container mx-auto">
+					{
+						dataContentPrice.map(el => {
+							return (
+								<div className="" key={el.id}>
+									{el.content.text}
+								</div>
+							)
+						})
+					}
+				</div>
 			</section>
-			<section className="mt-16 mb-8 container mx-auto">
-				<Image src='/price/questions.webp'
-					alt='Вопрос-ответ стоимости создания сайта'
-					className="object-cover w-screen h-full mx-auto"
-					style={{ width: 'auto', height: 'auto' }}
-					width={370} height={223} />
-				<h4 className="mt-8 text-center uppercase">
-					Ответы на популярные вопросы
-				</h4>
-				<article className="mt-4">
-					<Collapse items={itemsPriceQuestions} bordered={false} />
-				</article>
+			<section className="pt-24 bg-white">
+				<div className="container mx-auto">
+					<Image src='/price/questions.webp'
+						alt='Вопрос-ответ стоимости создания сайта'
+						className="object-cover w-screen h-full mx-auto"
+						style={{ width: 'auto', height: 'auto' }}
+						width={370} height={223} />
+					<h4 className="mt-8 text-center uppercase">
+						Ответы на популярные вопросы
+					</h4>
+					<article className="mt-4">
+						<Collapse items={itemsPriceQuestions} bordered={false} />
+					</article>
+				</div>
 			</section>
 
-			<div className="container mx-auto sd:flex xz:flex-row sd:mt-10 xz:mt-4">
-				<Image
-					src='/price/logo-price2.webp'
-					alt='Логотип компании VI:TECH стоимость создания сайта'
-					className="object-cover w-screen h-full"
-					width={370} height={223} />
+			<div className="bg-white pt-24 pb-20">
+				<div className="container mx-auto sd:flex xz:flex-row">
+					<Image
+						src='/price/logo-price2.webp'
+						alt='Логотип компании VI:TECH стоимость создания сайта'
+						className="object-cover w-screen h-full"
+						width={370} height={223} />
 
-				<p className="font-bold xz:text-[#004C97] sd:text-black sd:ml-7 xz:ml-0 xz:text-center sd:text-justify xz:text-lg sd:text-2xl xz:mt-10 sd:mt-0">
-					Не откладывайте на завтра то, что можно начать сегодня. Позвоните нам прямо сейчас, и мы с удовольствием проконсультируем вас по всем вопросам, связанным с вашим будущим сайтом. Расскажем о стоимости, сроках и всем, что вам нужно знать. Начнем работу над вашим проектом, чтобы он стал мощным инструментом для развития вашего бизнеса. Не упустите шанс – звоните уже сегодня!
-				</p>
+					<p className="font-bold xz:text-[#004C97] sd:text-black sd:ml-7 xz:ml-0 xz:text-center sd:text-justify xz:text-lg sd:text-2xl xz:mt-10 sd:mt-0">
+						Не откладывайте на завтра то, что можно начать сегодня. Позвоните нам прямо сейчас, и мы с удовольствием проконсультируем вас по всем вопросам, связанным с вашим будущим сайтом. Расскажем о стоимости, сроках и всем, что вам нужно знать. Начнем работу над вашим проектом, чтобы он стал мощным инструментом для развития вашего бизнеса. Не упустите шанс – звоните уже сегодня!
+					</p>
+				</div>
 			</div>
 		</main >
 	)
