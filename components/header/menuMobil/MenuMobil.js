@@ -30,17 +30,17 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 							<Image src='/close.svg' alt="Кнопка закрытия меню" className={`cursor-pointer ${isActiveMenu2 ? 'pointer-events-none' : ''}`} width={40} height={40} />
 						</div>
 					</div>
-					<div className="flex flex-col justify-center items-center pb-10 h-[90vh] overflow-y-scroll ">
-						<nav className="">
-							<ul className="text-center">
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
+					<div className="flex flex-col w-full justify-around items-start pb-10 h-[90vh] overflow-y-scroll ">
+						<nav className="w-full container mx-auto">
+							<ul className="w-full">
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}>
 										Главная
 									</Link>
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`}>
@@ -48,24 +48,33 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									</Link>
 								</li>
 								<li
-									className="text-center text-xl text-blue-400 uppercase py-2 px-2 cursor-pointer hover:bg-slate-700"
+									className="flex justify-between text-xl text-blue-400 uppercase py-2 px-2 cursor-pointer hover:bg-slate-700 border-b border-gray-600"
 									onClick={() => offSetToLeft('development')}
 								>
-									Разработка  сайтов
+									<span className="">Разработка сайтов</span>
+									<Image src='/arrow-right-square.svg' className="ml-3" alt="меню прехода в подменю" width={17} height={17} />
 								</li>
 								<li
-									className="text-center text-xl text-cyan-400 uppercase py-2 px-2 cursor-pointer hover:bg-slate-700"
+									className="flex justify-between w-full text-xl text-cyan-400 uppercase py-2 px-2 cursor-pointer hover:bg-slate-700 border-b border-gray-600"
 									onClick={offSetToLeft}
 								>
-									Продвижение  сайтов
+									<span className="">Продвижение  сайтов</span>
+									<Image src='/arrow-right-square-sky.svg' className="ml-3" alt="меню прехода в подменю" width={17} height={17} />
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
+									onClick={isCloseMenu}
+								>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta`}>
+										Статьи
+									</Link>
+								</li>
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/o-nas`}>
 										О нас</Link>
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio`}>
@@ -79,6 +88,18 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 								</li>
 							</ul>
 						</nav>
+
+						<div className="container mx-auto text-white">
+							<p className="font-light mb-2 text-sm pl-4">
+								Давайте поговорим
+							</p>
+							<div className="text-2xl flex">
+								<a href="tel:80293511597">
+									+375 33 351-15-97
+								</a>
+								<Image src='/mts.svg' className="ml-2" alt="номер телефона оператор мтс" width={75} height={75} />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
