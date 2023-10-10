@@ -5,20 +5,14 @@ import MenuMobil from "./menuMobil/MenuMobil";
 import { useState } from "react";
 import Link from "next/link";
 
-
 function gtag_report_conversion(url) {
-	var callback = function () {
-		// if (typeof (url) != 'undefined') {
-		// 	window.location = url;
-		// }
-	};
+	var callback = function () {};
 	window.gtag('event', 'conversion', {
 		'send_to': 'AW-11359232505/FETvCOT4vukYEPnDwKgq',
 		'event_callback': callback
 	});
 	return false;
 }
-
 
 const content = (
 	<div>
@@ -38,10 +32,8 @@ const content = (
 	</div>
 );
 
-
 const Header = () => {
 	const [isMenuMobil, setMenuMobil] = useState(false)
-
 
 	const isOpenMenu = () => {
 		setMenuMobil(true)
@@ -53,7 +45,6 @@ const Header = () => {
 	return (
 		<header className="py-1 bg-white fixed top-0 left-0 right-0 z-50">
 			<div className="container mx-auto">
-
 				<div className="flex justify-between items-center">
 					<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`} as='/' className="pt-2 z-50">
 						<Image src='/logo/logoAnime.svg'
@@ -62,20 +53,22 @@ const Header = () => {
 							className="z-50"
 						/>
 					</Link>
-
 					<div className="">
 						<Popover content={content} title="Позвоните нам" trigger="click">
 							<Image src='/telephone.svg' alt="Иконка телефона" width={25} height={25} className="cursor-pointer" />
 						</Popover>
 					</div>
-
 					<div className="" onClick={isOpenMenu}>
 						<Image src='/menu.svg' className="cursor-pointer" alt="Кнопка меню" width={40} height={40} />
 					</div>
 				</div>
 			</div>
-			<MenuMobil isCloseMenu={isCloseMenu} isMenuMobil={isMenuMobil} />
-
+			{
+				isMenuMobil ?
+					<MenuMobil isCloseMenu={isCloseMenu} isMenuMobil={isMenuMobil} />
+					:
+					null
+			}
 		</header>
 	)
 }

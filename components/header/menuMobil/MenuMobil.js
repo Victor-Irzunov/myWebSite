@@ -1,238 +1,106 @@
-import Image from "next/image"
-import Link from "next/link";
 
+import Image from "next/image";
+import Link from "next/link";
+import MenuMobil2Comp from "./menuMobil2/MenuMobil2Comp";
+import { useState } from "react";
 
 const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
+	const [isActiveMenu, setIsActiveMenu] = useState(false);
+	const [isActiveMenu2, setIsActiveMenu2] = useState(false);
+	const [keyMenu2, setKeyMenu2] = useState('');
+
 	const menuClass = isMenuMobil
 		? "opacity-100 translate-x-0"
 		: "opacity-0 -translate-x-full";
 
-	// console.log('process.env.NEXT_PUBLIC_BASE_URL:', process.env.NEXT_PUBLIC_BASE_URL)
+	const menuAnimationClass = !isActiveMenu2 ? "slide-in-left" : "slide-out-left";
 
+	const offSetToLeft = (key) => {
+		setIsActiveMenu(true)
+		setIsActiveMenu2(true)
+		if (key === 'development') {
+			setKeyMenu2('development')
+		} else {
+			setKeyMenu2('promotion')
+		}
+	}
+	const offSetToRight = () => {
+		setIsActiveMenu2(false)
+	}
 	return (
-		<div
-			className={`w-full max-h-screen fixed top-0 left-0 right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
-		>
-			<div className="bg-gradient-to-t from-black/0 to-black/90
-			 h-20 relative">
-				<div className="container mx-auto pt-3">
-					<div className="flex justify-end pr-1"
-						onClick={isCloseMenu}
-					>
-						<Image src='/close.svg' alt="Кнопка закрытия меню" className="cursor-pointer" width={40} height={40} />
+		<>
+			<div
+				className={`${isActiveMenu ? menuAnimationClass : ''} w-full max-h-screen  top-0 left-0 fixed right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
+			>
+				<div className="bg-gradient-to-t from-black/0 to-black/90
+			 	h-20 relative">
+					<div className="container mx-auto pt-3">
+						<div className={`flex justify-end pr-1 ${isActiveMenu2 ? 'opacity-0' : 'opacity-100 duration-[2000ms] ease-in-out'}`}
+							onClick={isCloseMenu}
+						>
+							<Image src='/close.svg' alt="Кнопка закрытия меню" className={`cursor-pointer ${isActiveMenu2 ? 'pointer-events-none' : ''}`} width={40} height={40} />
+						</div>
 					</div>
-
-				</div>
-				<div className="flex flex-col justify-center items-center pt-24 pb-10 h-[90vh] overflow-y-scroll ">
-					<nav className="">
-						<ul className="text-center">
-							<li className="text-white text-xl uppercase mb-2"
-								onClick={isCloseMenu}
-							>
-								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}>
-									Главная
-								</Link>
-							</li>
-							<li className="text-white text-xl uppercase mb-5"
-								onClick={isCloseMenu}
-							>
-								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`}>
-									Цены
-								</Link>
-							</li>
-							<li className="text-center text-sm uppercase mb-5 font-semibold">
-								<span className="text-blue-400">Разработка</span>
-								<ul className="text-sm mt-2 font-light">
-
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link
-											as={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`}
-											href='/uslugi/sozdanie-mnogostranichnogo-sajta'
-										>
-											Многостраничный сайт
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-0"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-sajta-vizitki`}>
-											Сайт-визитка
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-10"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`}>
-											Одностраничный сайт
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-0"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-lendinga`}>
-											Лендинг
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка лендинга"
-												width={10}
-												height={10}
-												className="absolute top-0 right-16"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-internet-magazina`}>
-											Интернет-магазин
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-6"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/gotovye-sajty`}>
-											Готовые сайты
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-8"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`}>
-											Корпоративные сайты
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-2"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`}>
-											Внутреннее веб-приложение
-											<Image
-												src='/arrow-blue.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 -right-4"
-											/>
-										</Link>
-									</li>
-								</ul>
-							</li>
-							<li className="text-cyan-400 text-sm uppercase font-semibold mb-5">
-								Продвижение
-								<ul className="text-sm mt-2 font-light">
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/prodvizhenie-sajta`}>
-											Продвижение сайта
-											<Image
-												src='/arrow.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-4"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-prodvizhenie-sajta`}>
-											SEO продвижение
-											<Image
-												src='/arrow.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 right-6"
-											/>
-										</Link>
-									</li>
-									<li className="text-gray-100 uppercase mb-2 relative"
-										onClick={isCloseMenu}
-									>
-										<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontekstnaya-reklama`}>
-											Реклама Google и Яндекс
-											<Image
-												src='/arrow.svg'
-												alt="ссылка на страницу разработка сайтов"
-												width={10}
-												height={10}
-												className="absolute top-0 -right-2"
-											/>
-										</Link>
-									</li>
-								</ul>
-							</li>
-							<li className="text-white text-xl uppercase mb-2"
-								onClick={isCloseMenu}
-							>
-								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/o-nas`}>
-									О нас</Link>
-							</li>
-							<li className="text-white text-xl uppercase mb-2"
-								onClick={isCloseMenu}
-							>
-								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio`}>
-									Портфолио</Link>
-							</li>
-							<li className="text-white text-xl uppercase"
-								onClick={isCloseMenu}
-							>
-								<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontakty`}>
-									Контакты</Link>
-							</li>
-
-						</ul>
-					</nav>
+					<div className="flex flex-col justify-center items-center pb-10 h-[90vh] overflow-y-scroll ">
+						<nav className="">
+							<ul className="text-center">
+								<li className="text-white text-xl uppercase mb-3"
+									onClick={isCloseMenu}
+								>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}>
+										Главная
+									</Link>
+								</li>
+								<li className="text-white text-xl uppercase mb-5"
+									onClick={isCloseMenu}
+								>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`}>
+										Цены
+									</Link>
+								</li>
+								<li
+									className="text-center text-2xl text-blue-400 uppercase mb-5 cursor-pointer"
+									onClick={() => offSetToLeft('development')}
+								>
+									Разработка
+								</li>
+								<li
+									className="text-center text-2xl text-cyan-400 uppercase mb-5 cursor-pointer"
+									onClick={offSetToLeft}
+								>
+									Продвижение
+								</li>
+								<li className="text-white text-xl uppercase mb-3"
+									onClick={isCloseMenu}
+								>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/o-nas`}>
+										О нас</Link>
+								</li>
+								<li className="text-white text-xl uppercase mb-3"
+									onClick={isCloseMenu}
+								>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio`}>
+										Портфолио</Link>
+								</li>
+								<li className="text-white text-xl uppercase"
+									onClick={isCloseMenu}
+								>
+									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontakty`}>
+										Контакты</Link>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
-		</div>
+			{
+				isActiveMenu ?
+					<MenuMobil2Comp isActiveMenu={isActiveMenu} offSetToRight={offSetToRight} keyMenu2={keyMenu2} isActiveMenu2={isActiveMenu2} isCloseMenu={isCloseMenu} />
+					:
+					null
+			}
+		</>
 	)
 }
-
 export default MenuMobil
+
