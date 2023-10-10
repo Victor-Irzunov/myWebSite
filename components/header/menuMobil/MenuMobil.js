@@ -3,34 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import MenuMobil2Comp from "./menuMobil2/MenuMobil2Comp";
 import { useState } from "react";
-
 const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 	const [isActiveMenu, setIsActiveMenu] = useState(false);
 	const [isActiveMenu2, setIsActiveMenu2] = useState(false);
 	const [keyMenu2, setKeyMenu2] = useState('');
-
-	const menuClass = isMenuMobil
-		? "opacity-100 translate-x-0"
-		: "opacity-0 -translate-x-full";
-
+	const menuClass = isMenuMobil ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full";
 	const menuAnimationClass = !isActiveMenu2 ? "slide-in-left" : "slide-out-left";
-
-	const offSetToLeft = (key) => {
+	const offSetToLeft = key => {
 		setIsActiveMenu(true)
 		setIsActiveMenu2(true)
-		if (key === 'development') {
-			setKeyMenu2('development')
-		} else {
-			setKeyMenu2('promotion')
-		}
+		if (key === 'development') setKeyMenu2('development')
+		else setKeyMenu2('promotion')
 	}
-	const offSetToRight = () => {
-		setIsActiveMenu2(false)
-	}
+	const offSetToRight = () => setIsActiveMenu2(false)
 	return (
-		<>
+		<div className="">
 			<div
-				className={`${isActiveMenu ? menuAnimationClass : ''} w-full max-h-screen  top-0 left-0 fixed right-0 bottom-0 bg-black/90 z-40 ${menuClass} transition-opacity duration-300 ease-in-out`}
+				className={`${isActiveMenu ? menuAnimationClass : ''} w-full max-h-screen top-0 left-0 fixed right-0 bottom-0 bg-black/95 z-40 transition-opacity duration-300 ease-in-out`}
 			>
 				<div className="bg-gradient-to-t from-black/0 to-black/90
 			 	h-20 relative">
@@ -44,14 +33,14 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 					<div className="flex flex-col justify-center items-center pb-10 h-[90vh] overflow-y-scroll ">
 						<nav className="">
 							<ul className="text-center">
-								<li className="text-white text-xl uppercase mb-3"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}>
 										Главная
 									</Link>
 								</li>
-								<li className="text-white text-xl uppercase mb-5"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`}>
@@ -59,30 +48,30 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									</Link>
 								</li>
 								<li
-									className="text-center text-2xl text-blue-400 uppercase mb-5 cursor-pointer"
+									className="text-center text-xl text-blue-400 uppercase py-2 px-2 cursor-pointer hover:bg-slate-700"
 									onClick={() => offSetToLeft('development')}
 								>
-									Разработка
+									Разработка  сайтов
 								</li>
 								<li
-									className="text-center text-2xl text-cyan-400 uppercase mb-5 cursor-pointer"
+									className="text-center text-xl text-cyan-400 uppercase py-2 px-2 cursor-pointer hover:bg-slate-700"
 									onClick={offSetToLeft}
 								>
-									Продвижение
+									Продвижение  сайтов
 								</li>
-								<li className="text-white text-xl uppercase mb-3"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/o-nas`}>
 										О нас</Link>
 								</li>
-								<li className="text-white text-xl uppercase mb-3"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio`}>
 										Портфолио</Link>
 								</li>
-								<li className="text-white text-xl uppercase"
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
 									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontakty`}>
@@ -99,7 +88,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 					:
 					null
 			}
-		</>
+		</div>
 	)
 }
 export default MenuMobil
