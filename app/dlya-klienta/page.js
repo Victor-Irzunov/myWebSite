@@ -72,7 +72,7 @@ const DlyaKlientaPage = () => {
 								</Link>
 							</li>
 
-							<li className="bg-white pb-7 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
 								<Link
 									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/unikalnyj-sajt-sozdannyj-opytnym-razrabotchikom`}
 									href='/dlya-klienta/unikalnyj-sajt-sozdannyj-opytnym-razrabotchikom'
@@ -82,7 +82,7 @@ const DlyaKlientaPage = () => {
 									</div>
 									<div className="mt-4 px-3">
 										<p className="text-lg font-semibold underline">
-											Уникальный сайт созданый опытным разработчиком
+											Уникальный сайт созданый опытным разработчиком, преимущества и недостатки
 										</p>
 									</div>
 								</Link>

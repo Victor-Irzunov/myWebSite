@@ -1,12 +1,12 @@
 "use client"
 import Image from "next/image";
-import { Popover } from 'antd';
+import { Badge, Popover, Space } from 'antd';
 import MenuMobil from "./menuMobil/MenuMobil";
 import { useState } from "react";
 import Link from "next/link";
 
 function gtag_report_conversion(url) {
-	var callback = function () {};
+	var callback = function () { };
 	window.gtag('event', 'conversion', {
 		'send_to': 'AW-11359232505/FETvCOT4vukYEPnDwKgq',
 		'event_callback': callback
@@ -15,19 +15,29 @@ function gtag_report_conversion(url) {
 }
 
 const content = (
-	<div>
+	<div className="px-3">
 		<a href="tel:80333511597"
-			className="text-lg"
+			className="text-xl"
 			onClick={() => gtag_report_conversion('/')}
 		>
 			+375 33 351-15-97
 		</a>
-		<div className="mt-2">
+		<div className="mt-4">
 			<p className="font-semibold">
 				Режим работы:
 			</p>
-			<p className="font-light">8:00-19:00</p>
-			<p className="font-light">Без выходных</p>
+			<div className="pl-1">
+				<p className="">8:00-19:00</p>
+				<Space direction="">
+					<Badge status="success" />
+					<Badge status="success" />
+					<Badge status="success" />
+					<Badge status="success" />
+					<Badge status="success" />
+					<Badge status="success" />
+					<Badge status="error" style={{ color: 'red' }} text='Вс' />
+				</Space>
+			</div>
 		</div>
 	</div>
 );
