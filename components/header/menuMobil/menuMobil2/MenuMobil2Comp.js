@@ -29,7 +29,7 @@ const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2 ,i
 										>
 											<Link
 												as={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
-												href='/uslugi/sozdanie-mnogostranichnogo-sajta'
+												href='/'
 											>
 												Разработка сайтов
 

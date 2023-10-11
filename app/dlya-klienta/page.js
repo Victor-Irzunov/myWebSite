@@ -1,3 +1,5 @@
+import Image from "next/image"
+import Link from "next/link"
 
 export const metadata = {
 	title: 'Полезные статьи для клиентов на тему создания и продвижения сайта',
@@ -18,13 +20,38 @@ const DlyaKlientaPage = () => {
 						</p>
 					</div>
 
-					<div className="mt-14">
+					<section className="mt-14">
 						<ul className="">
-							<li className="">
+							<li className="mb-8">
+								<Image src='/articles/1.webp' className="rounded-sm" alt="картинка статьи как сэкономить на разработке сайта" width={998} height={718} />
 
+								<div className="mt-2 px-2">
+									<Link
+										as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat`}
+										href='/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat'
+									>
+										<p className="text-lg font-semibold underline">
+											Как заказать хороший сайт без лишних переплат
+										</p>
+									</Link>
+									{/* <div className="flex mt-3">
+										<div className="flex items-center">
+											<Image src='/eye.svg' alt="просмотров статьи" width={20} height={20} />
+											<span className="ml-1">
+												87
+											</span>
+										</div>
+										<div className="flex items-center ml-4">
+											<Image src='/like.svg' alt="понравилось" width={20} height={20} />
+											<span className="ml-1">
+												29
+											</span>
+										</div>
+									</div> */}
+								</div>
 							</li>
 						</ul>
-					</div>
+					</section>
 				</div>
 			</div>
 		</main>
