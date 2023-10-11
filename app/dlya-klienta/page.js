@@ -8,8 +8,8 @@ export const metadata = {
 
 const DlyaKlientaPage = () => {
 	return (
-		<main className="pt-16">
-			<div className="bg-white xm:pt-20 xz:pt-14 h-full relative">
+		<main className="pt-16 bg-slate-100 pb-20">
+			<div className="xm:pt-20 xz:pt-14 h-full relative">
 				<div className="container mx-auto xm:pb-16">
 					<div className="text-center">
 						<h1 className="text-[#004C97] uppercase font-semibold text-3xl sd:text-5xl mb-4">
@@ -21,34 +21,39 @@ const DlyaKlientaPage = () => {
 					</div>
 
 					<section className="mt-14">
-						<ul className="">
-							<li className="mb-8">
-								<Image src='/articles/1.webp' className="rounded-sm" alt="картинка статьи как сэкономить на разработке сайта" width={998} height={718} />
+						<ul className="sd:flex xz:flex-row xz:justify-center sd:items-center sd:justify-around sd:flex-wrap">
 
-								<div className="mt-2 px-2">
-									<Link
-										as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat`}
-										href='/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat'
-									>
+							<li className="bg-white pb-7 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat`}
+									href='/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/1.webp' className="object-cover w-full h-full" alt="картинка статьи как сэкономить на разработке сайта" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3">
 										<p className="text-lg font-semibold underline">
 											Как заказать хороший сайт без лишних переплат
 										</p>
-									</Link>
-									{/* <div className="flex mt-3">
-										<div className="flex items-center">
-											<Image src='/eye.svg' alt="просмотров статьи" width={20} height={20} />
-											<span className="ml-1">
-												87
-											</span>
-										</div>
-										<div className="flex items-center ml-4">
-											<Image src='/like.svg' alt="понравилось" width={20} height={20} />
-											<span className="ml-1">
-												29
-											</span>
-										</div>
-									</div> */}
-								</div>
+									</div>
+								</Link>
+							</li>
+
+
+							<li className="bg-white pb-7 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/pochemu-kachestvo-sajta-igraet-reshayushuyu-rol`}
+									href='/dlya-klienta/pochemu-kachestvo-sajta-igraet-reshayushuyu-rol'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/2.webp' className="object-cover w-full h-full" alt="Почему качество сайта играет решающую роль" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3">
+										<p className="text-lg font-semibold underline">
+											Почему качество сайта играет решающую роль
+										</p>
+									</div>
+								</Link>
 							</li>
 						</ul>
 					</section>

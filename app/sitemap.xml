@@ -103,4 +103,16 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta</loc>
+    <lastmod>2023-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta/kak-zakazat-horoshij-sajt-i-ne-pereplachivat</loc>
+    <lastmod>2023-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

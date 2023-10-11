@@ -10,6 +10,10 @@ export function generateMetadata({ params: { link } }) {
 			title = 'Как заказать сайт без переплат | IT компания VI:TECH';
 			description = 'Узнайте полезные советы и рекомендации по заказу сайта без дополнительных расходов. Создание веб-сайта с высоким качеством и минимальными затратами.';
 			break;
+		case 'pochemu-kachestvo-sajta-igraet-reshayushuyu-rol':
+			title = 'Почему качество сайта играет решающую роль | IT компания VI:TECH';
+			description = '';
+			break;
 	}
 	return {
 		title: title,
