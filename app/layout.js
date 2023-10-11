@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
 
         <link rel="canonical" href="https://vi-tech.by/" />
-
+        <meta name="google-site-verification" content="Eo0Xif5nmQIm7hOzoU1kzcVeqrcRlDBiDWa5au4Yxz4" />
         <meta name="yandex-verification" content="4c1774881f86806f" />
 
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
