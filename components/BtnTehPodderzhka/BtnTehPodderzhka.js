@@ -9,7 +9,7 @@ const BtnTehPodderzhka = () => {
 	return (
 		<div>
 			{!isTehPodderzhkaPage && (
-				<div className="mt-16 text-white uppercase font-semibold text-sm">
+				<div className="mt-16 text-white uppercase  text-sm">
 					<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/teh-podderzhka`} className='flex'>
 						техподдержка 24/7
 						<Image src='/link-white.svg' alt='Ссылка на страницу техподдержка' className='ml-2' width={15} height={15} />

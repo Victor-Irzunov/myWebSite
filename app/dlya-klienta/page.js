@@ -71,6 +71,22 @@ const DlyaKlientaPage = () => {
 									</div>
 								</Link>
 							</li>
+
+							<li className="bg-white pb-7 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/unikalnyj-sajt-sozdannyj-opytnym-razrabotchikom`}
+									href='/dlya-klienta/unikalnyj-sajt-sozdannyj-opytnym-razrabotchikom'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/4.webp' className="object-cover w-full h-full" alt="Уникальный сайт, преимущества и недостатки" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3">
+										<p className="text-lg font-semibold underline">
+											Уникальный сайт созданый опытным разработчиком
+										</p>
+									</div>
+								</Link>
+							</li>
 						</ul>
 					</section>
 				</div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MenuMobil2Comp from "./menuMobil2/MenuMobil2Comp";
 import { useState } from "react";
+import BtnTehPodderzhka from "@/components/BtnTehPodderzhka/BtnTehPodderzhka";
 const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 	const [isActiveMenu, setIsActiveMenu] = useState(false);
 	const [isActiveMenu2, setIsActiveMenu2] = useState(false);
@@ -30,21 +31,19 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 							<Image src='/close.svg' alt="Кнопка закрытия меню" className={`cursor-pointer ${isActiveMenu2 ? 'pointer-events-none' : ''}`} width={40} height={40} />
 						</div>
 					</div>
-					<div className="flex flex-col w-full justify-around items-start pb-10 h-[90vh] overflow-y-scroll ">
-						<nav className="w-full container mx-auto">
+					<div className="flex flex-col w-full justify-around items-start pb-10 h-[95vh] overflow-y-scroll ">
+						<nav className="w-full container mx-auto pt-5">
 							<ul className="w-full">
 								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
-									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`}>
-										Главная
+										<p onClick={isCloseMenu}>Главная</p>
 									</Link>
 								</li>
 								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
-									onClick={isCloseMenu}
 								>
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`}>
-										Цены
+										<p onClick={isCloseMenu}>Цены</p>
 									</Link>
 								</li>
 								<li
@@ -61,43 +60,41 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 									<span className="">Продвижение  сайтов</span>
 									<Image src='/arrow-right-square-sky.svg' className="ml-3" alt="меню прехода в подменю" width={17} height={17} />
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
-									onClick={isCloseMenu}
-								>
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600">
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta`}>
-										Статьи
+										<p onClick={isCloseMenu}>Статьи</p>
 									</Link>
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
-									onClick={isCloseMenu}
-								>
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600">
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/o-nas`}>
-										О нас</Link>
+										<p onClick={isCloseMenu}>О нас</p>
+									</Link>
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600"
-									onClick={isCloseMenu}
-								>
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2 border-b border-gray-600">
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/portfolio`}>
-										Портфолио</Link>
+										<p onClick={isCloseMenu}>Портфолио</p>
+									</Link>
 								</li>
-								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2"
-									onClick={isCloseMenu}
-								>
+								<li className="text-white text-xl uppercase py-2 hover:bg-slate-700 px-2">
 									<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontakty`}>
-										Контакты</Link>
+										<p onClick={isCloseMenu}>Контакты</p>
+									</Link>
 								</li>
 							</ul>
 						</nav>
 
-						<div className="container mx-auto text-white">
+						<div className="container mx-auto text-white pt-3">
 							<p className="font-light mb-2 text-sm pl-4">
 								Давайте поговорим
 							</p>
-							<div className="text-2xl flex">
+							<div className="text-xl flex">
 								<a href="tel:80293511597">
 									+375 33 351-15-97
 								</a>
-								<Image src='/mts.svg' className="ml-2" alt="номер телефона оператор мтс" width={75} height={75} />
+								<Image src='/mts.svg' className="ml-2" alt="номер телефона оператор мтс" width={60} height={60} />
+							</div>
+							<div className="">
+								<BtnTehPodderzhka />
 							</div>
 						</div>
 					</div>

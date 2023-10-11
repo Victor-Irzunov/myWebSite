@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2 ,isActiveMenu }) => {
+const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2, isActiveMenu }) => {
 	const menuAnimationClass = isActiveMenu2 ? "slide-in-right" : "slide-out-right";
 
 	return (
@@ -24,75 +24,57 @@ const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2 ,i
 									<span className="text-blue-400 text-xl uppercase">Разработка</span>
 									<ul className="mt-6 font-light text-lg">
 
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link
 												as={`${process.env.NEXT_PUBLIC_BASE_URL}/`}
 												href='/'
 											>
-												Разработка сайтов
+												<p onClick={isCloseMenu}>Разработка сайтов</p>
 
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link
 												as={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-mnogostranichnogo-sajta`}
 												href='/uslugi/sozdanie-mnogostranichnogo-sajta'
 											>
-												Разработка многостраничных сайтов
+												<p onClick={isCloseMenu}>Разработка многостраничных сайтов</p>
 
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-sajta-vizitki`}>
-												Разработка сайтов-визиток
+												<p onClick={isCloseMenu}>Разработка сайтов-визиток</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-odnostranichnogo-sajta`}>
-												Разработка одностраничных сайтов
+												<p onClick={isCloseMenu}>Разработка одностраничных сайтов</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-lendinga`}>
-												Разработка лендингов
+												<p onClick={isCloseMenu}>Разработка лендингов</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-internet-magazina`}>
-												Разработка интернет-магазинов
+												<p onClick={isCloseMenu}>Разработка интернет-магазинов</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/sozdanie-korporativnogo-sajta`}>
-												Разработка корпоративных сайтов
+												<p onClick={isCloseMenu}>Разработка корпоративных сайтов</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/uslugi/vnutrennee-korporativnoe-veb-prilozhenie`}>
-												Разработка внутренних веб-приложений
+												<p onClick={isCloseMenu}>Разработка внутренних веб-приложений</p>
 											</Link>
 										</li>
-										<li className="text-blue-300 mb-2 hover:bg-slate-600 pl-1 pt-2 pb-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-blue-300 mb-2 hover:bg-slate-600 pl-1 pt-2 pb-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/gotovye-sajty`}>
-												Продажа готовых сайтов
+												<p onClick={isCloseMenu}>Продажа готовых сайтов</p>
 											</Link>
 										</li>
 									</ul>
@@ -101,28 +83,19 @@ const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2 ,i
 								<li className="">
 									<span className='uppercase text-cyan-400 text-xl mb-5 font-semibold'>Продвижение</span>
 									<ul className="text-xl mt-6 font-light">
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/prodvizhenie-sajta`}>
-												Продвижение сайта
-
+												<p onClick={isCloseMenu}>Продвижение сайта</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-prodvizhenie-sajta`}>
-												SEO продвижение
-
+												<p onClick={isCloseMenu}>SEO продвижение</p>
 											</Link>
 										</li>
-										<li className="text-gray-100 pb-2 hover:bg-slate-600 pl-1 pt-2"
-											onClick={isCloseMenu}
-										>
+										<li className="text-gray-100 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontekstnaya-reklama`}>
-												Реклама Google и Яндекс
-
+												<p onClick={isCloseMenu}>Реклама Google и Яндекс</p>
 											</Link>
 										</li>
 									</ul>
