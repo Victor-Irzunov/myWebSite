@@ -12,7 +12,11 @@ export function generateMetadata({ params: { link } }) {
 			break;
 		case 'pochemu-kachestvo-sajta-igraet-reshayushuyu-rol':
 			title = 'Почему качество сайта играет решающую роль | IT компания VI:TECH';
-			description = '';
+			description = 'Узнайте, почему качество вашего сайта имеет критическое значение для успеха вашего онлайн-бизнеса. Мы рассматриваем важность оптимизации, SEO, пользовательского опыта и других факторов.';
+			break;
+		case 'preimushestva-i-nedostatki-sajta-na-konstruktore':
+			title = 'Сайт на конструкторе - преимущества и недостатки | IT компания VI:TECH';
+			description = 'Исследуйте плюсы и минусы создания веб-сайта с использованием конструктора. Узнайте, какие преимущества и недостатки свойственны этой популярной методике разработки сайта.';
 			break;
 	}
 	return {
@@ -48,5 +52,4 @@ const page = async ({ params: { link } }) => {
 		</main>
 	)
 }
-
 export default page
