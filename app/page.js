@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic';
 import BlockMainPage from '@/components/blockMainPage/BlockMainPage';
+import LinkScrollCom from '@/components/LinkScroll/LinkScrollCom';
 
 const VideoPlayer = dynamic(() => import('@/components/video/VideoPlayer'));
 
@@ -21,7 +22,9 @@ export default function Home() {
         </section>
       </div>
 
-      <article id='main' className="mt-28 font-light bg-[#004C97] pb-8 pt-8 px-5 text-white">
+      <LinkScrollCom link='site' />
+
+      <article id='main' className="mt-16 font-light bg-[#004C97] pb-8 pt-8 px-5 text-white">
         <div className='container mx-auto'>
           <p className=" bg-blue-700 xz:p-2 sd:p-5 xz:text-base sd:text-lg text-center">
             <span className='font-semibold'>Создание сайта</span> - это важный этап в развитии любого бизнеса в интернете.
@@ -109,29 +112,32 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center  xz:mb-2 sd:mb-4'>
+          <div
+            className='bg-gradient-to-r from-sky-500 to-indigo-500 font-semibold rounded-md xz:p-4 sd:p-6
+              text-center xz:mb-2 sd:mb-4 text-lg'
+          >
             <p className=''>
               Разрабатываем сайты любой сложности - от простых лендингов до крупных интернет-магазинов. Фокусируемся на пользовательском опыте и конверсии посетителей в клиентов.
             </p>
           </div>
-          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center xz:mb-2 sd:mb-4'>
+          <div className='text-lg bg-gradient-to-r from-sky-500 to-indigo-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center xz:mb-2 sd:mb-4'>
             <p className=''>
               Ведем продвижение сайтов в ТОП Google и Яндекса. Комплексная SEO-оптимизация и настройка контекстной рекламы быстро привлекают целевой трафик из поиска.
             </p>
           </div>
-          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center xz:mb-2 sd:mb-4'>
+          <div className='text-lg bg-gradient-to-r from-sky-500 to-indigo-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center xz:mb-2 sd:mb-4'>
             <p className=''>
               Создаем уникальный дизайн сайтов. Современный стиль и корпоративный имидж повышают доверие аудитории.
             </p>
           </div>
-          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold  rounded-md xz:p-4 sd:p-6 text-center  xz:mb-2 sd:mb-4'>
+          <div className='text-lg bg-gradient-to-r from-sky-500 to-indigo-500 font-semibold  rounded-md xz:p-4 sd:p-6 text-center  xz:mb-2 sd:mb-4'>
             <p className=''>
               Обеспечиваем наполнение сайта полезным контентом, который читают и делятся в соцсетях.
             </p>
           </div>
-          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6 text-center'>
+          <div className='text-lg bg-gradient-to-r from-sky-500 to-indigo-500 font-semibold rounded-md xz:p-4 sd:p-6 text-center'>
             <p className=''>
-              Осуществляем техническую поддержку и обновление сайтов. Ваш ресурс всегда работает быстро и без сбоев.
+              Осуществляем техническую поддержку и обновление сайтов. Ваш сайт всегда будет работать быстро и без сбоев.
             </p>
           </div>
         </article>
@@ -174,7 +180,7 @@ export default function Home() {
         </article>
       </section>
 
-      <section className="mt-16 mb-10 w-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white">
+      <section id='site' className="mt-16 mb-10 w-full bg-gradient-to-r from-sky-500 to-indigo-500">
         <div className='container mx-auto'>
           <div className="pt-12 pb-32 ">
             <div className="container mx-auto">
@@ -185,15 +191,15 @@ export default function Home() {
                 <div className="w-1/2 xz:text-sm sd:text-xl">
                   Стоимость разработки сайта
                 </div>
-                <p className="font-bold text-xl sd:text-2xl">
-                  от 170 рублей
+                <p className="font-semibold text-xl sd:text-2xl">
+                  от 170 BYN
                 </p>
               </div>
               <div className="mt-10 flex items-center justify-between">
                 <div className="w-1/2 xz:text-sm sd:text-xl">
                   Срок разработки
                 </div>
-                <p className="font-bold text-xl">
+                <p className="font-semibold text-xl">
                   от 2-х дней
                 </p>
               </div>

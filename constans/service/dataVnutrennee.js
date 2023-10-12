@@ -210,6 +210,7 @@ export const title = {
 	h1: 'Разработка внутренего корпоративного сайта в Минске',
 	img: '/service/vnutrennee/main.webp',
 	alt: "Разработка внутренего корпоративного сайта",
+	scroll:'dataVnutrennee',
 }
 
 export const priceAndDate = {

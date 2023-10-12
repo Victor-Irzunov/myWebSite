@@ -94,7 +94,7 @@ const MenuMobil = ({ isCloseMenu, isMenuMobil }) => {
 								<Image src='/mts.svg' className="ml-2" alt="номер телефона оператор мтс" width={60} height={60} />
 							</div>
 							<div className="">
-								<BtnTehPodderzhka />
+								<BtnTehPodderzhka  onClick={isCloseMenu} />
 							</div>
 						</div>
 					</div>

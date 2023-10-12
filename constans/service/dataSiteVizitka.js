@@ -205,6 +205,7 @@ export const title = {
 	h1: 'Создание сайта-визитки в Минске',
 	img: '/service/site-vizitka/main.webp',
 	alt: "Создание сайта-визитки",
+	scroll:'dataSiteVizitka',
 }
 
 export const priceAndDate = {

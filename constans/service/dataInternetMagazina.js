@@ -231,6 +231,7 @@ export const title = {
 	h1: 'Создание интернет-магазина в Минске',
 	img: '/service/internetMagazin/main.webp',
 	alt: "Создание интернет-магазина",
+	scroll:'internet-magazin',
 }
 
 export const priceAndDate = {

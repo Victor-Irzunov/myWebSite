@@ -9,28 +9,27 @@ export const metadata = {
 const TehPodderzhka = () => {
 	return (
 		<main className="pt-10">
-			<div className="w-full mb-20 xz:block xm:hidden fixed top-10 left-0 right-0 -z-10">
+			<div className="w-full mb-20 xz:block xm:hidden fixed top-13 left-0 right-0 -z-10">
 				<Image
-					src="/teh-podderzhka/main.webp"
+					src="/teh-podderzhka/main5.webp"
 					alt="Техподдержка компании по созданию сайтов vi:tech"
-					width={1492} height={900}
+					width={994} height={785}
 					className="object-cover w-full h-full"
 				/>
 			</div>
 			<div className="w-full mb-20 xz:hidden xm:block fixed top-14 left-0 right-0 -z-10">
 				<div className="container mx-auto">
 					<Image
-						src="/teh-podderzhka/main2.webp"
+						src="/teh-podderzhka/main4.webp"
 						alt="Техподдержка компании по созданию сайтов vi:tech"
-						width={1492} height={900}
+						width={1842} height={343}
 						className="object-cover w-full h-full"
 					/>
 				</div>
 			</div>
-			<div className="bg-white xm:mt-[40vh] xz:mt-[37vh] xm:pt-20 xz:pt-14 pb-20 h-full relative">
+			<div className="bg-white xm:mt-[40vh] xz:mt-[50vh] xm:pt-12 xz:pt-10 pb-20 h-full relative">
 				<div className="container mx-auto">
-
-					<div className="mt-16 text-[#004C97] font-semibold text-center">
+					<div className="text-[#004C97] font-semibold text-center">
 						<h1 className="uppercase xz:text-2xl sd:text-6xl">
 							Техническая поддрежка клиентов
 						</h1>

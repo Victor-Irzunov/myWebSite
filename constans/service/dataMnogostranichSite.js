@@ -156,6 +156,7 @@ export const title = {
 	h1: 'Разработка многостраничного сайта в Минске',
 	img: '/service/mnogostranich/main.webp',
 	alt: "Создание многостраничного сайта",
+	scroll:'dataMnogostranichSite',
 }
 
 export const priceAndDate = {

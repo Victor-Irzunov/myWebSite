@@ -1,3 +1,4 @@
+import LinkScrollCom from "@/components/LinkScroll/LinkScrollCom";
 import BtnComp from "@/components/btnComp/BtnComp";
 import { useDataService } from "@/hook/dataServiceHook";
 import { Empty } from "antd";
@@ -75,6 +76,10 @@ const UniversalServicePage = async ({ params: { link } }) => {
 						/>
 					</div>
 				</div>
+
+				<LinkScrollCom link={data.title.scroll} />
+
+
 				{data.data.map((el, idx) => (
 					<article className={`sd:mt-6 xz:mt-16 mb-24`} key={el.id}>
 						<div className="container mx-auto">
@@ -246,10 +251,11 @@ const UniversalServicePage = async ({ params: { link } }) => {
 									</div>
 								</div>
 							}
-
 						</div>
+
+
 						{idx === data.data.length - 2 && (
-							<div className="mt-16 mb-16">
+							<div className="mt-16 mb-16" id={data.title.scroll}>
 								<div className="pt-12 pb-32 bg-[#004C97] text-white">
 									<div className="container mx-auto">
 										<p className="sd:text-3xl xz:text-2xl uppercase text-center">

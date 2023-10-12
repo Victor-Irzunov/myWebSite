@@ -171,6 +171,7 @@ export const title = {
 	h1: 'Создание лендинга в Минске',
 	img: '/service/lending/main1.webp',
 	alt: "Создание лендинга",
+	scroll:'dataLending',
 }
 
 export const priceAndDate = {

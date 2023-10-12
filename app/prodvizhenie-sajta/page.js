@@ -1,4 +1,5 @@
 import BtnComp from "@/components/btnComp/BtnComp"
+import CardProdvizhenie from "@/components/cardProdvizhenie/CardProdvizhenie"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -277,11 +278,17 @@ const ProdvizheniePage = () => {
 						</p>
 					</div>
 
-					<p className="text-center mt-8">
+					<p className="text-center mt-8 text-yellow-400 font-semibold">
 						Мы заботимся о том, чтобы ваш сайт не только появился в результатах поиска и рекламе, но и привлекал людей и предоставлял им нужную информацию или услуги. Для этого мы используем разные методы и постоянно следим за результатами. Когда все хорошо настроено, ваш сайт будет более заметным и привлечет больше посетителей
 					</p>
 				</article>
 			</section>
+
+
+			<section className="mt-20 mb-20 container mx-auto">
+				<CardProdvizhenie />
+			</section>
+
 
 			<div className="container mx-auto text-justify mt-12 font-bold">
 				<div className="sd:flex flex-row sd:justify-between sd:items-start">

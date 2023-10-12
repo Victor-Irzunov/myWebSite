@@ -231,6 +231,7 @@ export const title = {
 	h1: 'Создание одностраничного сайта в Минске',
 	img: '/service/odnostranichnyj/main1.webp',
 	alt: "Создание одностраничного сайта",
+	scroll:'dataOdnostranichnyj',
 }
 
 export const priceAndDate = {

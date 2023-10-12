@@ -186,6 +186,7 @@ export const title = {
 	h1: 'Создание корпоративных сайтов в Минске',
 	img: '/service/korporativnyj/main.webp',
 	alt: "Создание корпоративных сайтов",
+	scroll:'dataKorporativnyj',
 }
 
 export const priceAndDate = {
