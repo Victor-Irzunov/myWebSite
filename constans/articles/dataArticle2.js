@@ -3,7 +3,7 @@ export const dataArticle2 = [
 		id: 1,
 		img: '/articles/2.webp',
 		alt: 'Качество сайта',
-		link: '',
+		link: 'pochemu-kachestvo-sajta-igraet-reshayushuyu-rol',
 		title: 'Значение качества сайта: влияние на Google Ads, Яндекс.Директ, SEO и пользовательский опыт',
 		content: (
 			<div className="mt-6">

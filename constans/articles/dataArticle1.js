@@ -3,6 +3,7 @@ export const dataArticle1 = [
 		id: 1,
 		img: '/articles/1.webp',
 		alt: 'Заказать сайт без переплат',
+		link:'kak-zakazat-horoshij-sajt-i-ne-pereplachivat',
 		title: 'Как заказать хороший сайт и не переплачивать',
 		content: (
 			<div className="text-justify">

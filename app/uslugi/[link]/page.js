@@ -233,7 +233,7 @@ const UniversalServicePage = async ({ params: { link } }) => {
 								idx === 1 && <div className="my-20 bg-blue-600 rounded-2xl pt-8 pb-8">
 									<div className="text-center px-2">
 										<p className="mb-2 font-semibold sd:text-xl xz:text-lg text-white uppercase tracking-wider">
-											Закажите свой сайт сегодня и превратите свои идеи в реальность!
+											Закажите свой сайт сегодня и получите скидку 10%!
 										</p>
 										<p className="mb-6 font-semibold sd:text-xl xz:text-lg text-white">
 											Свяжитесь с нами прямо сейчас, и мы с удовольствием начнем работу над вашим будущим cайтом.

@@ -1,8 +1,8 @@
 import BtnComp from '@/components/btnComp/BtnComp'
-// import VideoPlayer from '@/components/video/VideoPlayer'
 import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic';
+import BlockMainPage from '@/components/blockMainPage/BlockMainPage';
 
 const VideoPlayer = dynamic(() => import('@/components/video/VideoPlayer'));
 
@@ -17,67 +17,30 @@ export default function Home() {
             Разработка сайтов в Минске
           </h1>
 
-          <div className='sd:flex xz:flex-row sd:justify-between  xz:mt-12 sd:mt-20'>
-            <Image
-              src='/main/main.webp'
-              alt='Компания по разрбатке сайтов'
-              className="object-cover w-full h-full xz:mx-auto sd:mx-0"
-              style={{ width: '512px', height: 'auto' }}
-              width={512} height={370} loading="eager"
-            />
-
-
-            <div className='mt-16  uppercase '>
-              <div className='relative mb-6'>
-                <Image src='/line-black.svg' alt='Линия' width={50} height={10}
-                  className='rotate-45 absolute top-0 left-0'
-                />
-                <p className=''>
-                  Создание сайтов и веб приложений
-                </p>
-              </div>
-              <div className='relative mb-6'>
-                <Image src='/line-black.svg' alt='Линия' width={50} height={10}
-                  className='rotate-45 absolute top-0 left-0'
-                />
-                <p className=''>
-                  SEO продвижение в Google и Яндекс
-                </p>
-              </div>
-              <div className='relative'>
-                <Image src='/line-black.svg' alt='Линия' width={50} height={10}
-                  className='rotate-45 absolute top-0 left-0'
-                />
-                <p className=''>
-                  Продвижение при помощи рекламы Google и Яндекс
-                </p>
-              </div>
-            </div>
-          </div>
+          <BlockMainPage />
         </section>
       </div>
 
-
-      <article className="mt-28 font-light bg-[#004C97] pb-8 pt-8 px-5 text-white">
+      <article id='main' className="mt-28 font-light bg-[#004C97] pb-8 pt-8 px-5 text-white">
         <div className='container mx-auto'>
-          <p className=" bg-blue-700 xz:p-2 sd:p-5 xz:text-base sd:text-lg">
+          <p className=" bg-blue-700 xz:p-2 sd:p-5 xz:text-base sd:text-lg text-center">
             <span className='font-semibold'>Создание сайта</span> - это важный этап в развитии любого бизнеса в интернете.
             Но одного только сайта недостаточно, чтобы привлечь клиентов и начать зарабатывать.
             Ключевым фактором является продвижение ресурса в поисковых системах.
           </p>
 
-          <p className="mt-2 text-right bg-blue-600 xz:p-2 sd:p-5 xz:text-base sd:text-lg">
+          <p className="mt-3 text-center bg-blue-600 xz:p-2 sd:p-5 xz:text-base sd:text-lg">
             <span className='font-semibold'> Мы предлагаем </span> комплексное решение, включающее разработку сайта и его раскрутку в Google и Яндекс.
             Благодаря грамотной SEO-оптимизации и настройке контекстной рекламы ваш сайт быстро займет лидирующие позиции в выдаче,
             и вы начнете получать целевой трафик из поиска каждый день.
           </p>
 
-          <p className="mt-2  bg-blue-700 xz:p-2 sd:p-5 xz:text-base sd:text-lg">
+          <p className="mt-3 text-center bg-blue-700 xz:p-2 sd:p-5 xz:text-base sd:text-lg">
             <span className='font-semibold'>SEO и контекстная реклама </span> работают 24 часа в сутки, привлекая потенциальных клиентов именно тогда,
             когда они ищут такие товары и услуги как ваши. Вы получите стабильный прирост посетителей и заказов с минимальными затратами.
           </p>
 
-          <p className="mt-2 text-right px-2  xz:p-2 sd:p-5 xz:text-base sd:text-xl text-white/90 font-semibold">
+          <p className="mt-3 text-right px-2  xz:p-2 sd:p-5 xz:text-base sd:text-xl text-yellow-400 font-semibold">
             Мы гарантируем высокие результаты в продвижении за счет использования передовых технологий,
             опыта специалистов и индивидуального подхода к каждому проекту. Зарабатывайте больше с помощью интернет-маркетинга вместе с нами!
           </p>
@@ -146,27 +109,27 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-[#004C97] rounded-md xz:p-4 sd:p-6 text-white/90 text-center  xz:mb-1 sd:mb-4'>
+          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center  xz:mb-2 sd:mb-4'>
             <p className=''>
               Разрабатываем сайты любой сложности - от простых лендингов до крупных интернет-магазинов. Фокусируемся на пользовательском опыте и конверсии посетителей в клиентов.
             </p>
           </div>
-          <div className='bg-blue-700 rounded-md xz:p-4 sd:p-6 text-white text-center font-light xz:mb-1 sd:mb-4'>
+          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center xz:mb-2 sd:mb-4'>
             <p className=''>
               Ведем продвижение сайтов в ТОП Google и Яндекса. Комплексная SEO-оптимизация и настройка контекстной рекламы быстро привлекают целевой трафик из поиска.
             </p>
           </div>
-          <div className='bg-[#004C97] rounded-md xz:p-4 sd:p-6 text-white/90 text-center font-light xz:mb-1 sd:mb-4'>
+          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6  text-center xz:mb-2 sd:mb-4'>
             <p className=''>
               Создаем уникальный дизайн сайтов. Современный стиль и корпоративный имидж повышают доверие аудитории.
             </p>
           </div>
-          <div className='bg-blue-700 rounded-md xz:p-4 sd:p-6 text-white text-center font-light  xz:mb-1 sd:mb-4'>
+          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold  rounded-md xz:p-4 sd:p-6 text-center  xz:mb-2 sd:mb-4'>
             <p className=''>
               Обеспечиваем наполнение сайта полезным контентом, который читают и делятся в соцсетях.
             </p>
           </div>
-          <div className='bg-[#004C97] rounded-md xz:p-4 sd:p-6 text-white/90 text-center font-light'>
+          <div className='bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold rounded-md xz:p-4 sd:p-6 text-center'>
             <p className=''>
               Осуществляем техническую поддержку и обновление сайтов. Ваш ресурс всегда работает быстро и без сбоев.
             </p>
@@ -193,8 +156,6 @@ export default function Home() {
               width={512} height={370} loading="lazy"
             />
 
-
-
             <div className="xz:mt-6 sd:mt-0 xz:ml-0 sd:ml-10 text-justify" >
               <p className="">
                 Одна из основных целей - это привлечение новых клиентов, рост продаж и заказов. Сайт должен эффективно конвертировать посетителей в платежеспособных пользователей.
@@ -210,11 +171,49 @@ export default function Home() {
               </p>
             </div>
           </div>
-
         </article>
       </section>
 
-      <div className='mt-12 container mx-auto'>
+      <section className="mt-16 mb-10 w-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white">
+        <div className='container mx-auto'>
+          <div className="pt-12 pb-32 ">
+            <div className="container mx-auto">
+              <p className="sd:text-3xl xz:text-2xl uppercase text-center">
+                Стоимость и сроки
+              </p>
+              <div className="flex items-center justify-between mt-16">
+                <div className="w-1/2 xz:text-sm sd:text-xl">
+                  Стоимость разработки сайта
+                </div>
+                <p className="font-bold text-xl sd:text-2xl">
+                  от 170 рублей
+                </p>
+              </div>
+              <div className="mt-10 flex items-center justify-between">
+                <div className="w-1/2 xz:text-sm sd:text-xl">
+                  Срок разработки
+                </div>
+                <p className="font-bold text-xl">
+                  от 2-х дней
+                </p>
+              </div>
+              <div className="float-right mt-16">
+                <BtnComp el='Разаботка сайта' />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div className="flex justify-end container mx-auto">
+        <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">
+          подробнее о стоимости
+        </Link>
+      </div>
+
+
+      <div className='mt-16 container mx-auto'>
         <p className="font-semibold uppercase mb-3">
           Наши услуги по продвижению
         </p>
@@ -366,6 +365,24 @@ export default function Home() {
           </div>
         </article>
       </section>
+
+      <div className="my-20 bg-blue-600 rounded-2xl pt-8 pb-8">
+        <div className="text-center px-2">
+          <p className="mb-2 font-semibold sd:text-xl xz:text-lg text-white uppercase tracking-wider">
+            Закажите свой сайт сегодня и получите скидку 10%!
+          </p>
+          <p className="mb-6 font-semibold sd:text-xl xz:text-lg text-white">
+            Свяжитесь с нами прямо сейчас, и мы с удовольствием начнем работу над вашим будущим cайтом.
+          </p>
+          <div className='animate-pulse'>
+          <a href="tel:80333511597" className='' >
+            <span className="text-3xl text-white font-bold blok w-full text-center">
+              8 (033) 351-15-97
+            </span>
+            </a>
+            </div>
+        </div>
+      </div>
 
       <section className="container mx-auto mt-20">
         <p className="font-semibold uppercase mb-4 text-lg">

@@ -31,7 +31,7 @@ const DlyaKlientaPage = () => {
 									<div className="sd:h-[30vh] xz:h-full">
 										<Image src='/articles/1.webp' className="object-cover w-full h-full" alt="картинка статьи как сэкономить на разработке сайта" width={998} height={718} />
 									</div>
-									<div className="mt-4 px-3">
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
 										<p className="text-lg font-semibold underline">
 											Как заказать хороший сайт без лишних переплат
 										</p>
@@ -48,7 +48,7 @@ const DlyaKlientaPage = () => {
 									<div className="sd:h-[30vh] xz:h-full">
 										<Image src='/articles/2.webp' className="object-cover w-full h-full" alt="Почему качество сайта играет решающую роль" width={998} height={718} />
 									</div>
-									<div className="mt-4 px-3">
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
 										<p className="text-lg font-semibold underline">
 											Почему качество сайта играет решающую роль
 										</p>
@@ -64,7 +64,7 @@ const DlyaKlientaPage = () => {
 									<div className="sd:h-[30vh] xz:h-full">
 										<Image src='/articles/3.webp' className="object-cover w-full h-full" alt="Сайт на конструкторе, преимущества и недостатки" width={998} height={718} />
 									</div>
-									<div className="mt-4 px-3">
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
 										<p className="text-lg font-semibold underline">
 											Сайт на конструкторе, преимущества и недостатки
 										</p>
@@ -80,7 +80,7 @@ const DlyaKlientaPage = () => {
 									<div className="sd:h-[30vh] xz:h-full">
 										<Image src='/articles/4.webp' className="object-cover w-full h-full" alt="Уникальный сайт, преимущества и недостатки" width={998} height={718} />
 									</div>
-									<div className="mt-4 px-3">
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
 										<p className="text-lg font-semibold underline">
 											Уникальный сайт созданый опытным разработчиком, преимущества и недостатки
 										</p>
@@ -96,9 +96,26 @@ const DlyaKlientaPage = () => {
 									<div className="sd:h-[30vh] xz:h-full">
 										<Image src='/articles/5.webp' className="object-cover w-full h-full" alt="10 Вопросов Перед Заказом Сайта" width={998} height={718} />
 									</div>
-									<div className="mt-4 px-3">
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
 										<p className="text-lg font-semibold underline">
-										10 ключевых вопросов для вашего разработчика перед заказом сайта
+											10 ключевых вопросов для вашего разработчика перед заказом сайта
+										</p>
+									</div>
+								</Link>
+							</li>
+
+
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/kak-sdelat-sajt-besplatno-samomu`}
+									href='/dlya-klienta/kak-sdelat-sajt-besplatno-samomu'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/6.webp' className="object-cover w-full h-full" alt="Как сделать сайт бесплатно самому" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
+										<p className="text-lg font-semibold underline">
+											Как сделать сайт бесплатно самому
 										</p>
 									</div>
 								</Link>

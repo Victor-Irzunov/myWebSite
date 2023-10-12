@@ -23,6 +23,10 @@ export const useDataArticles = async (link) => {
 			const { dataArticle5 } = await import('@/constans/articles/dataArticle5');
 			data = dataArticle5;
 			break
+		case 'kak-sdelat-sajt-besplatno-samomu':
+			const { dataArticle6 } = await import('@/constans/articles/dataArticle6');
+			data = dataArticle6;
+			break
 	}
 
 	return { data };
