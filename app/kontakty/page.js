@@ -1,5 +1,7 @@
 import ContactBlock from "@/components/contactBlock/ContactBlock";
+import ImageDogovorComp from "@/components/imgDogovorComp/ImageDogovorComp";
 import Image from "next/image";
+import { DownloadOutlined } from '@ant-design/icons';
 
 export const metadata = {
 	title: 'Контакты компании по разработке и продвижению сайтов VI:TECH',
@@ -47,7 +49,50 @@ const ContactPage = () => {
 						<ContactBlock />
 					</section>
 
-					<div className="mt-28 text-center font-bold text-[#004C97]">
+					<section className="mt-12">
+						<h2 className="font-semibold text-lg">
+							Наши реквизиты
+						</h2>
+						<address className="mt-3 xz:text-sm sd:text-base">
+							<p className="">
+								&copy; 2015-2023 компания «VI:TECH» Все права защищены. Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
+							</p>
+							<p className="">
+								Республика Беларусь г.Минск ул. К.Туровского 8
+							</p>
+							<p className="">
+								Ирзунов В.К. УНП KA5795000 Государственная регистрация от 06.03.2023, Инспекция МНС по Первомайскому району г.Минска
+							</p>
+							<p className="">
+								Номер счета
+								BY48MTBK30140008999900633251
+							</p>
+							<p className="">
+								Номер договора
+								32546661
+							</p>
+						</address>
+					</section>
+
+					<section className="mt-8">
+						<h3 className="font-semibold">
+							Договор на разработку сайта
+						</h3>
+						<div className="mt-4 pl-6">
+							<ImageDogovorComp />
+						</div>
+						<div className="mt-5 font-semibold pl-6">
+							<a href="/dogovor/Dogovor.docx"
+								download
+								className="underline uppercase text-xs mr-3"
+							>
+								Скачать договор
+							</a>
+							<DownloadOutlined />
+						</div>
+					</section>
+
+					<div className="mt-32 text-center font-bold text-[#004C97]">
 						<p className="">
 							Уважаемый клиент, если вы все еще сомневаетесь в необходимости разработки и продвижения вашего сайта, давайте сделаем следующий шаг вместе. Не упустите возможность получить новых клиентов из поисковых систем Google и Яндекс. Свяжитесь с нами сейчас, и мы создадим для вас сайт, который не только соответствует вашим потребностям, но и принесет вам результаты.
 						</p>

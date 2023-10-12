@@ -19,6 +19,10 @@ export const useDataArticles = async (link) => {
 			const { dataArticle4 } = await import('@/constans/articles/dataArticle4');
 			data = dataArticle4;
 			break
+		case '10-voprosov-pered-zakazom-sajta':
+			const { dataArticle5 } = await import('@/constans/articles/dataArticle5');
+			data = dataArticle5;
+			break
 	}
 
 	return { data };

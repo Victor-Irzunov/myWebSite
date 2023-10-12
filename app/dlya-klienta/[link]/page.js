@@ -1,6 +1,7 @@
 import { useDataArticles } from "@/hook/dataArticlesHook";
 import { Empty } from "antd";
 import Image from "next/image";
+import Link from "next/link";
 
 export function generateMetadata({ params: { link } }) {
 	let title;
@@ -36,7 +37,17 @@ const page = async ({ params: { link } }) => {
 	return (
 		<main className="pt-28 pb-16">
 			<article className="container mx-auto">
-				<section>
+
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta`}>
+					<div className="flex justify-start items-center pr-1 cursor-pointer">
+						<Image src='/arrow-left.svg' alt="Кнопка возврата меню"
+							className="invert" width={30} height={30}
+						/>
+						<span className="text-black ml-2 uppercase">Назад</span>
+					</div>
+				</Link>
+
+				<section className="mt-12">
 					<div className="mb-12">
 						<h1 className="text-3xl text-[#004C97] uppercase">
 							{data[0].title}

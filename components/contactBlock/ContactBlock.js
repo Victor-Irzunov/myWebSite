@@ -25,20 +25,19 @@ const ContactBlock = () => {
 			className={`
 			bg-white xz:w-full xy:w-4/5
 			sd:w-1/2 overflow-x-hidden
-			rounded-r-md shadow-xl py-8
+			rounded-r-md shadow-xl pt-10 pb-3
 			px-3 absolute top-16 left-0
 			transition-transform duration-500
 			 ${isOpen ? "slide-in-left" : "slide-out-left sd:left-12 xz:left-9"}
 			 `}
 		>
-			<div className="absolute top-2 right-2" onClick={() => setIsOpen(!isOpen)}>
+			<div className="absolute top-1.5 right-1.5" onClick={() => setIsOpen(!isOpen)}>
 				{
 					isOpen ?
-						<Image src="/close-blue.svg" alt="Кнопка закрытия блока контактов" width={30} height={30} />
+						<Image src="/close-blue.svg" className="cursor-pointer" alt="Кнопка закрытия блока контактов" width={25} height={25} />
 						:
-						<Image src="/arrow-right-blue.svg" alt="Кнопка закрытия блока контактов" width={30} height={30} />
+						<Image src="/arrow-right-blue.svg" className="cursor-pointer" alt="Кнопка закрытия блока контактов" width={25} height={25} />
 				}
-
 			</div>
 
 			<div className="flex items-start mb-5">
@@ -75,11 +74,8 @@ const ContactBlock = () => {
 					</Space>
 				</div>
 			</div>
-			<div className="pl-10">
-				УНП KA5795000
-			</div>
 
-			<div className="flex items-center mt-7 pl-10">
+			<div className="flex items-center mt-2 pl-10">
 				<a href='viber://chat?number=%2B375339174921' target="_blank" className="mr-5">
 					<Image src='/contact/viber.svg' alt='Вайбер' width={30} height={30}
 					/>

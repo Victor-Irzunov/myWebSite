@@ -87,6 +87,22 @@ const DlyaKlientaPage = () => {
 									</div>
 								</Link>
 							</li>
+
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/10-voprosov-pered-zakazom-sajta`}
+									href='/dlya-klienta/10-voprosov-pered-zakazom-sajta'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/5.webp' className="object-cover w-full h-full" alt="10 Вопросов Перед Заказом Сайта" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3">
+										<p className="text-lg font-semibold underline">
+										10 ключевых вопросов для вашего разработчика перед заказом сайта
+										</p>
+									</div>
+								</Link>
+							</li>
 						</ul>
 					</section>
 				</div>

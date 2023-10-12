@@ -19,7 +19,7 @@ const Footer = () => {
 	}
 
 	return (
-		<footer className="bg-[#15579e] pt-20 pb-10">
+		<footer className="bg-[#15579e] pt-16 pb-6">
 			<div className="container mx-auto px-3">
 				<div className="flex justify-between">
 					<div className="">
@@ -53,6 +53,26 @@ const Footer = () => {
 				</div>
 
 				<BtnTehPodderzhka />
+
+				<div className="mt-8 text-xs text-slate-300 font-light border-t border-gray-300 pt-2">
+					<p className="">
+						&copy; 2015-2023 компания «VI:TECH» Все права защищены. Информация на сайте не является публичной офертой и предоставляется исключительно в информационных целях.
+					</p>
+					<p className="">
+						Республика Беларусь г.Минск ул. К.Туровского 8
+					</p>
+					<p className="">
+						Ирзунов В.К. УНП KA5795000 Государственная регистрация от 06.03.2023, Инспекция МНС по Первомайскому району г.Минска
+					</p>
+					<p className="">
+						Номер счета
+						BY48MTBK30140008999900633251
+					</p>
+					<p className="">
+						Номер договора
+						32546661
+					</p>
+				</div>
 			</div>
 		</footer>
 	)

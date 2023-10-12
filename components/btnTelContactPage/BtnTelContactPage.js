@@ -20,7 +20,7 @@ const BtnTelContactPage = () => {
 	return (
 		<div className="flex items-start mb-5">
 			<Image src='/contact/phone-blue.svg' alt='Телефон компании VI:TECH' width={30} height={30} />
-			<span className="ml-3">
+			<span className="ml-3 text-lg">
 				<a href="tel:80333511597"
 					onClick={() => gtag_report_conversion('/')}
 				>
