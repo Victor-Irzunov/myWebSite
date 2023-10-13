@@ -1,7 +1,6 @@
 import Header from '@/components/header/Header'
 import './globals.css'
 import Footer from '@/components/footer/Footer'
-// import ReplainWidget from '@/components/ReplainWidget/ReplainWidget'
 import dynamic from 'next/dynamic';
 
 const ReplainWidget = dynamic(() => import('@/components/ReplainWidget/ReplainWidget'));
@@ -42,7 +41,7 @@ export default function RootLayout({ children }) {
               `
           }}
         /> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
