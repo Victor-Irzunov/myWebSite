@@ -162,7 +162,7 @@ const CardProdvizhenie = () => {
 				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 py-3 border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
 						<p className="text-2xl font-semibold text-orange-500">
-							Премиум
+							Профи
 						</p>
 						<p className="font-light text-sm mt-3">
 							Удобен для интернет-магазинов и крупных сайтов
