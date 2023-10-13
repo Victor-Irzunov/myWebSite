@@ -98,6 +98,11 @@ const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2, i
 												<p onClick={isCloseMenu}>Реклама Google и Яндекс</p>
 											</Link>
 										</li>
+										<li className="text-sky-400 pb-2 hover:bg-slate-600 pl-1 pt-2">
+											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-audit-sajta`}>
+												<p onClick={isCloseMenu}>SEO аудит сайта</p>
+											</Link>
+										</li>
 									</ul>
 								</li>
 						}

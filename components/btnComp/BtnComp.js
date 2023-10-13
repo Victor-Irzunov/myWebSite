@@ -3,7 +3,7 @@ import { Button, Tag } from 'antd';
 import { useState } from 'react'
 import { ModalUniversal } from '../modal/ModalUniversal';
 
-const BtnComp = ({ el, tag, title2 = '', konsultaciya, color='purple' }) => {
+const BtnComp = ({ el, tag, title2 = '', konsultaciya, color }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [title, setTitle] = useState('');
 	const [isActive, setIsActive] = useState({

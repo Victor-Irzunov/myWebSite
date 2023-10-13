@@ -4,6 +4,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic';
 import BlockMainPage from '@/components/blockMainPage/BlockMainPage';
 import LinkScrollCom from '@/components/LinkScroll/LinkScrollCom';
+import PriceSection from '@/components/priceSection/PriceSection';
 
 const VideoPlayer = dynamic(() => import('@/components/video/VideoPlayer'));
 
@@ -180,41 +181,11 @@ export default function Home() {
         </article>
       </section>
 
-      <section id='site' className="mt-16 mb-10 w-full bg-gradient-to-r from-sky-500 to-indigo-500">
-        <div className='container mx-auto'>
-          <div className="pt-12 pb-32 ">
-            <div className="container mx-auto">
-              <p className="sd:text-3xl xz:text-2xl uppercase text-center">
-                Стоимость и сроки
-              </p>
-              <div className="flex items-center justify-between mt-16">
-                <div className="w-1/2 xz:text-sm sd:text-xl">
-                  Стоимость разработки сайта
-                </div>
-                <p className="font-semibold text-xl sd:text-2xl">
-                  от 170 BYN
-                </p>
-              </div>
-              <div className="mt-10 flex items-center justify-between">
-                <div className="w-1/2 xz:text-sm sd:text-xl">
-                  Срок разработки
-                </div>
-                <p className="font-semibold text-xl">
-                  от 2-х дней
-                </p>
-              </div>
-              <div className="float-right mt-16">
-                <BtnComp el='Разаботка сайта' />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
+      <PriceSection />
 
       <div className="flex justify-end container mx-auto">
         <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">
-          подробнее о стоимости
+          подробнее по стоимости
         </Link>
       </div>
 
@@ -381,12 +352,12 @@ export default function Home() {
             Свяжитесь с нами прямо сейчас, и мы с удовольствием начнем работу над вашим будущим cайтом.
           </p>
           <div className='animate-pulse'>
-          <a href="tel:80333511597" className='' >
-            <span className="text-3xl text-white font-bold blok w-full text-center">
-              8 (033) 351-15-97
-            </span>
+            <a href="tel:80333511597" className='' >
+              <span className="text-3xl text-white font-bold blok w-full text-center">
+                8 (033) 351-15-97
+              </span>
             </a>
-            </div>
+          </div>
         </div>
       </div>
 
