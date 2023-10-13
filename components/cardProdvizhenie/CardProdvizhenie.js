@@ -7,11 +7,11 @@ const CardProdvizhenie = () => {
 		<div>
 			<h3 className="mb-10 uppercase font-semibold sd:text-2xl xz:text-xl text-center">Тарифы на продвижение сайта</h3>
 			<p className="font-light text-center">
-			Каждый из наших тарифов может быть индивидуально адаптирован под уникальные потребности вашего бизнеса. Дополнительные услуги доступны по запросу. Наши эксперты всегда готовы помочь вам выбрать наилучшее решение для вашего проекта.
-</p>
+				Каждый из наших тарифов может быть индивидуально адаптирован под уникальные потребности вашего бизнеса. Дополнительные услуги доступны по запросу. Наши эксперты всегда готовы помочь вам выбрать наилучшее решение для вашего проекта.
+			</p>
 			<div className="sd:flex flex-row sd:justify-evenly sd:items-center mt-11">
 				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 pb-3 pt-2 border rounded-md text-center">
-					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
+					<div className="bg-slate-100 py-3 rounded-md sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-blue-600">
 							Лайт
 						</p>
@@ -19,7 +19,6 @@ const CardProdvizhenie = () => {
 							Удобен для одностраничных сайтов
 						</p>
 					</div>
-
 					<div className="px-1 mt-8">
 						<div className="flex justify-between text-xs mb-3">
 							<span className="font-light">
@@ -38,12 +37,9 @@ const CardProdvizhenie = () => {
 							</span>
 						</div>
 
-						{/* <Image src='/cross.svg' alt='Опция недоступна' width={15} height={15} /> */}
-						{/* '/check.svg' : '/cross.svg' */}
-
 						<div className="flex justify-between text-xs mb-3">
 							<span className="font-light">
-								Оптимизация сайта под <strong>SEO</strong>
+								<strong>SEO</strong> оптимизация сайта
 								{' '}
 								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
 									<QuestionCircleOutlined />
@@ -87,7 +83,7 @@ const CardProdvizhenie = () => {
 
 
 				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2  pb-3 pt-2  border rounded-md text-center">
-					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
+					<div className="bg-slate-100 py-3 rounded-md  sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-green-600">
 							Стандарт
 						</p>
@@ -116,7 +112,7 @@ const CardProdvizhenie = () => {
 
 						<div className="flex justify-between text-xs mb-3">
 							<span className="font-light">
-								Оптимизация сайта под <strong>SEO</strong>
+								<strong>SEO</strong> оптимизация сайта
 								{' '}
 								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
 									<QuestionCircleOutlined />
@@ -160,7 +156,7 @@ const CardProdvizhenie = () => {
 
 
 				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2  pb-3 pt-2  border rounded-md text-center">
-					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
+					<div className="bg-slate-100 py-3 rounded-md sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-orange-500">
 							Профи
 						</p>
@@ -189,7 +185,7 @@ const CardProdvizhenie = () => {
 
 						<div className="flex justify-between text-xs mb-3">
 							<span className="font-light">
-								Оптимизация сайта под <strong>SEO</strong>
+								<strong>SEO</strong> оптимизация сайта
 								{' '}
 								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
 									<QuestionCircleOutlined />

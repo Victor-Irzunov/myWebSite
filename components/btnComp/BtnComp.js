@@ -3,7 +3,7 @@ import { Button, Tag } from 'antd';
 import { useState } from 'react'
 import { ModalUniversal } from '../modal/ModalUniversal';
 
-const BtnComp = ({ el, tag, title2 = '', konsultaciya, color }) => {
+const BtnComp = ({ el, tag, title2 = '', konsultaciya, color='purple' }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [title, setTitle] = useState('');
 	const [isActive, setIsActive] = useState({
@@ -23,7 +23,7 @@ const BtnComp = ({ el, tag, title2 = '', konsultaciya, color }) => {
 		<>
 			{
 				tag ?
-					<Tag color='purple' className='cursor-pointer animate-bounce'
+					<Tag color={color} className='cursor-pointer animate-bounce'
 						onClick={() => showModal(`${el}`, "order")}
 					>
 					<span className='uppercase'>{title2}</span>

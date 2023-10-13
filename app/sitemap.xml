@@ -115,4 +115,34 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta/pochemu-kachestvo-sajta-igraet-reshayushuyu-rol</loc>
+    <lastmod>2023-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta/preimushestva-i-nedostatki-sajta-na-konstruktore</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta/unikalnyj-sajt-sozdannyj-opytnym-razrabotchikom</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta/10-voprosov-pered-zakazom-sajta</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vi-tech.by/dlya-klienta/kak-sdelat-sajt-besplatno-samomu</loc>
+    <lastmod>2023-10-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

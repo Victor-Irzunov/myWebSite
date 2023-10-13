@@ -301,7 +301,7 @@ const ProdvizheniePage = () => {
 							width={1920} height={1080}
 						/>
 					</div>
-					<div className="sd:w-1/2 w-full sd:ml-7 xz:ml-0 sd:pt-10">
+					<div className="sd:w-1/2 w-full xz:mt-10 sd:mt-0 sd:ml-7 xz:ml-0 sd:pt-10">
 						<p className="sd:text-lg xz:text-base">
 							Дайте вашему сайту крылья с нашими услугами! Мы предлагаем продвижение вашего сайта с использованием <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/seo-prodvizhenie-sajta`} className="text-blue-800 underline">SEO </Link> и быструю раскрутку через <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontekstnaya-reklama`} className="text-blue-800 underline">контекстную рекламу</Link>. Гарантируем высокие результаты, увеличение посещаемости и привлечение целевой аудитории. Доверьтесь нам и дайте вашему бизнесу возможность процветать онлайн!
 						</p>
@@ -313,7 +313,7 @@ const ProdvizheniePage = () => {
 				</p>
 
 				<div className="flex justify-end">
-					<BtnComp tag={true} title2={`Заказать продвижение сайта`} />
+					<BtnComp tag={true} title2={`Заказать продвижение сайта`} color='blue' />
 				</div>
 			</div>
 		</main >
