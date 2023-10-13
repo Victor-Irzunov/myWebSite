@@ -27,6 +27,10 @@ export function generateMetadata({ params: { link } }) {
 			title = 'Как сделать сайт бесплатно самому | IT компания VI:TECH';
 			description = 'Хотите узнать, как создать собственный сайт бесплатно? Наша статья расскажет вам о преимуществах и ограничениях бесплатных конструкторов, а также предоставит список рекомендованных инструментов для самостоятельного создания вашего веб-пространства.';
 			break;
+		case '10-idej-dlya-sozdaniya-pribylnyh-sajtov':
+			title = '10 Идей для создания прибыльных сайтов и заработка в интернете | IT компания VI:TECH';
+			description = 'Интернет предоставляет огромные возможности для заработка. Узнайте о 10 прибыльных идей для создания сайтов и онлайн-проектов, которые могут принести вам доход. Погрузитесь в мир виртуального бизнеса.'
+			break;
 	}
 	return {
 		title: title,
@@ -39,7 +43,7 @@ const page = async ({ params: { link } }) => {
 
 	if (!data) return <Empty className="h-[60vh] pt-32" />;
 	return (
-		<main className="pt-28 pb-16">
+		<main className="pt-28 pb-20">
 			<article className="container mx-auto">
 
 				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta`}>
