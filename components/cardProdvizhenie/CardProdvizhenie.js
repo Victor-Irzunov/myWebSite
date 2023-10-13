@@ -5,12 +5,12 @@ import { Tooltip } from 'antd';
 const CardProdvizhenie = () => {
 	return (
 		<div>
-			<h3 className="mb-10 uppercase font-semibold text-xl text-center">Тарифы на продвижение сайта</h3>
-
-			<div className="sd:flex flex-row sd:justify-evenly sd:items-center">
-
-
-				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 py-3 border rounded-md text-center">
+			<h3 className="mb-10 uppercase font-semibold sd:text-2xl xz:text-xl text-center">Тарифы на продвижение сайта</h3>
+			<p className="font-light text-center">
+			Каждый из наших тарифов может быть индивидуально адаптирован под уникальные потребности вашего бизнеса. Дополнительные услуги доступны по запросу. Наши эксперты всегда готовы помочь вам выбрать наилучшее решение для вашего проекта.
+</p>
+			<div className="sd:flex flex-row sd:justify-evenly sd:items-center mt-11">
+				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 pb-3 pt-2 border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
 						<p className="text-2xl font-semibold text-blue-600">
 							Лайт
@@ -86,7 +86,7 @@ const CardProdvizhenie = () => {
 				</div>
 
 
-				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 py-3 border rounded-md text-center">
+				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2  pb-3 pt-2  border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
 						<p className="text-2xl font-semibold text-green-600">
 							Стандарт
@@ -159,7 +159,7 @@ const CardProdvizhenie = () => {
 				</div>
 
 
-				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 py-3 border rounded-md text-center">
+				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2  pb-3 pt-2  border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md h-[13vh]">
 						<p className="text-2xl font-semibold text-orange-500">
 							Профи
