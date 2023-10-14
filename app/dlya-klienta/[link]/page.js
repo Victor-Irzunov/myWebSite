@@ -43,7 +43,7 @@ const page = async ({ params: { link } }) => {
 
 	if (!data) return <Empty className="h-[60vh] pt-32" />;
 	return (
-		<main className="pt-28 pb-20">
+		<main className="pt-28 pb-24">
 			<article className="container mx-auto">
 
 				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta`}>

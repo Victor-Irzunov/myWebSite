@@ -285,7 +285,7 @@ const ProdvizheniePage = () => {
 			</section>
 
 
-			<section className="mt-20 mb-20 container mx-auto">
+			<section className="mt-20 mb-28 container mx-auto">
 				<CardProdvizhenie />
 			</section>
 

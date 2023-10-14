@@ -10,7 +10,7 @@ const CardProdvizhenie = () => {
 				Каждый из наших тарифов может быть индивидуально адаптирован под уникальные потребности вашего бизнеса. Дополнительные услуги доступны по запросу. Наши эксперты всегда готовы помочь вам выбрать наилучшее решение для вашего проекта.
 			</p>
 			<div className="sd:flex flex-row sd:justify-evenly sd:items-center mt-11">
-				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2 pb-3 pt-2 border rounded-md text-center">
+				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0  sd:h-[55vh] xz:h-auto  my-7 px-2 pb-3 pt-2 border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-blue-600">
 							Лайт
@@ -82,7 +82,7 @@ const CardProdvizhenie = () => {
 				</div>
 
 
-				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2  pb-3 pt-2  border rounded-md text-center">
+				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 sd:h-[55vh] xz:h-auto my-7 px-2  pb-3 pt-2  border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md  sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-green-600">
 							Стандарт
@@ -155,7 +155,7 @@ const CardProdvizhenie = () => {
 				</div>
 
 
-				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 h-[55vh] my-7 px-2  pb-3 pt-2  border rounded-md text-center">
+				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0 sd:h-[55vh] xz:h-auto  my-7 px-2  pb-3 pt-2  border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-orange-500">
 							Профи
