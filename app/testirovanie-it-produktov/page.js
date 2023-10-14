@@ -1,4 +1,5 @@
 import CarouselComp from "@/components/CarouselComp/CarouselComp"
+import TestPageCard from "@/components/testPageCard/TestPageCard"
 import Image from "next/image"
 
 export const metadata = {
@@ -16,7 +17,7 @@ const page = () => {
 					<CarouselComp />
 				</div>
 
-				<div className="container mx-auto pt-24">
+				<div className="container mx-auto sd:pt-24 xz:pt-12">
 					<div className="">
 						<h1 className="uppercase xz:text-2xl sd:text-4xl text-[#004C97]">
 							Тестирование IT продуктов
@@ -68,7 +69,23 @@ const page = () => {
 							Для дополнительной информации и обсуждения того, как мы можем помочь вам усовершенствовать ваш веб-продукт, свяжитесь с нами. Наша команда готова помочь вам достичь выдающихся результатов.
 						</p>
 					</article>
+
+
+					<div className="mt-24 mb-20">
+						<h2 className="font-semibold text-xl uppercase text-center mb-10">
+							Наши услуги по тестированию
+						</h2>
+						<TestPageCard />
+						<p className="mt-7 font-light uppercase text-sm text-center">
+							цена договорная
+						</p>
+					</div>
+
+					<p className="font-bold text-center text-lg">
+						Гарантированный успех начинается с надежного тестирования. Доверьте нам ваш проект, и мы обеспечим ему безупречное качество. Начните сейчас – запросите бесплатную консультацию и оценку вашего проекта. Наши эксперты всегда готовы помочь вам достичь выдающихся результатов. Убедитесь в надежности вашего продукта уже сегодня!
+					</p>
 				</div>
+
 
 			</section>
 
