@@ -10,6 +10,8 @@ const CardProdvizhenie = () => {
 				Каждый из наших тарифов может быть индивидуально адаптирован под уникальные потребности вашего бизнеса. Дополнительные услуги доступны по запросу. Наши эксперты всегда готовы помочь вам выбрать наилучшее решение для вашего проекта.
 			</p>
 			<div className="sd:flex flex-row sd:justify-evenly sd:items-center mt-11">
+
+
 				<div className="sd:w-1/4 xz:w-full sd:mx-3 xz:mx-0  sd:h-[55vh] xz:h-auto  my-7 px-2 pb-3 pt-2 border rounded-md text-center">
 					<div className="bg-slate-100 py-3 rounded-md sd:h-[13vh] xz:h-[17vh]">
 						<p className="text-2xl font-semibold text-blue-600">
@@ -19,6 +21,7 @@ const CardProdvizhenie = () => {
 							Удобен для одностраничных сайтов
 						</p>
 					</div>
+
 					<div className="px-1 mt-8">
 						<div className="flex justify-between text-xs mb-3">
 							<span className="font-light">
@@ -37,13 +40,14 @@ const CardProdvizhenie = () => {
 							</span>
 						</div>
 
-						<div className="flex justify-between text-xs mb-3">
-							<span className="font-light">
+						<div className="flex justify-between items-center text-xs mb-3">
+							<span className="font-light relative">
 								<strong>SEO</strong> оптимизация сайта
-								{' '}
-								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
-									<QuestionCircleOutlined />
-								</Tooltip>
+								<div className="absolute top-0 -right-4">
+									<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
+										<QuestionCircleOutlined />
+									</Tooltip>
+								</div>
 							</span>
 							<span className="font-semibold text-green-600">
 								Базовая
@@ -111,12 +115,14 @@ const CardProdvizhenie = () => {
 						</div>
 
 						<div className="flex justify-between text-xs mb-3">
-							<span className="font-light">
+							<span className="font-light relative">
 								<strong>SEO</strong> оптимизация сайта
-								{' '}
-								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
-									<QuestionCircleOutlined />
-								</Tooltip>
+
+								<div className="absolute top-0 -right-4">
+									<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
+										<QuestionCircleOutlined />
+									</Tooltip>
+								</div>
 							</span>
 							<span className="font-semibold text-green-600">
 								Полная
@@ -184,12 +190,14 @@ const CardProdvizhenie = () => {
 						</div>
 
 						<div className="flex justify-between text-xs mb-3">
-							<span className="font-light">
+							<span className="font-light relative">
 								<strong>SEO</strong> оптимизация сайта
-								{' '}
-								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
-									<QuestionCircleOutlined />
-								</Tooltip>
+
+								<div className="absolute top-0 -right-4">
+									<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
+										<QuestionCircleOutlined />
+									</Tooltip>
+								</div>
 							</span>
 							<span className="font-semibold text-green-600">
 								Полная
@@ -214,12 +222,14 @@ const CardProdvizhenie = () => {
 						</div>
 
 						<div className="flex justify-between text-xs mb-3">
-							<span className="font-light">
+							<span className="font-light relative">
 								Ежемесячная <strong>SEO</strong> оптимизация
-								{' '}
-								<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
-									<QuestionCircleOutlined />
-								</Tooltip>
+
+								<div className="absolute top-0 -right-4">
+									<Tooltip title={<p className="text-center">Если сайт разработан нашей компанией</p>}>
+										<QuestionCircleOutlined />
+									</Tooltip>
+								</div>
 							</span>
 							<span className="font-semibold">
 								от 299 BYN
