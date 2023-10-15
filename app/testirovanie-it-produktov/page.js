@@ -17,13 +17,13 @@ const page = () => {
 					<CarouselComp />
 				</div>
 
-				<div className="container mx-auto sd:pt-24 xz:pt-12">
+				<div className="container mx-auto sd:pt-24 xz:pt-20">
 					<div className="">
 						<h1 className="uppercase xz:text-2xl sd:text-4xl text-[#004C97]">
 							Тестирование IT продуктов
 						</h1>
 					</div>
-					<article className="mt-20">
+					<article className="mt-12">
 						<h2 className="font-semibold text-xl">
 							Почему тестирование важно для стабильной работы сайта и приложения?
 						</h2>
@@ -76,12 +76,9 @@ const page = () => {
 							Наши услуги по тестированию
 						</h2>
 						<TestPageCard />
-						<p className="mt-7 font-light uppercase text-sm text-center">
-							цена договорная
-						</p>
 					</div>
 
-					<p className="font-bold text-center text-lg">
+					<p className="font-bold text-center text-lg text-[#004C97]">
 						Гарантированный успех начинается с надежного тестирования. Доверьте нам ваш проект, и мы обеспечим ему безупречное качество. Начните сейчас – запросите бесплатную консультацию и оценку вашего проекта. Наши эксперты всегда готовы помочь вам достичь выдающихся результатов. Убедитесь в надежности вашего продукта уже сегодня!
 					</p>
 				</div>

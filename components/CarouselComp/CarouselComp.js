@@ -10,7 +10,7 @@ const CarouselComp = () => {
 		<Carousel autoplay pauseOnHover={false} effect='fade'>
 			<div>
 				<Image
-					src={!screens.xs ? '/testirovanie/1.webp' : '/testirovanie/3.webp'}
+					src={!screens.xs ? '/testirovanie/1.webp' : '/testirovanie/5.webp'}
 					alt='Банер на тему тестирования'
 					width={!screens.xs ? 1920 : 598}
 					height={!screens.xs ? 1080 : 970}
