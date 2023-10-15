@@ -28,7 +28,7 @@ const AboutPage = () => {
 				</div>
 			</div>
 
-			<div className="bg-white xm:mt-[40vh] xz:mt-[37vh] xm:pt-10 xz:pt-14 pb-20 h-full relative">
+			<div className="bg-white xm:mt-[40vh] xz:mt-[37vh] xm:pt-10 xz:pt-1 pb-20 h-full relative">
 				<div className="container mx-auto">
 
 					<div className="mt-16 text-[#004C97] font-semibold text-center">

@@ -165,7 +165,7 @@ const PriceSection = () => {
 					</div>
 				</div>
 				<div className='flex justify-end mt-10'>
-					<BtnComp tag={true} title2='Заказать сайт' color='blue' />
+					<BtnComp tag={true} title2='Заказать сайт' color='blue' konsultaciya={true} />
 				</div>
 			</div>
 		</section>

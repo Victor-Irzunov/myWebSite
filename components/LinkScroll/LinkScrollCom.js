@@ -10,6 +10,7 @@ const LinkScrollCom = ({link}) => {
 				offset={-100}
 				duration={800}
 				className="cursor-pointer"
+				rel="nofollow"
 			>
 				<div className='flex flex-col justify-start items-center mt-20'>
 				

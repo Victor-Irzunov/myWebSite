@@ -17,13 +17,13 @@ const page = () => {
 					<CarouselComp />
 				</div>
 
-				<div className="container mx-auto sd:pt-24 xz:pt-20">
+				<div className="container mx-auto sd:pt-24 xz:pt-16">
 					<div className="">
 						<h1 className="uppercase xz:text-2xl sd:text-4xl text-[#004C97]">
 							Тестирование IT продуктов
 						</h1>
 					</div>
-					<article className="mt-12">
+					<article className="mt-8">
 						<h2 className="font-semibold text-xl">
 							Почему тестирование важно для стабильной работы сайта и приложения?
 						</h2>

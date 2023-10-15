@@ -181,7 +181,7 @@ export default function Home() {
         </article>
       </section>
 
-      <PriceSection />
+      <PriceSection  />
 
       <div className="flex justify-end container mx-auto">
         <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">

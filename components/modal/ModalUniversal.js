@@ -1,7 +1,7 @@
 "use client"
 import { Modal } from 'antd'
 import { FormQuestion } from '../form/FormQuestion'
-import { FormTel } from '../form/FormTel'
+// import { FormTel } from '../form/FormTel'
 import FormOcenkaProekta from '../form/FormOcenkaProekta'
 import { FormOrder } from '../form/FormOrder'
 
@@ -14,6 +14,7 @@ export const ModalUniversal = ({ isModalOpen, title = '', handleCancel, isActive
 			onCancel={handleCancel}
 			centered
 			footer={null}
+			className='overflow-x-hidden'
 		>
 			{
 				isActive.order && !tag && !order ? <FormQuestion handleCancel={handleCancel} el={el} tag={tag} title={title}  /> : null

@@ -15,37 +15,44 @@ const select = [
 	{
 		value: 'Многостраничный сайт',
 		id: 1
-
 	},
 	{
-		value: 'Одностраничный сайт',
+		value: 'Интернет-магазин',
 		id: 2
 	},
 	{
-		value: 'Сайт-визитка',
+		value: 'Одностраничный сайт',
 		id: 3
 	},
 	{
-		value: 'Корпоративный сайт',
+		value: 'Лендинг',
 		id: 4
 	},
 	{
-		value: 'Внутренее приложение',
+		value: 'Сайт-визитка',
 		id: 5
 	},
 	{
-		value: 'Не знаю',
+		value: 'Корпоративный сайт',
 		id: 6
 	},
 	{
-		value: 'Другое',
+		value: 'Внутренее приложение',
 		id: 7
+	},
+	{
+		value: 'Не знаю',
+		id: 8
+	},
+	{
+		value: 'Другое',
+		id: 9
 	},
 ]
 
 
 
-const FormOcenkaProekta = ({ title, handleCancel , konsultaciya}) => {
+const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 	const [tel, setTel] = useState('')
 	const screens = useScreens()
 
@@ -100,10 +107,9 @@ const FormOcenkaProekta = ({ title, handleCancel , konsultaciya}) => {
 			labelCol={{
 				span: 24,
 			}}
-			wrapperCol={{
-				span: 24,
-
-			}}
+			// wrapperCol={{
+			// 	span: 24,
+			// }}
 			onFinish={onFinish}
 			onFinishFailed={onFinishFailed}
 			autoComplete="off"
@@ -197,7 +203,7 @@ const FormOcenkaProekta = ({ title, handleCancel , konsultaciya}) => {
 					}}
 				>
 					<Button type="primary" htmlType="submit">
-						Получить оценку сайта
+						{konsultaciya ? 'Заказать сайт' : 'Получить оценку сайта'}
 					</Button>
 				</Form.Item>
 			</Form.Item>
