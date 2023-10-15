@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
               `
           }}
         /> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-CG6QV5N03T');
               `
           }}
-        />
+        /> */}
       </head>
       <body>
         <Header />

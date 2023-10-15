@@ -11,6 +11,7 @@ const LinkScrollCom = ({link}) => {
 				duration={800}
 				className="cursor-pointer"
 				rel="nofollow"
+				href='#/'
 			>
 				<div className='flex flex-col justify-start items-center mt-20'>
 				
