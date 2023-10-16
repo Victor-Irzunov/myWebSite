@@ -13,22 +13,32 @@ const CarouselComp = ({ main, }) => {
 					<Carousel autoplay pauseOnHover={false} effect='fade'>
 						<div>
 							<Image
+								src={screens.xs === undefined && '/main/8-small.webp' || screens.xs ? '/main/8-small.webp' : '/main/7-big.webp'}
+								alt='Банер страницы по разработки сайтов'
+								width={screens.xs ? 1080 : 1920}
+								height={screens.xs ? 1920 : 1080}
+								loading="eager"
+							/>
+						</div>
+						{/* <div>
+							<Image
 								src={screens.xs === undefined && '/main/3-small.webp' || screens.xs ? '/main/3-small.webp' : '/main/4-big.webp'}
 								alt='Банер страницы по разработки сайтов'
 								width={screens.xs ? 1080 : 1920}
 								height={screens.xs ? 1920 : 1080}
 								loading="eager"
 							/>
-						</div>
+						</div> */}
 						<div>
 							<Image
-								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ? '/main/2-small.webp' : '/main/1-big.webp'}
+								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ? '/main/2-small2.webp' : '/main/1-big.webp'}
 								alt='Банер страницы по разработки сайтов'
 								width={screens.xs ? 1080 : 1920}
 								height={screens.xs ? 1920 : 1080}
 								loading="eager"
 							/>
 						</div>
+						
 					</Carousel>
 					:
 					<Carousel autoplay pauseOnHover={false} effect='fade'>
