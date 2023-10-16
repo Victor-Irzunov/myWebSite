@@ -11,26 +11,6 @@ const CarouselComp = ({ main, }) => {
 			{
 				main ?
 					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>
-						{/* <div className=''>
-							<Image
-								src={screens.xs === undefined && '/main/8-small2.webp' || screens.xs ? '/main/8-small2.webp' : '/main/4-big.webp'}
-								alt='Банер страницы по разработке сайтов'
-								width={screens.xs ? 575 : 1920}
-								height={screens.xs ? 1022 : 1080}
-								loading="eager"
-								className='relative'
-							/>
-						</div> */}
-						<div>
-							<Image
-								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ?
-									'/main/2-small2.webp' : '/main/1-big2.webp'}
-								alt='Банер страницы по разработке сайтов'
-								width={screens.xs ? 575 : 1920}
-								height={screens.xs ? 1022 : 1080}
-								loading="lazy"
-							/>
-						</div>
 						<div>
 							<Image
 								src={screens.xs === undefined && '/main/13-small.webp' || screens.xs ?
@@ -41,6 +21,17 @@ const CarouselComp = ({ main, }) => {
 								loading="lazy"
 							/>
 						</div>
+						<div>
+							<Image
+								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ?
+									'/main/2-small2.webp' : '/main/1-big2.webp'}
+								alt='Банер страницы по разработке сайтов'
+								width={screens.xs ? 575 : 1920}
+								height={screens.xs ? 1022 : 1080}
+								loading="lazy"
+							/>
+						</div>
+
 					</Carousel>
 					:
 					<Carousel autoplay pauseOnHover={false} effect='fade'>
