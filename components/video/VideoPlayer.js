@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-
 const VideoPlayer = ({portfolio}) => {
   const videoRef = useRef(null);
   const [videoVisible, setVideoVisible] = useState(false); // Состояние видимости видео

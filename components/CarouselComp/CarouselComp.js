@@ -10,7 +10,7 @@ const CarouselComp = ({ main, }) => {
 		<div className={`xz:h-screen xm:h-auto`}>
 			{
 				main ?
-					<Carousel autoplay pauseOnHover={false} effect='fade'>
+					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>
 						<div>
 							<Image
 								src={screens.xs === undefined && '/main/8-small.webp' || screens.xs ? '/main/8-small.webp' : '/main/7-big.webp'}
@@ -20,25 +20,16 @@ const CarouselComp = ({ main, }) => {
 								loading="eager"
 							/>
 						</div>
-						{/* <div>
-							<Image
-								src={screens.xs === undefined && '/main/3-small.webp' || screens.xs ? '/main/3-small.webp' : '/main/4-big.webp'}
-								alt='Банер страницы по разработки сайтов'
-								width={screens.xs ? 1080 : 1920}
-								height={screens.xs ? 1920 : 1080}
-								loading="eager"
-							/>
-						</div> */}
 						<div>
 							<Image
 								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ? '/main/2-small2.webp' : '/main/1-big.webp'}
 								alt='Банер страницы по разработки сайтов'
 								width={screens.xs ? 1080 : 1920}
 								height={screens.xs ? 1920 : 1080}
-								loading="eager"
+								loading="lazy"
 							/>
 						</div>
-						
+
 					</Carousel>
 					:
 					<Carousel autoplay pauseOnHover={false} effect='fade'>
@@ -60,7 +51,6 @@ const CarouselComp = ({ main, }) => {
 								loading="eager"
 							/>
 						</div>
-
 					</Carousel>
 			}
 		</div>
