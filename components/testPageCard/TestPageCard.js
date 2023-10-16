@@ -7,7 +7,7 @@ const TestPageCard = () => {
 
 
 
-			<div className="sd:w-1/4 xz:w-full border bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
+			<div className="sd:w-1/4 xz:w-full border shadow-xl bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
 				<div className="bg-blue-500 h-[15vh] py-2 flex items-center px-2">
 					<Image src='/testirovanie/test.svg' alt='Функциональное тестирование' width={65} height={65} />
 					<h3 className="text-lg font-bold text-left pl-2">
@@ -44,7 +44,7 @@ const TestPageCard = () => {
 			</div>
 
 
-			<div className="sd:w-1/4 xz:w-full border bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
+			<div className="sd:w-1/4 xz:w-full border bg-blue-50  shadow-xl sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
 				<div className="bg-lime-500 h-[15vh] py-2 flex items-center px-2">
 					<Image src='/testirovanie/speed test.svg' alt='Тестирование производительности' width={65} height={65} />
 					<h3 className="text-lg font-bold text-left pl-2">
@@ -84,7 +84,7 @@ const TestPageCard = () => {
 			</div>
 
 
-			<div className="sd:w-1/4 xz:w-full border bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
+			<div className="sd:w-1/4 xz:w-full border bg-blue-50 shadow-xl sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
 				<div className="bg-purple-500 h-[15vh] py-2 flex items-center px-2">
 					<Image src='/testirovanie/application.svg' alt='Тестирование веб-приложений' width={65} height={65} />
 					<h3 className="text-lg font-bold text-left pl-2">
@@ -124,7 +124,7 @@ const TestPageCard = () => {
 			</div>
 
 
-			<div className="sd:w-1/4 xz:w-full border bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
+			<div className="sd:w-1/4 xz:w-full border bg-blue-50 shadow-xl sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
 				<div className="bg-rose-500 h-[15vh] py-2 flex items-center px-2">
 					<Image src='/testirovanie/Automation.svg' alt='Автоматизация тестирования' width={65} height={65} />
 					<h3 className="text-lg font-bold text-left pl-2">
@@ -163,7 +163,7 @@ const TestPageCard = () => {
 				</div>
 			</div>
 
-			<div className="sd:w-1/4 xz:w-full border bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
+			<div className="sd:w-1/4 xz:w-full border bg-blue-50 shadow-xl sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
 				<div className="bg-sky-500 h-[15vh] py-2 flex items-center px-2">
 					<Image src='/testirovanie/mobil.svg' alt='Мобильное тестирование' width={65} height={65} />
 					<h3 className="text-lg font-bold text-left pl-2">

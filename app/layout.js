@@ -30,6 +30,17 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="Eo0Xif5nmQIm7hOzoU1kzcVeqrcRlDBiDWa5au4Yxz4" />
         <meta name="yandex-verification" content="4c1774881f86806f" />
 
+        {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11166544233');
+              `
+          }}
+        /> */}
         <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
         <script
           dangerouslySetInnerHTML={{

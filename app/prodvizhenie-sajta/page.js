@@ -287,6 +287,10 @@ const ProdvizheniePage = () => {
 
 			<section className="mt-20 mb-28 container mx-auto">
 				<CardProdvizhenie />
+
+				<div className="flex justify-end pt-5 sd:pr-16 xz:pr-0">
+					<BtnComp tag={true} title2={`Заказать продвижение сайта`} color='blue' />
+				</div>
 			</section>
 
 
@@ -311,10 +315,6 @@ const ProdvizheniePage = () => {
 				<p className="xz:mt-8 sd:mt-12 mb-8 sd:text-lg text-base">
 					Давайте вместе достигнем успеха в интернете! Начните продвижение вашего сайта с нами уже сегодня. Нажмите на кнопку 'Заказать' и убедитесь сами, как мы можем повысить вашу онлайн видимость и прибыльность. Ваш успех - наша гордость!
 				</p>
-
-				<div className="flex justify-end">
-					<BtnComp tag={true} title2={`Заказать продвижение сайта`} color='blue' />
-				</div>
 			</div>
 		</main >
 	)

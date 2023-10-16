@@ -168,6 +168,11 @@ const PriceSection = () => {
 					<BtnComp tag={true} title2='Заказать сайт' color='blue' konsultaciya={true} />
 				</div>
 			</div>
+			<div className="flex justify-end container mx-auto">
+				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">
+					подробнее по стоимости
+				</Link>
+			</div>
 		</section>
 	)
 }

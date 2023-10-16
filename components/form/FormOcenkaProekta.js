@@ -62,13 +62,19 @@ const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 
 		let messageForm = `<b>Заказ с сайта VI:TECH - ${title}</b>\n`
 		messageForm += `<b> </b>\n`
-		messageForm += `<b>Клиент по имени ${values.name || '-'}  </b>\n`
+		messageForm += `<i>Клиент по имени:  </i>${values.name || '-'} \n`
 		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
-		messageForm += `<b>Примечание: ${values.primechanie || '-'} </b>\n`
+		messageForm += `<i>Примечание:  </i>${values.message || '-'}\n`
 		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
-		messageForm += `<b>Обратная связь: ${values.contact || '-'} </b>\n`
+		messageForm += `<i>Выбор:  </i>${values.select || '-'}\n`
 		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
-		messageForm += `<b>Телефон:</b> ${values.tel}\n`
+		messageForm += `<i>Сайт: </i>${values.link || '-'} \n`
+		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
+		messageForm += `<i>Тариф: </i>  ${values.tarif || '-'}\n`
+		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
+		messageForm += `<i>Обратная связь: </i> ${values.contact || '-'} \n`
+		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
+		messageForm += `<b>Телефон: </b> ${values.tel}\n`
 
 		sendOrderTelegram(messageForm)
 			.then(data => {
@@ -114,10 +120,17 @@ const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 			onFinishFailed={onFinishFailed}
 			autoComplete="off"
 		>
+			{
+				konsultaciya ?
+					<p className='mt-10 mb-10'>
+						Пожалуйста, предоставьте нам данные этой формы, чтобы мы могли подготовить точную оценку стоимости и сроков разработки, учитывая ваши индивидуальные требования к сайту. Мы обязательно свяжемся с вами, как только получим необходимую информацию.
+					</p>
+					:
+					<p className='mt-10 mb-10'>
+						Пожалуйста, предоставьте нам данные этой формы, чтобы мы могли подготовить оценку стоимости и сроков продвижения, учитывая ваш сайт. Мы обязательно свяжемся с вами, как только подготовим необходимую информацию.
+					</p>
+			}
 
-			<p className='mt-10 mb-10'>
-				Пожалуйста, предоставьте нам данные этой формы, чтобы мы могли подготовить точную оценку стоимости и сроков разработки, учитывая ваши индивидуальные требования к сайту. Мы обязательно свяжемся с вами, как только получим необходимую информацию.
-			</p>
 			<Form.Item
 				label='Ваше имя'
 				name="name"
@@ -147,26 +160,64 @@ const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 				/>
 			</Form.Item>
 
-			<Form.Item
-				label={konsultaciya ? 'Выберите, что будем разрабатывать' : 'Выберите, что будем продвигать'}
-				name="select"
-			>
-				<Select
-					placeholder="Выберите.."
-					allowClear
-				>
-					{select.map(el => {
-						return (
-							<Option
-								value={el.value}
-								key={el.id}
-							>
-								{el.value}
+			{
+				konsultaciya ?
+					<Form.Item
+						label={konsultaciya ? 'Выберите, что будем разрабатывать' : 'Выберите, что будем продвигать'}
+						name="select"
+					>
+						<Select
+							placeholder="Выберите.."
+							allowClear
+						>
+							{select.map(el => {
+								return (
+									<Option
+										value={el.value}
+										key={el.id}
+									>
+										{el.value}
+									</Option>
+								)
+							})}
+						</Select>
+					</Form.Item>
+					:
+					<Form.Item
+						label='Название сайта'
+						name="link"
+						tooltip="Напишите пожалуйста ссылку 'https://domain.by/' или домен domain.by, который необходимо продвигать"
+					>
+						<Input />
+					</Form.Item>
+			}
+
+			{
+				!konsultaciya ?
+					<Form.Item
+						label='Тариф'
+						name="tarif"
+						tooltip=""
+					>
+						<Select>
+							<Option value='Лайт' key='Лайт'>
+								Тариф "Лайт"
 							</Option>
-						)
-					})}
-				</Select>
-			</Form.Item>
+							<Option value='Стандарт' key='Стандарт'>
+								Тариф "Стандарт"
+							</Option>
+							<Option value='Профи' key='Профи'>
+								Тариф "Профи"
+							</Option>
+							<Option value='Не знаю' key='Не знаю'>
+								Не знаю
+							</Option>
+						</Select>
+					</Form.Item>
+					:
+					null
+			}
+
 
 			<Form.Item
 				label='Описание'

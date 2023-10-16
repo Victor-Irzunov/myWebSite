@@ -3,7 +3,7 @@ import { Button, Tag } from 'antd';
 import { useState } from 'react'
 import { ModalUniversal } from '../modal/ModalUniversal';
 
-const BtnComp = ({ el, tag, title2 = '', konsultaciya, color }) => {
+const BtnComp = ({ el, tag, title2 = '', konsultaciya, color, isActive2 }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [title, setTitle] = useState('');
 	const [isActive, setIsActive] = useState({
@@ -47,6 +47,7 @@ const BtnComp = ({ el, tag, title2 = '', konsultaciya, color }) => {
 				handleCancel={handleCancel}
 				isActive={isActive}
 				konsultaciya={konsultaciya}
+				isActive2={isActive2}
 			/>
 		</>
 	)

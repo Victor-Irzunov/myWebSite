@@ -46,7 +46,7 @@ const VideoPlayer = ({portfolio}) => {
   }, [videoVisible]);
 
   return (
-    <div ref={ref} className="w-full xz:mt-16 sd:mt-0 container mx-auto">
+    <div ref={ref} className="w-full xz:mt-16 sd:mt-0 flex justify-center">
       <video ref={videoRef} className="w-auto h-auto object-cover" muted autoPlay playsInline>
         <source src={!portfolio ? "/logovideo.mp4" : "/video2.mp4"} type="video/mp4" />
         <track kind="captions" src="/subtitles.vtt" srcLang="ru" label="Russian" default={false} />

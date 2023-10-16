@@ -5,7 +5,7 @@ import { FormQuestion } from '../form/FormQuestion'
 import FormOcenkaProekta from '../form/FormOcenkaProekta'
 import { FormOrder } from '../form/FormOrder'
 
-export const ModalUniversal = ({ isModalOpen, title = '', handleCancel, isActive, el, tag, order, konsultaciya }) => {
+export const ModalUniversal = ({ isModalOpen, title = '', handleCancel, isActive, el, tag, order, konsultaciya, isActive2 }) => {
 
 	return (
 		<Modal
@@ -19,12 +19,15 @@ export const ModalUniversal = ({ isModalOpen, title = '', handleCancel, isActive
 			{
 				isActive.order && !tag && !order ? <FormQuestion handleCancel={handleCancel} el={el} tag={tag} title={title}  /> : null
 			}
+			{
+				 isActive2 && tag ? <FormQuestion handleCancel={handleCancel} el={el} tag={tag} title={title}  /> : null
+			}
 			{/* {
 				konsultaciya && !tag && !order && !isActive.order ? <FormQuestion handleCancel={handleCancel} el={el} tag={tag} title={title} /> : null
 			} */}
 
 			{
-				tag && <FormOcenkaProekta title={title} handleCancel={handleCancel} konsultaciya={konsultaciya} />
+				tag && !isActive2 && <FormOcenkaProekta title={title} handleCancel={handleCancel} konsultaciya={konsultaciya} />
 			}
 			{
 				order && <FormOrder title={title} handleCancel={handleCancel}  />
