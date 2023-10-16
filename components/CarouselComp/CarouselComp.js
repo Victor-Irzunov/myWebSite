@@ -12,7 +12,7 @@ const CarouselComp = ({ main, }) => {
 					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>
 						<div className='relative'>
 							<Image
-								src={screens.xs === undefined && '/main/8-small2.webp' || screens.xs ? '/main/8-small2.webp' : '/main/7-big.webp'}
+								src={screens.xs === undefined && '/main/8-small2.webp' || screens.xs ? '/main/8-small2.webp' : '/main/4-big.webp'}
 								alt='Банер страницы по разработке сайтов'
 								width={screens.xs ? 575 : 1920}
 								height={screens.xs ? 1022 : 1080}
@@ -36,7 +36,8 @@ const CarouselComp = ({ main, }) => {
 						</div>
 						<div>
 							<Image
-								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ? '/main/2-small2.webp' : '/main/1-big2.webp'}
+								src={screens.xs === undefined && '/main/2-small2.webp' || screens.xs ?
+									'/main/2-small2.webp' : '/main/1-big2.webp'}
 								alt='Банер страницы по разработке сайтов'
 								width={screens.xs ? 575 : 1920}
 								height={screens.xs ? 1022 : 1080}
@@ -44,12 +45,12 @@ const CarouselComp = ({ main, }) => {
 							/>
 						</div>
 					</Carousel>
-
 					:
 					<Carousel autoplay pauseOnHover={false} effect='fade'>
 						<div>
 							<Image
-								src={screens.xs === undefined && '/testirovanie/5.webp' || screens.xs ? '/testirovanie/5.webp' : '/testirovanie/1.webp'}
+								src={screens.xs === undefined && '/testirovanie/5.webp' || screens.xs ?
+									'/testirovanie/5.webp' : '/testirovanie/1.webp'}
 								alt='Банер на тему тестирования'
 								width={!screens.xs ? 1920 : 598}
 								height={!screens.xs ? 1080 : 970}
@@ -58,7 +59,8 @@ const CarouselComp = ({ main, }) => {
 						</div>
 						<div>
 							<Image
-								src={screens.xs === undefined && '/testirovanie/4.webp' || screens.xs ? '/testirovanie/4.webp' : '/testirovanie/2.webp'}
+								src={screens.xs === undefined && '/testirovanie/4.webp' || screens.xs ?
+									'/testirovanie/4.webp' : '/testirovanie/2.webp'}
 								alt='Банер на тему тестирования'
 								width={!screens.xs ? 1920 : 598}
 								height={!screens.xs ? 1080 : 970}

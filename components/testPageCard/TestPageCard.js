@@ -5,8 +5,6 @@ const TestPageCard = () => {
 	return (
 		<div className="sd:flex xz:flex-row sd:justify-center sd:flex-wrap">
 
-
-
 			<div className="sd:w-1/4 xz:w-full border shadow-xl bg-blue-50  sd:mx-3 xz:mx-0 rounded-3xl overflow-hidden my-3">
 				<div className="bg-blue-500 h-[15vh] py-2 flex items-center px-2">
 					<Image src='/testirovanie/test.svg' alt='Функциональное тестирование' width={65} height={65} />

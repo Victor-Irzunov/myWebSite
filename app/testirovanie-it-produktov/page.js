@@ -1,11 +1,9 @@
 import CarouselComp from "@/components/CarouselComp/CarouselComp"
 import TestPageCard from "@/components/testPageCard/TestPageCard"
-import Image from "next/image"
 
 export const metadata = {
 	title: 'Профессиональное тестирование IT продуктов | IT компания VI:TECH',
 	description: 'Надежность, безопасность и бесперебойная работа вашего сайта или веб-приложения - это залог успеха в онлайн-мире. Наши профессиональные тестировщики создают сценарии тестирования, прогнозируют сбои и находят ошибки на всех этапах жизненного цикла вашего продукта.'
-
 }
 
 const page = () => {
