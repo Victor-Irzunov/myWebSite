@@ -7,7 +7,10 @@ const ReplainWidget = dynamic(() => import('@/components/ReplainWidget/ReplainWi
 
 export const metadata = {
   title: 'Создание сайтов в Минске | Заказать разработку сайта под ключ',
-  description: 'Мы разрабатываем и продвигаем сайты в Минске и Беларуси. Закажите сайт у нас и получите клиентов из Google и Яндекс. Высокий результат по приятной цене!'
+  description: 'Мы разрабатываем и продвигаем сайты в Минске и Беларуси. Закажите сайт у нас и получите клиентов из Google и Яндекс. Высокий результат по приятной цене!',
+  alternates: {
+    canonical: 'https://vi-tech.by/'
+  }
 }
 
 export default function RootLayout({ children }) {
@@ -26,7 +29,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon/apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
 
-        <link rel="canonical" href="https://vi-tech.by/" />
+        {/* <link rel="canonical" href="https://vi-tech.by/" /> */}
         <meta name="google-site-verification" content="Eo0Xif5nmQIm7hOzoU1kzcVeqrcRlDBiDWa5au4Yxz4" />
         <meta name="yandex-verification" content="4c1774881f86806f" />
 
