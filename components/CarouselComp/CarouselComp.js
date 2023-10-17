@@ -18,7 +18,7 @@ const CarouselComp = ({ main, }) => {
 								alt='Банер страницы по разработке сайтов'
 								width={screens.xs ? 575 : 1920}
 								height={screens.xs ? 1022 : 1080}
-								loading="lazy"
+								loading="eager"
 							/>
 						</div>
 						<div>
@@ -28,7 +28,7 @@ const CarouselComp = ({ main, }) => {
 								alt='Банер страницы по разработке сайтов'
 								width={screens.xs ? 575 : 1920}
 								height={screens.xs ? 1022 : 1080}
-								loading="lazy"
+								loading="eager"
 							/>
 						</div>
 

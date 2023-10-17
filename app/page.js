@@ -10,10 +10,11 @@ export default function Home() {
   return (
     <main className="pb-24">
       <CarouselComp main />
-      <div className='h-[13vh]' />
+      <div className='h-[11vh]' />
       <LazyLoad offset={0}>
         <MainSection1 />
       </LazyLoad>
+      <div className='h-[5vh]' />
       <LazyLoad offset={0}>
         <MainSection2 />
       </LazyLoad>
