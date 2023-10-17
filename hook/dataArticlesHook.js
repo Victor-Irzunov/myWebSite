@@ -31,6 +31,10 @@ export const useDataArticles = async (link) => {
 			const { dataArticle7 } = await import('@/constans/articles/dataArticle7');
 			data = dataArticle7;
 			break
+		case 'etapy-razrabotki-i-zapuska-sajta':
+			const { dataArticle8 } = await import('@/constans/articles/dataArticle8');
+			data = dataArticle8;
+			break
 	}
 
 	return { data };

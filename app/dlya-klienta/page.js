@@ -131,7 +131,22 @@ const DlyaKlientaPage = () => {
 									</div>
 									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
 										<p className="text-lg font-semibold underline">
-										10 Идей для создания прибыльных сайтов и заработка в интернете
+											10 Идей для создания прибыльных сайтов и заработка в интернете
+										</p>
+									</div>
+								</Link>
+							</li>
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/etapy-razrabotki-i-zapuska-sajta`}
+									href='/dlya-klienta/etapy-razrabotki-i-zapuska-sajta'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/8.webp' className="object-cover w-full h-full" alt="Этапы Разработки и Запуска Сайта" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
+										<p className="text-lg font-semibold underline">
+											Этапы Разработки и Запуска Сайта
 										</p>
 									</div>
 								</Link>
