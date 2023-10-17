@@ -6,9 +6,6 @@ import Image from "next/image";
 export const metadata = {
 	title: 'Стоимость разработки сайта в Минске | IT-Компания VI:TECH',
 	description: 'Узнайте о прозрачной и честной стоимости разработки сайта от VI:TECH. Мы предоставляем ориентировочные базовые цены, но каждый проект уникален и расчитывается индивидуально. С нами нет скрытых платежей и высокая качественная разработка доступна по небольшой рыночной стоимости.',
-	alternates: {
-		canonical: 'https://vi-tech.by/cena/razrabotka-sajta'
-	}
 }
 const PricePage = () => {
 	return (
