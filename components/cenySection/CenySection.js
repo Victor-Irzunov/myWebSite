@@ -1,17 +1,16 @@
-"use client"
+
 import { dataContentPrice, itemsPriceQuestions } from "@/constans/price/PriceData"
-// import CardComp from "../cardComp/CardComp"
 import { Collapse } from "antd";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
-import LazyLoad from 'react-lazy-load';
+
 
 const CardComp = dynamic(() => import('@/components/cardComp/CardComp'));
 
 
 const CenySection = () => {
 	return (
-		<LazyLoad offset={0}>
+	
 			<div>
 				
 				<section className="pt-32 pb-10 bg-white text-center">
@@ -66,7 +65,7 @@ const CenySection = () => {
 					</div>
 				</div>
 			</div>
-		</LazyLoad>
+	
 	)
 }
 
