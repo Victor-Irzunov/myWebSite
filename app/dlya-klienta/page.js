@@ -166,6 +166,36 @@ const DlyaKlientaPage = () => {
 									</div>
 								</Link>
 							</li>
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/sekrety-uspeshnogo-kontent-marketinga`}
+									href='/dlya-klienta/sekrety-uspeshnogo-kontent-marketinga'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/10.webp' className="object-cover w-full h-full" alt="Секреты успешного контент-маркетинга" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
+										<p className="text-lg font-semibold underline">
+											Секреты успешного контент-маркетинга: как привлекать аудиторию
+										</p>
+									</div>
+								</Link>
+							</li>
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/znachenie-mobilnoj-adaptivnosti`}
+									href='/dlya-klienta/znachenie-mobilnoj-adaptivnosti'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/11.webp' className="object-cover w-full h-full" alt="Значение мобильной адаптивности" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
+										<p className="text-lg font-semibold underline">
+											Значение мобильной адаптивности: почему ваш сайт должен быть мобильным
+										</p>
+									</div>
+								</Link>
+							</li>
 						</ul>
 					</section>
 				</div>
