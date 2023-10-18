@@ -7,7 +7,7 @@ const CarouselComp = ({ main, }) => {
 	const screens = useScreens()
 
 	return (
-		<div className={`xz:h-screen xm:h-auto`}>
+		<div className={``}>
 			{
 				main ?
 					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>

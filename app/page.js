@@ -9,12 +9,10 @@ export default function Home() {
   return (
     <main className="pb-24 overflow-x-hidden">
       <CarouselComp main />
-      <div className='h-[9vh]' />
+      <div className='xz:h-[7vh] sd:h-[10vh]' />
       <MainSection1 />
 
-
       <MainSection2 />
-
     </main>
   );
 }

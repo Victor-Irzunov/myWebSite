@@ -353,4 +353,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 29,
+		title: '',
+		link: 'https://avtobiz.by/',
+		image: '/portfolio/portfolioCard/avtobiz/1.webp',
+		alt: 'Сайт клиента по аренде погрузчика, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/avtobiz/2.webp',
+		alt2: 'Сайт клиента по аренде погрузчика, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]

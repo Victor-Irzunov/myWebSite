@@ -35,6 +35,10 @@ export const useDataArticles = async (link) => {
 			const { dataArticle8 } = await import('@/constans/articles/dataArticle8');
 			data = dataArticle8;
 			break
+		case 'vybor-domena-dlya-sajta':
+			const { dataArticle9 } = await import('@/constans/articles/dataArticle9');
+			data = dataArticle9;
+			break
 	}
 
 	return { data };
