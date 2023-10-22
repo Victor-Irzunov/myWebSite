@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <head>
         {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" /> */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
 
         <meta name="theme-color" content="#317EFB" />
         {/* <link rel="android-chrome-192x192" sizes="192x192" href="/favicon/android-chrome-192x192.png" />

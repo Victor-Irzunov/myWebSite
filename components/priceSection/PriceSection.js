@@ -16,10 +16,10 @@ const PriceSection = () => {
 					<div className='flex justify-between items-center'>
 						<div className='w-1/3 invisible m-0.5'></div>
 						<div className='w-1/3 h-20 shadow-lg bg-[#004C97] flex justify-center items-center m-0.5'>
-							<p className='uppercase text-white text-[10px] mb-0'>стоимость</p>
+							<p className='uppercase text-white text-[12px] mb-0'>стоимость</p>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-gray-700 flex justify-center items-center m-0.5'>
-							<p className='uppercase text-white text-[10px] mb-0'>сроки</p>
+							<p className='uppercase text-white text-[12px] mb-0'>сроки</p>
 						</div>
 					</div>
 
@@ -164,15 +164,19 @@ const PriceSection = () => {
 						</div>
 					</div>
 				</div>
-				<div className='flex justify-end mt-10'>
-					<BtnComp tag={true} title2='Заказать сайт' color='blue' konsultaciya={true} />
+
+				<div className='sd:flex sd:justify-between sd:items-center xz:flex xz:flex-col-reverse xz:items-end w-full mt-16'>
+					<div className="mt-6">
+						<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">
+							подробнее по стоимости
+						</Link>
+					</div>
+					<div className=''>
+						<BtnComp tag={true} title2='Заказать сайт' color='blue' konsultaciya={true} />
+					</div>
 				</div>
 			</div>
-			<div className="flex justify-end container mx-auto mt-6">
-				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/cena/razrabotka-sajta`} className="text-blue-700 underline sd:text-lg">
-					подробнее по стоимости
-				</Link>
-			</div>
+
 		</section>
 	)
 }

@@ -2,6 +2,7 @@ import { useDataArticles } from "@/hook/dataArticlesHook";
 import { Empty } from "antd";
 import Image from "next/image";
 import Link from "next/link";
+import { Watermark } from 'antd';
 
 export function generateMetadata({ params: { link } }) {
 	let title;
@@ -60,34 +61,38 @@ const page = async ({ params: { link } }) => {
 	if (!data) return <Empty className="h-[60vh] pt-32" />;
 	return (
 		<main className="pt-28 pb-24">
-			<article className="container mx-auto">
-
+			<article className="container mx-auto" itemScope itemType="http://schema.org/Article">
 				<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta`}>
 					<div className="flex justify-start items-center pr-1 cursor-pointer">
-						<Image src='/arrow-left.svg' alt="Кнопка возврата меню"
-							className="invert" width={30} height={30}
-						/>
+						<Image src='/arrow-left.svg' alt="Кнопка возврата меню" className="invert" width={30} height={30} />
 						<span className="text-black ml-2 uppercase">Назад</span>
 					</div>
 				</Link>
 
-				<section className="mt-12">
-					<div className="mb-12">
-						<h1 className="text-3xl text-[#004C97] uppercase">
-							{data[0].title}
-						</h1>
-					</div>
+				<Watermark content="VI:TECH">
+					<section className="mt-12">
+						<div className="mb-12">
+							<h1 className="text-3xl text-[#004C97] uppercase" itemProp="name">
+								{data[0].title}
+							</h1>
+							<p className="mt-3">Автор: <span className="italic" itemProp="author">Ирзунов Виктор Константинович</span></p>
+						</div>
 
-					<div className="">
-						<div className="xz:w-full sd:w-1/3 sd:float-right xz:float-none">
-							<Image src={data[0].img} alt={data[0].alt} className="sd:pl-4 pb-2 xz:pl-0 w-full" width={350} height={252} />
-						</div>
 						<div className="">
-							{data[0].content}
+							<div className="xz:w-full sd:w-1/3 sd:float-right xz:float-none">
+								<figure>
+									<Image src={data[0].img} alt={data[0].alt} className="sd:pl-4 pb-2 xz:pl-0 w-full" width={350} height={252} />
+									<figcaption>{'уникальное изображение компании VI:TECH'}</figcaption>
+								</figure>
+							</div>
+							<div className="" itemProp="articleBody">
+								{data[0].content}
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</Watermark>
 			</article>
+
 		</main>
 	)
 }

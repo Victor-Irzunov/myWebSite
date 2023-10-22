@@ -59,7 +59,7 @@ const ChtoMyDelaem = () => {
         </div>
 
         <div
-          className='bg-gradient-to-r from-sky-500 to-indigo-500 font-semibold rounded-md xz:p-4 sd:p-6
+          className='bg-gradient-to-r from-sky-500 to-indigo-500 font-bold rounded-md xz:p-4 sd:p-6
           text-center xz:mb-2 sd:mb-4 text-lg'
         >
           <p className=''>
