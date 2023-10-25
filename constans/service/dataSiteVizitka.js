@@ -209,7 +209,7 @@ export const title = {
 }
 
 export const priceAndDate = {
-	price: '170-200 BYN',
+	price: '170-250 BYN',
 	date: '2-3 дня'
 }
 

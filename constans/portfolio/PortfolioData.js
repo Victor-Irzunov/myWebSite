@@ -366,4 +366,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 30,
+		title: '',
+		link: 'https://belshow.by/',
+		image: '/portfolio/portfolioCard/shou/1.webp',
+		alt: 'Сайт клиента искусство шоу Бетельгейз, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/shou/2.webp',
+		alt2: 'Сайт клиента искусство шоу Бетельгейз, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]

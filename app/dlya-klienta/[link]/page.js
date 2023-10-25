@@ -2,7 +2,6 @@ import { useDataArticles } from "@/hook/dataArticlesHook";
 import { Empty } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { Watermark } from 'antd';
 
 export function generateMetadata({ params: { link } }) {
 	let title;
@@ -68,14 +67,12 @@ const page = async ({ params: { link } }) => {
 						<span className="text-black ml-2 uppercase">Назад</span>
 					</div>
 				</Link>
-
-				<Watermark content="VI:TECH">
 					<section className="mt-12">
 						<div className="mb-12">
 							<h1 className="text-3xl text-[#004C97] uppercase" itemProp="name">
 								{data[0].title}
 							</h1>
-							<p className="mt-3">Автор: <span className="italic" itemProp="author">Ирзунов Виктор Константинович</span></p>
+							<p className="mt-3">Автор: <span className="italic" itemProp="author">Ирзунов Виктор</span></p>
 						</div>
 
 						<div className="">
@@ -90,7 +87,6 @@ const page = async ({ params: { link } }) => {
 							</div>
 						</div>
 					</section>
-				</Watermark>
 			</article>
 
 		</main>
