@@ -135,9 +135,9 @@ export const dataPortfolio = [
 	{
 		id: 11,
 		title: '',
-		link: 'https://super-plumber.vercel.app/',
+		link: 'https://master-help.by/',
 		image: '/portfolio/portfolioCard/plumber/1.webp',
-		alt: 'Сайт клиента услуги сантехника',
+		alt: 'Сайт клиента услуги муж на час',
 		w: 1000,
 		h: 566,
 		image2: '/portfolio/portfolioCard/plumber/2.webp',
@@ -376,6 +376,19 @@ export const dataPortfolio = [
 		h: 566,
 		image2: '/portfolio/portfolioCard/shou/2.webp',
 		alt2: 'Сайт клиента искусство шоу Бетельгейз, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 31,
+		title: '',
+		link: 'https://obuvcomplekt.by/',
+		image: '/portfolio/portfolioCard/obuvcomplekt/1.webp',
+		alt: 'Сайт клиента магазин искусственной кожи, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/obuvcomplekt/2.webp',
+		alt2: 'Сайт клиента магазин искусственной кожи, компании VI:TECH',
 		w2: 70,
 		h2: 132
 	},
