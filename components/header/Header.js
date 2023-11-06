@@ -47,7 +47,7 @@ const Header = () => {
 	const [isMenuMobil, setMenuMobil] = useState(false);
 	const [isScrolled, setScrolled] = useState(false);
 	const pathname = usePathname();
-	const isTestPage = pathname === '/testirovanie-it-produktov';
+	// const isTestPage = pathname === '/testirovanie-it-produktov';
 	const isMainPage = pathname === '/';
 
 
@@ -76,8 +76,8 @@ const Header = () => {
 
 
 	return (
-		<header className={`py-1  ${!isTestPage  ? 'bg-white': ''} ${isScrolled ? 'bg-white' : ''} fixed top-0 left-0 right-0 z-50`}>
-			
+		<header className={`py-1 bg-white fixed top-0 left-0 right-0 z-50`}>
+
 			<div className="container mx-auto">
 				<div className="flex justify-between items-center">
 					<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`} as='/' className="pt-2 z-50">
@@ -95,13 +95,13 @@ const Header = () => {
 								src='/telephone.svg'
 								alt="Иконка телефона"
 								width={25} height={25}
-								className={`cursor-pointer  ${isTestPage && !isScrolled ? 'invert' : ''}`}
+								className={`cursor-pointer`}
 							/>
 						</Popover>
 					</div>
 					<div className="" onClick={isOpenMenu}>
 						<Image src='/menu.svg'
-							className={`cursor-pointer ${isTestPage && !isScrolled ? 'invert' : ''}`}
+							className={`cursor-pointer`}
 							alt="Кнопка меню"
 							width={40} height={40}
 						/>

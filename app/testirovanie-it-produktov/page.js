@@ -11,9 +11,6 @@ const page = () => {
 		<main className="pb-24">
 
 			<section className="">
-				<div className="h-screen">
-					<CarouselComp />
-				</div>
 
 				<div className="container mx-auto sd:pt-24 xz:pt-16">
 					<div className="">

@@ -1,15 +1,15 @@
 import { Carousel } from 'antd';
-import Image from 'next/image';
 import BlockMainPage from '../blockMainPage/BlockMainPage';
 import BlockMainPage2 from '../blockMainPage2/BlockMainPage2';
 import LinkScrollCom from '../LinkScroll/LinkScrollCom';
 
+
 const CarouselComp = ({ main }) => {
+
 
 	return (
 		<div className=''>
-			{
-				main ?
+
 					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>
 
 						<section className="min-h-screen xz:pb-20 sd:pb-0 relative">
@@ -40,30 +40,7 @@ const CarouselComp = ({ main }) => {
 							</div>
 						</section>
 					</Carousel>
-					:
-					<Carousel autoplay pauseOnHover={false} effect='fade'>
-						<div>
-							<Image
-								src={screens.xs === undefined && '/testirovanie/5.webp' || screens.xs ?
-									'/testirovanie/5.webp' : '/testirovanie/1.webp'}
-								alt='Банер на тему тестирования'
-								width={!screens.xs ? 1920 : 598}
-								height={!screens.xs ? 1080 : 970}
-								loading="eager"
-							/>
-						</div>
-						<div>
-							<Image
-								src={screens.xs === undefined && '/testirovanie/4.webp' || screens.xs ?
-									'/testirovanie/4.webp' : '/testirovanie/2.webp'}
-								alt='Банер на тему тестирования'
-								width={!screens.xs ? 1920 : 598}
-								height={!screens.xs ? 1080 : 970}
-								loading="eager"
-							/>
-						</div>
-					</Carousel>
-			}
+					
 		</div>
 	);
 };
