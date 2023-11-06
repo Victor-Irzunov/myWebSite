@@ -76,12 +76,13 @@ const Header = () => {
 
 
 	return (
-		<header className={`py-1  ${!isTestPage ? 'bg-white': ''} ${isScrolled ? 'bg-white' : ''} fixed top-0 left-0 right-0 z-50`}>
+		<header className={`py-1  ${!isTestPage  ? 'bg-white': ''} ${isScrolled ? 'bg-white' : ''} fixed top-0 left-0 right-0 z-50`}>
 			
 			<div className="container mx-auto">
 				<div className="flex justify-between items-center">
 					<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/`} as='/' className="pt-2 z-50">
-						<Image src='/logo/logoAnime.svg'
+						<Image
+							src='/logo/logoAnime.svg'
 							alt="Логотип компании vi-tech"
 							width={170} height={37}
 							className="z-50"
