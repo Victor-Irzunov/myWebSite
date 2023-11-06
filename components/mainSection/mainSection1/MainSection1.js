@@ -8,7 +8,7 @@ import CeliKlientov from '@/components/mainSection/CeliKlientov';
 const MainSection1 = () => {
 
 	return (
-		<div className=''>
+		<div className='xz:pt-12 sd:pt-32'>
 					<div className=''>
 						<section className="">
 							<div className="container mx-auto">

@@ -9,7 +9,7 @@ export const FormTel = ({ btn = 'Жду звонка', handleCancel }) => {
 	const onFinish = (values) => {
 		console.log('Success:', values);
 
-		let messageForm = `<b>Клиент с сайта ЭкоСанПроект просит перезвонить</b>\n`
+		let messageForm = `<b>Клиент с сайта просит перезвонить</b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Телефон:</b> ${values.tel}\n`
 

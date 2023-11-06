@@ -76,7 +76,7 @@ const Header = () => {
 
 
 	return (
-		<header className={`py-1  ${!isTestPage && !isMainPage ? 'bg-white': ''} ${isScrolled ? 'bg-white' : ''} fixed top-0 left-0 right-0 z-50`}>
+		<header className={`py-1  ${!isTestPage ? 'bg-white': ''} ${isScrolled ? 'bg-white' : ''} fixed top-0 left-0 right-0 z-50`}>
 			
 			<div className="container mx-auto">
 				<div className="flex justify-between items-center">
@@ -94,13 +94,13 @@ const Header = () => {
 								src='/telephone.svg'
 								alt="Иконка телефона"
 								width={25} height={25}
-								className={`cursor-pointer  ${isTestPage || isMainPage && !isScrolled ? 'invert' : ''}`}
+								className={`cursor-pointer  ${isTestPage && !isScrolled ? 'invert' : ''}`}
 							/>
 						</Popover>
 					</div>
 					<div className="" onClick={isOpenMenu}>
 						<Image src='/menu.svg'
-							className={`cursor-pointer ${isTestPage || isMainPage && !isScrolled ? 'invert' : ''}`}
+							className={`cursor-pointer ${isTestPage && !isScrolled ? 'invert' : ''}`}
 							alt="Кнопка меню"
 							width={40} height={40}
 						/>

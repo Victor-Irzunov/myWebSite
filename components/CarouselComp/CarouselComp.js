@@ -11,15 +11,8 @@ const CarouselComp = ({ main, }) => {
 			{
 				main ?
 					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>
-						<div>
-							<Image
-								src={screens.xs === undefined && '/main/13-small.webp' || screens.xs ?
-									'/main/13-small.webp' : '/main/13-big.webp'}
-								alt='Банер страницы по разработке сайтов'
-								width={screens.xs ? 575 : 1920}
-								height={screens.xs ? 1022 : 1080}
-								loading="eager"
-							/>
+						<div className=''>
+							
 						</div>
 						<div>
 							<Image
