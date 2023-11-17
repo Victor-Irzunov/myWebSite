@@ -392,4 +392,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 32,
+		title: '',
+		link: 'https://rezonansgroup.by/',
+		image: '/portfolio/portfolioCard/rezonansgroup/1.webp',
+		alt: 'Сайт клиента оптовый склад смазочных материалов, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/rezonansgroup/2.webp',
+		alt2: 'Сайт клиента оптовый склад смазочных материалов, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]

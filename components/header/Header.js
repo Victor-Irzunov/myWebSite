@@ -46,10 +46,20 @@ const content = (
 const Header = () => {
 	const [isMenuMobil, setMenuMobil] = useState(false);
 	const [isScrolled, setScrolled] = useState(false);
-	const pathname = usePathname();
+	const [isBlue, setIsBlue] = useState(true);
+	// const pathname = usePathname();
 	// const isTestPage = pathname === '/testirovanie-it-produktov';
-	const isMainPage = pathname === '/';
+	// const isMainPage = pathname === '/';
 
+	// useEffect(() => {
+	//   const interval = setInterval(() => {
+	// 	 setIsBlue((prevIsBlue) => !prevIsBlue);
+	//   }, 3000);
+ 
+	//   return () => {
+	// 	 clearInterval(interval);
+	//   };
+	// }, []);
 
 	const isOpenMenu = () => {
 		setMenuMobil(true)
@@ -66,17 +76,18 @@ const Header = () => {
 				setScrolled(false);
 			}
 		};
-
 		window.addEventListener("scroll", handleScroll);
-
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
 
+ 
+
+  const headerClass = !isBlue ? "bg-[#004C97]" : "bg-white";
 
 	return (
-		<header className={`py-1 bg-white fixed top-0 left-0 right-0 z-50`}>
+		<header className={`py-1 fixed top-0 left-0 right-0 z-50 bg-white`}>
 
 			<div className="container mx-auto">
 				<div className="flex justify-between items-center">
@@ -101,7 +112,7 @@ const Header = () => {
 					</div>
 					<div className="" onClick={isOpenMenu}>
 						<Image src='/menu.svg'
-							className={`cursor-pointer`}
+							className={`cursor-pointer `}
 							alt="Кнопка меню"
 							width={40} height={40}
 						/>

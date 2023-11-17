@@ -3,15 +3,10 @@ import BlockMainPage from '../blockMainPage/BlockMainPage';
 import BlockMainPage2 from '../blockMainPage2/BlockMainPage2';
 import LinkScrollCom from '../LinkScroll/LinkScrollCom';
 
-
-const CarouselComp = ({ main }) => {
-
-
+const CarouselComp = () => {
 	return (
 		<div className=''>
-
-					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false}>
-
+					<Carousel autoplay pauseOnHover={false} effect='fade' dots={false} autoplaySpeed={3000}>
 						<section className="min-h-screen xz:pb-20 sd:pb-0 relative">
 							<div className="container mx-auto">
 								<div className='pt-28'>
