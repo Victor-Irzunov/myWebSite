@@ -340,19 +340,19 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
-	{
-		id: 28,
-		title: '',
-		link: 'https://trans-gruz.by/',
-		image: '/portfolio/portfolioCard/trans-gruz/1.webp',
-		alt: 'Сайт клиента по грузоперевозкам, компании VI:TECH',
-		w: 1000,
-		h: 566,
-		image2: '/portfolio/portfolioCard/trans-gruz/2.webp',
-		alt2: 'Сайт клиента по грузоперевозкам, компании VI:TECH',
-		w2: 70,
-		h2: 132
-	},
+	// {
+	// 	id: 28,
+	// 	title: '',
+	// 	link: 'https://trans-gruz.by/',
+	// 	image: '/portfolio/portfolioCard/trans-gruz/1.webp',
+	// 	alt: 'Сайт клиента по грузоперевозкам, компании VI:TECH',
+	// 	w: 1000,
+	// 	h: 566,
+	// 	image2: '/portfolio/portfolioCard/trans-gruz/2.webp',
+	// 	alt2: 'Сайт клиента по грузоперевозкам, компании VI:TECH',
+	// 	w2: 70,
+	// 	h2: 132
+	// },
 	{
 		id: 29,
 		title: '',
@@ -415,6 +415,19 @@ export const dataPortfolio = [
 		h: 566,
 		image2: '/portfolio/portfolioCard/masha-production/2.webp',
 		alt2: 'Сайт клиента психолог в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 34,
+		title: '',
+		link: 'https://avtoservis.vercel.app/',
+		image: '/portfolio/portfolioCard/STO/1.webp',
+		alt: 'Сайт сто в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/STO/2.webp',
+		alt2: 'Сайт сто в Минске, компании VI:TECH',
 		w2: 70,
 		h2: 132
 	},
