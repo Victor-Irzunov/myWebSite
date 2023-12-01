@@ -196,6 +196,21 @@ const DlyaKlientaPage = () => {
 									</div>
 								</Link>
 							</li>
+							<li className="bg-white pb-3 rounded-xl overflow-hidden shadow-xl mb-14 sd:w-1/3 xz:w-full sd:mx-4 xz:mx-0">
+								<Link
+									as={`${process.env.NEXT_PUBLIC_BASE_URL}/dlya-klienta/kak-rabotaet-seo-prodvizhenie-sajta`}
+									href='/dlya-klienta/kak-rabotaet-seo-prodvizhenie-sajta'
+								>
+									<div className="sd:h-[30vh] xz:h-full">
+										<Image src='/articles/12.webp' className="object-cover w-full h-full" alt="Значение мобильной адаптивности" width={998} height={718} />
+									</div>
+									<div className="mt-4 px-3 sd:h-[11vh] xz:h-full">
+										<p className="text-lg font-semibold underline">
+										Как работает SEO-продвижение сайта: Подробный обзор стратегий и методов
+										</p>
+									</div>
+								</Link>
+							</li>
 						</ul>
 					</section>
 				</div>

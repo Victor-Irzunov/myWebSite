@@ -47,6 +47,10 @@ export const useDataArticles = async (link) => {
 			const { dataArticle11 } = await import('@/constans/articles/dataArticle11');
 			data = dataArticle11;
 			break
+		case 'kak-rabotaet-seo-prodvizhenie-sajta':
+			const { dataArticle12 } = await import('@/constans/articles/dataArticle12');
+			data = dataArticle12;
+			break
 	}
 
 	return { data };
