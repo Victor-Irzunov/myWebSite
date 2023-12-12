@@ -70,7 +70,7 @@ export const dataPortfolio = [
 	{
 		id: 6,
 		title: '',
-		link: 'https://pod-klyuch.vercel.app/',
+		link: 'https://podklyuch.by/',
 		image: '/portfolio/portfolioCard/pod-klyuch/1.webp',
 		alt: 'Сайт клиента по ремонту квартир',
 		w: 1000,
@@ -122,7 +122,7 @@ export const dataPortfolio = [
 	{
 		id: 10,
 		title: '',
-		link: 'https://arenda-tehniki.vercel.app/',
+		link: 'https://arenda-remont.by/',
 		image: '/portfolio/portfolioCard/arenda-tehniki/1.webp',
 		alt: 'Сайт клиента прокат спецтехники',
 		w: 1000,
