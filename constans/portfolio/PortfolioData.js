@@ -431,4 +431,43 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 35,
+		title: '',
+		link: 'https://smart-um.by/',
+		image: '/portfolio/portfolioCard/smart-um/1.webp',
+		alt: 'Сайт клиента обучение детей в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/smart-um/2.webp',
+		alt2: 'Сайт клиента обучение детей в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 36,
+		title: '',
+		link: 'https://avto-help.by/',
+		image: '/portfolio/portfolioCard/avto-help/1.webp',
+		alt: 'Сайт клиента эвакуатор в Могилеве, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/avto-help/2.webp',
+		alt2: 'Сайт клиента эвакуатор в Могилеве, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 37,
+		title: '',
+		link: 'https://korona-bel.vercel.app/',
+		image: '/portfolio/portfolioCard/korona/1.webp',
+		alt: 'Сайт клиента по продаже минитехники, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/korona/2.webp',
+		alt2: 'Сайт клиента по продаже минитехники, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
