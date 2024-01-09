@@ -52,7 +52,7 @@ const GotovyeCardComp = () => {
 
 										<div className='flex justify-between items-center mt-7'>
 											<BtnOrder title={el.alt} />
-											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}${el.link}`}
+											<Link href={`${el.link}`}
 												target="_blank"
 												className='uppercase text-sm text-[#004C97] flex justify-end items-start'
 											>
