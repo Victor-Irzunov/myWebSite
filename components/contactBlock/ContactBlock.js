@@ -76,7 +76,7 @@ const ContactBlock = () => {
 			</div>
 
 			<div className="flex items-center mt-2 pl-10">
-				<a href='viber://chat?number=%2B375339174921' target="_blank" className="mr-5">
+				<a href='viber://chat?number=%2B375333511597' target="_blank" className="mr-5">
 					<Image src='/contact/viber.svg' alt='Вайбер' width={30} height={30}
 					/>
 				</a>
