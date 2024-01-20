@@ -535,4 +535,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 43,
+		title: '',
+		link: 'https://arenda-tehniki.vercel.app/',
+		image: '/portfolio/portfolioCard/arenda-teh2/1.webp',
+		alt: 'Сайт клиента аренда спецтехники, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/arenda-teh2/2.webp',
+		alt2: 'Сайт клиента аренда спецтехники, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
