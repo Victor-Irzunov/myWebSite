@@ -548,4 +548,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 44,
+		title: '',
+		link: 'https://site-mojka.vercel.app/',
+		image: '/portfolio/portfolioCard/mojka/1.webp',
+		alt: 'Сайт клиента автомойка, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/mojka/2.webp',
+		alt2: 'Сайт клиента автомойка, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
