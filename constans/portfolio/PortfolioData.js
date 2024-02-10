@@ -561,4 +561,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 45,
+		title: '',
+		link: 'https://site-mojka.vercel.app/',
+		image: '/portfolio/portfolioCard/bavaria/1.webp',
+		alt: 'Сайт клиента питьевая вода Бавария, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/bavaria/2.webp',
+		alt2: 'Сайт клиента питьевая вода Бавария, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
