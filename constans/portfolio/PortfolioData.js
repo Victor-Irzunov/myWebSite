@@ -574,4 +574,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 46,
+		title: '',
+		link: 'https://stroitelstvo.vercel.app/',
+		image: '/portfolio/portfolioCard/stroitelstvo/1.webp',
+		alt: 'Сайт строительства и ремонта, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/stroitelstvo/2.webp',
+		alt2: 'Сайт строительства и ремонта, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
