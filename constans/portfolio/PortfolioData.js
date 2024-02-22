@@ -587,4 +587,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 47,
+		title: '',
+		link: 'https://ukladka-plitki.vercel.app/',
+		image: '/portfolio/portfolioCard/plitochnik/1.webp',
+		alt: 'Сайт услуги плиточника, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/plitochnik/2.webp',
+		alt: 'Сайт услуги плиточника, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
