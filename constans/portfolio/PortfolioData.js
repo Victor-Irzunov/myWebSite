@@ -624,5 +624,18 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 47,
+		title: 'prokat-minsk.vercel.app',
+		link: 'https://yabloki.by/',
+		image: '/portfolio/portfolioCard/grodno-yabloki/1.webp',
+		alt: 'Сайт клиента Продажа саженцов яблонь, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/grodno-yabloki/2.webp',
+		alt: 'Сайт клиента Продажа саженцов яблонь, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 
 ]
