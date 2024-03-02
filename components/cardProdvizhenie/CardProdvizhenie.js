@@ -28,7 +28,7 @@ const CardProdvizhenie = () => {
 								Запуск рекламы <strong>Google</strong>
 							</span>
 							<span className="font-semibold">
-								от 99 BYN
+								от 150 BYN
 							</span>
 						</div>
 						<div className="flex justify-between text-xs mb-3">
@@ -36,7 +36,7 @@ const CardProdvizhenie = () => {
 								Запуск рекламы <strong>Яндекс</strong>
 							</span>
 							<span className="font-semibold">
-								от 99 BYN
+								от 120 BYN
 							</span>
 						</div>
 
@@ -102,7 +102,7 @@ const CardProdvizhenie = () => {
 								Запуск рекламы <strong>Google</strong>
 							</span>
 							<span className="font-semibold">
-								от 150 BYN
+								от 199 BYN
 							</span>
 						</div>
 						<div className="flex justify-between text-xs mb-3">

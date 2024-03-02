@@ -35,7 +35,7 @@ const PriceSection = () => {
 							</Link>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-[#004C97] flex justify-center items-center m-0.5'>
-							<p className='text-white  xz:text-[12px] sd:text-[13px]  mb-0 font-semibold'>170-250 BYN</p>
+							<p className='text-white  xz:text-[12px] sd:text-[13px]  mb-0 font-semibold'>250 BYN</p>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 							<p className='text-black text-[13px] mb-0 font-semibold'>2-3 дня</p>
@@ -54,7 +54,7 @@ const PriceSection = () => {
 							</div>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-[#004C97] flex justify-center items-center m-0.5'>
-							<p className='text-white text-[13px] mb-0 font-semibold uppercase'>250-350 BYN</p>
+							<p className='text-white text-[13px] mb-0 font-semibold uppercase'>от 299 BYN</p>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 							<p className='text-black text-[13px] mb-0 font-semibold'>4-7 дней</p>
@@ -96,7 +96,7 @@ const PriceSection = () => {
 							</div>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-[#004C97] flex justify-center items-center m-0.5'>
-							<p className='text-white text-[13px] mb-0 font-semibold'>от 550 BYN</p>
+							<p className='text-white text-[13px] mb-0 font-semibold'>от 599 BYN</p>
 						</div>
 						<div className='w-1/3 h-20 shadow-lg bg-white flex justify-center items-center m-0.5'>
 							<p className='text-black text-[13px] mb-0 font-semibold'>от 5 дней</p>
