@@ -116,7 +116,7 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
-	
+
 	{
 		id: 10,
 		title: 'birdor.by',
@@ -471,7 +471,7 @@ export const dataPortfolio = [
 	{
 		id: 35,
 		title: '',
-		link: 'https://avtoservis.vercel.app/',
+		link: 'https://speedrepair.by/',
 		image: '/portfolio/portfolioCard/STO/1.webp',
 		alt: 'Сайт сто в Минске, компании VI:TECH',
 		w: 1000,
@@ -647,6 +647,45 @@ export const dataPortfolio = [
 		h: 566,
 		image2: '/portfolio/portfolioCard/mySiteMini/2.webp',
 		alt: 'Сайт компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 49,
+		title: 'car-service-one.vercel.app',
+		link: 'https://car-service-one.vercel.app/',
+		image: '/portfolio/portfolioCard/car-service2/1.webp',
+		alt: 'Сайт клиента СТО, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/car-service2/2.webp',
+		alt: 'Сайт клиента СТО, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 50,
+		title: 'cleantime.by',
+		link: 'https://cleantime.by/',
+		image: '/portfolio/portfolioCard/cleantime.by/1.webp',
+		alt: 'Сайт клиента услуги Клининга, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/cleantime.by/2.webp',
+		alt: 'Сайт клиента услуги Клининга, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 51,
+		title: 'demontazh.vercel.app',
+		link: 'https://demontazh.vercel.app/',
+		image: '/portfolio/portfolioCard/demontazh/1.webp',
+		alt: 'Сайт клиента услуги Демонтажа, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/demontazh/2.webp',
+		alt: 'Сайт клиента услуги Демонтажа, компании VI:TECH',
 		w2: 70,
 		h2: 132
 	},
