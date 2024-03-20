@@ -689,5 +689,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
-
+	{
+		id: 52,
+		title: 'pokraska.vercel.app',
+		link: 'https://pokraska.vercel.app/',
+		image: '/portfolio/portfolioCard/pokraska/1.webp',
+		alt: 'Сайт клиента услуги покраски авто, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/pokraska/2.webp',
+		alt: 'Сайт клиента услуги покраски авто, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
