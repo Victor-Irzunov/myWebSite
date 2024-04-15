@@ -741,4 +741,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 56,
+		title: 'master-na-chas.vercel.app',
+		link: 'https://master-na-chas.vercel.app/',
+		image: '/portfolio/portfolioCard/muzh-na-chas/1.webp',
+		alt: 'Сайт клиента услуга Муж на час, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/muzh-na-chas/2.webp',
+		alt: 'Сайт клиента услуга Муж на час, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
