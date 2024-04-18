@@ -754,4 +754,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 57,
+		title: 'pekarnya.vercel.app',
+		link: 'https://pekarnya.vercel.app/',
+		image: '/portfolio/portfolioCard/pekarnya/1.webp',
+		alt: 'Сайт клиента Пекарня в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/pekarnya/2.webp',
+		alt: 'Сайт клиента Пекарня в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
