@@ -44,7 +44,8 @@ const ContactPage = () => {
 
 					<section className="mt-10 relative overflow-x-hidden">
 					
-						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A56c7334263062ae35985c4b97aa2575621b310937d4ddef9f5789e7d9fd5de26&amp;source=constructor" width="100%" height="600" frameBorder="0" title="Локация компании по разработке сайтов на карте"></iframe>
+						{/* <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A56c7334263062ae35985c4b97aa2575621b310937d4ddef9f5789e7d9fd5de26&amp;source=constructor" width="100%" height="600" frameBorder="0" title="Локация компании по разработке сайтов на карте"></iframe> */}
+						<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=201710090314" width="100%" height="600" frameBorder="0" title="Локация компании по разработке сайтов на карте"></iframe>
 
 						<ContactBlock />
 					</section>
