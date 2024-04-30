@@ -780,4 +780,30 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 59,
+		title: 'eiw.by',
+		link: 'https://eiw.by/',
+		image: '/portfolio/portfolioCard/electrik/1.webp',
+		alt: 'Сайт клиента Электрик в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/electrik/2.webp',
+		alt: 'Сайт клиента Электрик в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 60,
+		title: 'bankety.by',
+		link: 'https://bankety.by/',
+		image: '/portfolio/portfolioCard/bankety.by/1.webp',
+		alt: 'Сайт клиента Банкетный зал в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/bankety.by/2.webp',
+		alt: 'Сайт клиента Банкетный зал в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
