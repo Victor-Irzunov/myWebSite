@@ -72,7 +72,7 @@ const MenuMobil2Comp = ({ isCloseMenu, offSetToRight, keyMenu2, isActiveMenu2, i
 												<p onClick={isCloseMenu}>Разработка внутренних веб-приложений</p>
 											</Link>
 										</li>
-										<li className="text-gray-100  border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
+										<li className="text-lime-500  border-b border-gray-600 pb-2 hover:bg-slate-600 pl-1 pt-2">
 											<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/gotovye-sajty`}>
 												<p onClick={isCloseMenu}>Продажа готовых сайтов</p>
 											</Link>

@@ -819,4 +819,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 62,
+		title: 'english-tutor-minsk.vercel.app',
+		link: 'https://english-tutor-minsk.vercel.app/',
+		image: '/portfolio/portfolioCard/english/1.webp',
+		alt: 'Сайт клиента Репетитор по английскому в Минске, компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/english/2.webp',
+		alt: 'Сайт клиента Репетитор по английскому в Минске, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
