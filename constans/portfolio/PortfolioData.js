@@ -639,8 +639,8 @@ export const dataPortfolio = [
 	},
 	{
 		id: 48,
-		title: 'prokat-minsk.vercel.app',
-		link: 'https://sites2024.vercel.app/',
+		title: 'it-grodno.vercel.app',
+		link: 'https://it-grodno.vercel.app/',
 		image: '/portfolio/portfolioCard/mySiteMini/1.webp',
 		alt: 'Сайт компании VI:TECH',
 		w: 1000,
