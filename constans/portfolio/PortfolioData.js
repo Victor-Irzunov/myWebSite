@@ -897,4 +897,17 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 67,
+		title: 'car-service2024.vercel.app',
+		link: 'https://car-service2024.vercel.app/',
+		image: '/portfolio/portfolioCard/car-service_2/1.webp',
+		alt: 'Сайт СТО компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/car-service_2/2.webp',
+		alt: 'Сайт СТО, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
