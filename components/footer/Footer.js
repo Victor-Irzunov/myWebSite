@@ -2,6 +2,7 @@
 import Image from "next/image";
 import BtnContact from "../btnContactFooter/BtnContact";
 import BtnTehPodderzhka from "../BtnTehPodderzhka/BtnTehPodderzhka";
+import BtnComp from "../btnComp/BtnComp";
 
 const Footer = () => {
 
@@ -26,7 +27,7 @@ const Footer = () => {
 						<p className="text-3xl text-white uppercase font-extrabold">
 							Давайте <br /> поговорим!
 						</p>
-						<div className="mt-14 mb-14">
+						<div className="mt-14 mb-10">
 							<a href="tel:80333511597"
 								className="flex text-xl text-white"
 								onClick={() => gtag_report_conversion('/')}
@@ -39,6 +40,10 @@ const Footer = () => {
 								/>
 								8 033 351-15-97
 							</a>
+						</div>
+
+						<div className='mt-6 mb-14 flex justify-center'>
+							<BtnComp title2='Получить консультацию' tag animate color='#15579E' isActive2 />
 						</div>
 
 						<BtnContact />

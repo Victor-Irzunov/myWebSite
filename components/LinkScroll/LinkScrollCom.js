@@ -13,7 +13,7 @@ const LinkScrollCom = ({link ,color}) => {
 				rel="nofollow"
 				href='#/'
 			>
-				<div className='flex flex-col justify-start items-center mt-20'>
+				<div className='flex flex-col justify-start items-center mt-20 animate-bounce'>
 				
 					<p className={`uppercase text-xs ${color ? color : 'text-black'}`}>
 						Стоимость и сроки

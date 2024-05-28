@@ -76,12 +76,16 @@ const ContactBlock = () => {
 			</div>
 
 			<div className="flex items-center mt-2 pl-10">
+				<a href='https://t.me/@Victor_developer' target="_blank" className="mr-5">
+					<Image src='/contact/telegram.svg' alt='Телеграмм для заказа создания сайта' width={30} height={30}
+					/>
+				</a>
 				<a href='viber://chat?number=%2B375333511597' target="_blank" className="mr-5">
-					<Image src='/contact/viber.svg' alt='Вайбер' width={30} height={30}
+					<Image src='/contact/viber.svg' alt='Вайбер для заказа создания сайта' width={30} height={30}
 					/>
 				</a>
 				<a href="https://www.instagram.com/webproduct_developer" target="_blank">
-					<Image src='/contact/instagram.svg' alt='Инстаграм' width={35} height={35} />
+					<Image src='/contact/instagram.svg' alt='Инстаграм для заказа создания сайта' width={35} height={35} />
 				</a>
 			</div>
 		</div>
