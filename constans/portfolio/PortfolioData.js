@@ -484,7 +484,7 @@ export const dataPortfolio = [
 	{
 		id: 36,
 		title: '',
-		link: 'https://belkorona.vercel.app/',
+		link: 'https://koronatools.by/',
 		image: '/portfolio/portfolioCard/korona/1.webp',
 		alt: 'Сайт клиента по продаже минитехники, компании VI:TECH',
 		w: 1000,
