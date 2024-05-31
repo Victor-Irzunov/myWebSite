@@ -211,7 +211,7 @@ export const dataPortfolio = [
 	{
 		id: 17,
 		title: '',
-		link: 'https://arenda-remont.by/',
+		link: 'https://arenda-tehniki-wta6.vercel.app/',
 		image: '/portfolio/portfolioCard/arenda-tehniki/1.webp',
 		alt: 'Сайт клиента прокат спецтехники',
 		w: 1000,
