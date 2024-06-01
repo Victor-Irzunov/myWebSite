@@ -874,7 +874,7 @@ export const dataPortfolio = [
 	{
 		id: 66,
 		title: 'perevozki-2024.vercel.app',
-		link: 'https://perevozki-2024.vercel.app/',
+		link: 'https://perevozkibus.vercel.app/',
 		image: '/portfolio/portfolioCard/perevozki-2024/1.webp',
 		alt: 'Сайт клиента Перевозки пассажиров, компании VI:TECH',
 		w: 1000,
