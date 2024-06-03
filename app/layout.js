@@ -1,7 +1,8 @@
-import Header from '@/components/header/Header'
-import './globals.css'
-import Footer from '@/components/footer/Footer'
+import Header from '@/components/header/Header';
+import './globals.css';
+import Footer from '@/components/footer/Footer';
 import dynamic from 'next/dynamic';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const ReplainWidget = dynamic(() => import('@/components/ReplainWidget/ReplainWidget'));
 
@@ -24,12 +25,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
+        <GoogleTagManager gtmId="GTM-N9CXDHMG" />
         <meta name="theme-color" content="#317EFB" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta name="google-site-verification" content="Eo0Xif5nmQIm7hOzoU1kzcVeqrcRlDBiDWa5au4Yxz4" />
         <meta name="yandex-verification" content="4c1774881f86806f" />
 
-        <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
+
+
+        {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11166544233"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -39,7 +43,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'AW-11166544233');
               `
           }}
-        />
+        /> */}
         {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-CG6QV5N03T"></script>
         <script
           dangerouslySetInnerHTML={{
