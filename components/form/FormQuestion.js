@@ -8,6 +8,8 @@ import { sendOrderTelegram } from '../../http/telegramAPI';
 
 const { TextArea } = Input
 
+
+
 export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 	const router = useRouter()
 	const [tel, setTel] = useState('')
@@ -24,14 +26,22 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 		sendOrderTelegram(messageForm)
 			.then(data => {
 				if (data.ok) {
-					router.push('/uspeshnaya-otpravka')
-					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
-					setIsActive(true)
+					// Добавление события в dataLayer
+					window.dataLayer = window.dataLayer || [];
+					window.dataLayer.push({
+						event: 'formSubmission',
+						formType: 'contactForm'
+					});
+
+					// Перенаправление на страницу благодарности
+					router.push('/uspeshnaya-otpravka');
+					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта');
+					setIsActive(true);
 					if (handleCancel) {
-						handleCancel()
+						handleCancel();
 					}
 				}
-			})
+			});
 	};
 	const onFinishFailed = (errorInfo) => {
 		console.log('Failed:', errorInfo);
