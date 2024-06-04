@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Form, Button, Input, message } from 'antd';
 import InputMask from 'react-input-mask';
 import { useRouter } from 'next/navigation'
-import { sendGTMEvent } from '@next/third-parties/google'
 
 import { sendOrderTelegram } from '../../http/telegramAPI';
 
@@ -142,11 +141,8 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 						span: 16,
 					}}
 				>
-					<Button type="primary" htmlType="submit"
-						 onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'отправить' })}
-					>
-						{/* {tag ? title : 'Заказать'} */}
-						отправить
+					<Button type="primary" htmlType="submit">
+						{tag ? title : 'Заказать'}
 					</Button>
 				</Form.Item>
 			</Form>
