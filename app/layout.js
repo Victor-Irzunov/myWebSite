@@ -32,6 +32,13 @@ export default function RootLayout({ children }) {
         <meta name="yandex-verification" content="4c1774881f86806f" />
       </head>
       <body>
+
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9CXDHMG"
+            height="0" width="0" style={{ display:'none', visibility: 'hidden' }}>
+          </iframe>
+        </noscript>
+
         <Header />
         {children}
         <Footer />
