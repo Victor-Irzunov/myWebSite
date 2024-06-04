@@ -3,3 +3,4 @@ Sitemap: https://vi-tech.by/sitemap.xml
 Allow: /
 Disallow: /*_next
 Disallow: /*.webp
+Disallow: /uspeshnaya-otpravka

@@ -2,12 +2,14 @@
 import { useState } from 'react';
 import { Form, Button, Input, message } from 'antd';
 import InputMask from 'react-input-mask';
+import { useRouter } from 'next/navigation'
 
 import { sendOrderTelegram } from '../../http/telegramAPI';
 
 const { TextArea } = Input
 
 export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
+	const router = useRouter()
 	const [tel, setTel] = useState('')
 	const [isActive, setIsActive] = useState(false)
 	const onFinish = (values) => {
@@ -22,7 +24,9 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 		sendOrderTelegram(messageForm)
 			.then(data => {
 				if (data.ok) {
+
 					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
+					router.push('/uspeshnaya-otpravka')
 					setIsActive(true)
 					if (handleCancel) {
 						handleCancel()

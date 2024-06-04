@@ -1,7 +1,7 @@
 "use client"
 import { Button, Checkbox, Form, Input, Select, message } from 'antd'
 import { useState } from 'react'
-
+import { useRouter } from 'next/navigation'
 import InputMask from 'react-input-mask'
 import { useScreens } from '@/constans/constants'
 import { sendOrderTelegram } from '@/http/telegramAPI'
@@ -55,7 +55,7 @@ const select = [
 const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 	const [tel, setTel] = useState('')
 	const screens = useScreens()
-
+	const router = useRouter()
 
 	const onFinish = (values) => {
 		console.log('Success:', values);
@@ -80,6 +80,7 @@ const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 			.then(data => {
 				if (data.ok) {
 					message.success('Ваш запрос принят!')
+					router.push('/uspeshnaya-otpravka')
 					if (handleCancel) {
 						handleCancel()
 					}
@@ -176,14 +177,14 @@ const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 				]}
 			>
 				<InputMask
-						placeholder="+375 29 123-45-67"
-						mask="+3\7\5 99 999 99 99"
-						maskChar={'-'}
-						className='border py-1 px-3 rounded-md w-full'
-						beforeMaskedValueChange={beforeMaskedValueChange}
-						value={tel}
-						onChange={handlePhoneChange}
-					/>
+					placeholder="+375 29 123-45-67"
+					mask="+3\7\5 99 999 99 99"
+					maskChar={'-'}
+					className='border py-1 px-3 rounded-md w-full'
+					beforeMaskedValueChange={beforeMaskedValueChange}
+					value={tel}
+					onChange={handlePhoneChange}
+				/>
 			</Form.Item>
 
 			{

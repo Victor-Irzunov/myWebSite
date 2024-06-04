@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Form, Button, Input, message, Checkbox } from 'antd';
 import InputMask from 'react-input-mask';
 import { sendOrderTelegram } from '@/http/telegramAPI';
+import { useRouter } from 'next/navigation'
 
 const { TextArea } = Input;
 
@@ -10,6 +11,7 @@ const { TextArea } = Input;
 export const FormOrder = ({ handleCancel, link, title, }) => {
 	const [tel, setTel] = useState('')
 	const [isActive, setIsActive] = useState(false)
+	const router = useRouter()
 
 	const onFinish = (values) => {
 		let messageForm = `<b>Заказ с сайта VI:TECH - ${title}</b>\n`
@@ -24,9 +26,9 @@ export const FormOrder = ({ handleCancel, link, title, }) => {
 
 		sendOrderTelegram(messageForm)
 			.then(data => {
-				console.log("🚀 🚀 🚀  _ file: FormOrder.js:27 _ onFinish _ data:", data)
 				if (data.ok) {
 					message.success('Ваш запрос принят!')
+					router.push('/uspeshnaya-otpravka')
 					setIsActive(true)
 					if (handleCancel) {
 						handleCancel()
@@ -80,7 +82,7 @@ export const FormOrder = ({ handleCancel, link, title, }) => {
 		};
 	};
 
-	
+
 	return (
 		<Form
 			name="order"
@@ -119,15 +121,15 @@ export const FormOrder = ({ handleCancel, link, title, }) => {
 					},
 				]}
 			>
-					<InputMask
-						placeholder="+375 29 123-45-67"
-						mask="+3\7\5 99 999 99 99"
-						maskChar={'-'}
-						className='border py-1 px-3 rounded-md w-full'
-						beforeMaskedValueChange={beforeMaskedValueChange}
-						value={tel}
-						onChange={handlePhoneChange}
-					/>
+				<InputMask
+					placeholder="+375 29 123-45-67"
+					mask="+3\7\5 99 999 99 99"
+					maskChar={'-'}
+					className='border py-1 px-3 rounded-md w-full'
+					beforeMaskedValueChange={beforeMaskedValueChange}
+					value={tel}
+					onChange={handlePhoneChange}
+				/>
 			</Form.Item>
 
 			<Form.Item
