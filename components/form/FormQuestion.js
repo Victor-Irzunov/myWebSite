@@ -18,7 +18,7 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 		let messageForm = `<b> Заказ с VI:TECH.BY: ${title}</b>\n`
 		messageForm += `<b>Интерисует: ${el || '-'} </b>\n`
 		messageForm += `<b> </b>\n`
-		messageForm += `<b>Клиент по имени ${values.name || ''} задал вопрос </b>\n`
+		// messageForm += `<b>Клиент по имени ${values.name || ''} задал вопрос </b>\n`
 		messageForm += `<b>Вопрос: ${values.message || ''} </b>\n`
 		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
 		messageForm += `<b>Телефон:</b> ${values.tel}\n`
@@ -26,22 +26,14 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 		sendOrderTelegram(messageForm)
 			.then(data => {
 				if (data.ok) {
-					// Добавление события в dataLayer
-					window.dataLayer = window.dataLayer || [];
-					window.dataLayer.push({
-						event: 'formSubmission',
-						formType: 'contactForm'
-					});
-
-					// Перенаправление на страницу благодарности
-					router.push('/uspeshnaya-otpravka');
-					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта');
-					setIsActive(true);
+					router.push('/uspeshnaya-otpravka')
+					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
+					setIsActive(true)
 					if (handleCancel) {
-						handleCancel();
+						handleCancel()
 					}
 				}
-			});
+			})
 	};
 	const onFinishFailed = (errorInfo) => {
 		console.log('Failed:', errorInfo);
@@ -103,13 +95,13 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 				onFinishFailed={onFinishFailed}
 				autoComplete="off"
 			>
-				<Form.Item
+				{/* <Form.Item
 					label="Имя"
 					name="name"
 					tooltip=""
 				>
 					<Input />
-				</Form.Item>
+				</Form.Item> */}
 				<Form.Item
 					label="Телефон"
 					name="tel"

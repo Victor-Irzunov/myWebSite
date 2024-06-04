@@ -1,7 +1,15 @@
+"use client";
+import { useEffect } from 'react';
 import Link from "next/link"
 
-
 const page = () => {
+	useEffect(() => {
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			event: 'pageView',
+			pageType: 'thankYouPage'
+		});
+	}, []);
 	return (
 		<main className="pt-20 min-h-screen">
 			<section className=''>
