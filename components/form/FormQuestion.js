@@ -13,8 +13,8 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 	const [tel, setTel] = useState('')
 	const [isActive, setIsActive] = useState(false)
 	const onFinish = (values) => {
-		let messageForm = `<b> Заказ с VI:TECH: ${title}</b>\n`
-		messageForm += `<b>Интерисует: ${el} </b>\n`
+		let messageForm = `<b> Заказ с VI:TECH.BY: ${title}</b>\n`
+		messageForm += `<b>Интерисует: ${el || '-'} </b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Клиент по имени ${values.name || ''} задал вопрос </b>\n`
 		messageForm += `<b>Вопрос: ${values.message || ''} </b>\n`
@@ -24,17 +24,14 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 		sendOrderTelegram(messageForm)
 			.then(data => {
 				if (data.ok) {
-
+					router.push('/uspeshnaya-otpravka')
 					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
-					router.push('/uspeshnaya-otpravka')
 					setIsActive(true)
-					router.push('/uspeshnaya-otpravka')
 					if (handleCancel) {
 						handleCancel()
 					}
 				}
 			})
-
 	};
 	const onFinishFailed = (errorInfo) => {
 		console.log('Failed:', errorInfo);

@@ -14,7 +14,7 @@ export const FormOrder = ({ handleCancel, link, title, }) => {
 	const router = useRouter()
 
 	const onFinish = (values) => {
-		let messageForm = `<b>Заказ с сайта VI:TECH - ${title}</b>\n`
+		let messageForm = `<b>Заказ с сайта VI:TECH.BY - ${title}</b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<b>Клиент по имени ${values.name || '-'}  </b>\n`
 		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`

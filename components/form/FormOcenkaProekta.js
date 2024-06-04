@@ -60,7 +60,7 @@ const FormOcenkaProekta = ({ title, handleCancel, konsultaciya }) => {
 	const onFinish = (values) => {
 		console.log('Success:', values);
 
-		let messageForm = `<b>Заказ с сайта VI:TECH - ${title}</b>\n`
+		let messageForm = `<b>Заказ с сайта VI:TECH.BY - ${title}</b>\n`
 		messageForm += `<b> </b>\n`
 		messageForm += `<i>Клиент по имени:  </i>${values.name || '-'} \n`
 		messageForm += `<b>- - - - - - - - - - - - - - -</b>\n`
