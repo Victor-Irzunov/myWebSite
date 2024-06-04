@@ -28,6 +28,7 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
 					router.push('/uspeshnaya-otpravka')
 					setIsActive(true)
+					router.push('/uspeshnaya-otpravka')
 					if (handleCancel) {
 						handleCancel()
 					}

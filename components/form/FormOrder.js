@@ -29,7 +29,10 @@ export const FormOrder = ({ handleCancel, link, title, }) => {
 				if (data.ok) {
 					message.success('Ваш запрос принят!')
 					router.push('/uspeshnaya-otpravka')
+					
 					setIsActive(true)
+
+					router.push('/uspeshnaya-otpravka')
 					if (handleCancel) {
 						handleCancel()
 					}
