@@ -1,5 +1,24 @@
+"use client"
 import Link from "next/link"
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
+
 const page = () => {
+	const router = useRouter();
+
+	useEffect(() => {
+		// Проверяем, что мы находимся на странице благодарности
+		if (router.pathname === '/uspeshnaya-otpravka') {
+			// Отправка события в GTM при загрузке страницы благодарности
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				event: 'formSubmissionSuccess',
+				formType: 'questionForm', // Здесь можно указать тип отправленной формы
+			});
+		}
+	}, [router.pathname]);
+
 
 	return (
 		<main className="pt-20 min-h-screen">

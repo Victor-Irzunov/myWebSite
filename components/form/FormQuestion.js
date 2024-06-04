@@ -26,7 +26,8 @@ export const FormQuestion = ({ handleCancel, link, title = '', el, tag }) => {
 		sendOrderTelegram(messageForm)
 			.then(data => {
 				if (data.ok) {
-					router.push('/uspeshnaya-otpravka')
+					router.push(`/uspeshnaya-otpravka`)
+					
 					message.success('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время, чтобы обсудить детали вашего проекта')
 					setIsActive(true)
 					if (handleCancel) {
