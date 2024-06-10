@@ -12,7 +12,7 @@ const CarouselComp = () => {
 				<div className="container mx-auto">
 					<div className='pt-28'>
 						<h1 className='uppercase text-[#004C97] xz:text-3xl sd:text-5xl font-semibold'>
-							Разработка сайтов в Минске
+							Создание сайтов в Минске
 						</h1>
 						<BlockMainPage />
 					

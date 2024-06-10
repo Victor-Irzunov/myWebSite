@@ -910,4 +910,30 @@ export const dataPortfolio = [
 		w2: 70,
 		h2: 132
 	},
+	{
+		id: 68,
+		title: 'okna-dveri.vercel.app',
+		link: 'https://okna-dveri.vercel.app/',
+		image: '/portfolio/portfolioCard/okna-dveri/1.webp',
+		alt: 'Сайт клиента Окна и Двери ПВХ компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/okna-dveri/2.webp',
+		alt: 'Сайт клиента Окна и Двери ПВХ, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
+	{
+		id: 69,
+		title: '3310.by',
+		link: 'https://3310.by/',
+		image: '/portfolio/portfolioCard/3310/1.webp',
+		alt: 'Сайт клиента Ремонт телефонов и компьютеров компании VI:TECH',
+		w: 1000,
+		h: 566,
+		image2: '/portfolio/portfolioCard/3310/2.webp',
+		alt: 'Сайт клиента Ремонт телефонов и компьютеров, компании VI:TECH',
+		w2: 70,
+		h2: 132
+	},
 ]
