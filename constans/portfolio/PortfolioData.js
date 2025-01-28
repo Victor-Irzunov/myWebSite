@@ -1095,7 +1095,7 @@ export const dataPortfolio = [
 	{
 		id: 83,
 		title: 'car-service3.vercel.app',
-		link: 'https://car-service3.vercel.app/',
+		link: 'https://avp-avto.by/',
 		image: '/portfolio/portfolioCard/car-service3/1.webp',
 		alt: 'Сайт клиента Сто в Минске, компании VI:TECH',
 		w: 1000,

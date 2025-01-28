@@ -4,9 +4,7 @@ import { Collapse } from "antd";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 
-
 const CardComp = dynamic(() => import('@/components/cardComp/CardComp'));
-
 
 const CenySection = () => {
 	return (
