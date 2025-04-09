@@ -886,8 +886,8 @@ export const dataPortfolio = [
 	},
 	{
 		id: 67,
-		title: 'vi-tech.site',
-		link: 'https://vi-tech.site/',
+		title: 'vi-tech-minsk.vercel.app',
+		link: 'https://vi-tech-minsk.vercel.app/',
 		image: '/portfolio/portfolioCard/myBlackSite/1.webp',
 		alt: 'Сайт компании по разработке сайтов, компании VI:TECH',
 		w: 1000,
