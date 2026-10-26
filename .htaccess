@@ -1,0 +1,22 @@
+# vi-tech.by - Apache / LiteSpeed, static one-page site
+# Old indexed URLs -> canonical homepage (301).
+# Keep physical assets and other files accessible.
+Options -MultiViews
+DirectoryIndex index.html
+RewriteEngine On
+
+# Canonical HTTPS and no www.
+RewriteCond %{HTTP_HOST} !^vi-tech\.by$ [NC,OR]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://vi-tech.by%{REQUEST_URI} [R=301,L,NE]
+
+# Old Next.js page paths, including trailing slash.
+# The single new page has no equivalent subpages.
+RewriteRule ^(uslugi(?:/.*)?|cena(?:/.*)?|gotovye-sajty|prodvizhenie-sajta|seo-prodvizhenie-sajta|seo-audit-sajta|kontekstnaya-reklama|portfolio|o-nas|kontakty|teh-podderzhka|testirovanie-it-produktov|dlya-klienta(?:/.*)?|uspeshnaya-otpravka)/?$ https://vi-tech.by/ [R=301,L,NC,QSD]
+
+# Old Next.js homepage URL.
+RewriteRule ^index\.html$ https://vi-tech.by/ [R=301,L,NC,QSD]
+
+# Unknown URLs: return real 404 instead of a blanket homepage
+# redirect (avoids Google's soft-404 classification).
+ErrorDocument 404 "404 Not Found"
